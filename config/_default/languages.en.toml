@@ -1,0 +1,26 @@
+disabled = false
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "Ckagngoc"
+
+[params]
+displayName = "EN"
+isoCode = "en"
+rtl = false
+dateFormat = "2 January 2006"
+logo = "none"
+
+[[params.author.links]]
+facebook = "https://www.facebook.com/pham.uc.minh.938347/"
+
+[[params.author.links]]
+github = "https://github.com/ckagngoc/"
+
+[[params.author.links]]
+youtube = "https://www.youtube.com/channel/UCQFvAyrte7EvoGSBnjy3F4g"
+
+["params.author"]
+name = "Ckagngoc"
+image = "49b3d869b7484e62a11b19925f45d66c_auto_x2.jpg"
+headline = "Reverse Engineer | Security Researcher"

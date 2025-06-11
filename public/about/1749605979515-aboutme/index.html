@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>[Write Up RE] Rifle-AK47 &middot; Ckagngoc</title>
-  <meta name="title" content="[Write Up RE] Rifle-AK47 &middot; Ckagngoc" />
+  <title>AboutMe &middot; Ckagngoc</title>
+  <meta name="title" content="AboutMe &middot; Ckagngoc" />
   
-  <meta name="description" content="CTF writeup of ckagngoc" />
-  <meta name="keywords" content="CTF, Reverser, " />
+  <meta name="description" content="something about me !!!" />
+  <meta name="keywords" content="profiles, " />
   
   
-  <link rel="canonical" href="https://ckagngoc.github.io/posts/1749605320278-write-up-re-rifle-ak47/" />
+  <link rel="canonical" href="https://ckagngoc.github.io/about/1749605979515-aboutme/" />
   
   
   
@@ -66,29 +66,29 @@
   
   
   
-  <meta property="og:title" content="[Write Up RE] Rifle-AK47" />
-<meta property="og:description" content="CTF writeup of ckagngoc" />
+  <meta property="og:title" content="AboutMe" />
+<meta property="og:description" content="something about me !!!" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ckagngoc.github.io/posts/1749605320278-write-up-re-rifle-ak47/" /><meta property="og:image" content="https://ckagngoc.github.io/posts/1749605320278-write-up-re-rifle-ak47/featured.png" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://ckagngoc.github.io/about/1749605979515-aboutme/" /><meta property="og:image" content="https://ckagngoc.github.io/about/1749605979515-aboutme/featured.JPG" /><meta property="article:section" content="about" />
 <meta property="article:published_time" content="2025-06-11T00:00:00+00:00" />
 <meta property="article:modified_time" content="2025-06-11T00:00:00+00:00" />
 
   <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://ckagngoc.github.io/posts/1749605320278-write-up-re-rifle-ak47/featured.png" /><meta name="twitter:title" content="[Write Up RE] Rifle-AK47"/>
-<meta name="twitter:description" content="CTF writeup of ckagngoc"/>
+<meta name="twitter:image" content="https://ckagngoc.github.io/about/1749605979515-aboutme/featured.JPG" /><meta name="twitter:title" content="AboutMe"/>
+<meta name="twitter:description" content="something about me !!!"/>
 
   
   <script type="application/ld+json">
   [{
     "@context": "https://schema.org",
     "@type": "Article",
-    "articleSection": "Posts",
-    "name": "[Write Up RE] Rifle-AK47",
-    "headline": "[Write Up RE] Rifle-AK47",
-    "description": "CTF writeup of ckagngoc",
-    "abstract": "Đầu tiên kiểm tra sơ bộ bằng Detect It Easy.",
+    "articleSection": "Abouts",
+    "name": "AboutMe",
+    "headline": "AboutMe",
+    "description": "something about me !!!",
+    "abstract": "👋 Hi, I\u0026rsquo;m ckagngoc!",
     "inLanguage": "en",
-    "url" : "https:\/\/ckagngoc.github.io\/posts\/1749605320278-write-up-re-rifle-ak47\/",
+    "url" : "https:\/\/ckagngoc.github.io\/about\/1749605979515-aboutme\/",
     "author" : {
       "@type": "Person",
       "name": "Ckagngoc"
@@ -99,10 +99,10 @@
     
     "dateModified": "2025-06-11T00:00:00\u002b00:00",
     
-    "keywords": ["CTF","Reverser"],
+    "keywords": ["profiles"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1006"
+    "wordCount": "107"
   }]
   </script>
 
@@ -428,7 +428,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      [Write Up RE] Rifle-AK47
+      AboutMe
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -473,7 +473,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2025-06-11T00:00:00&#43;00:00">11 June 2025</time><span class="px-2 text-primary-500">&middot;</span><span>1006 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
+  <time datetime="2025-06-11T00:00:00&#43;00:00">11 June 2025</time><span class="px-2 text-primary-500">&middot;</span><span>107 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
   
 
   
@@ -614,209 +614,149 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>
-
-
-
-
-
-<figure>
-    <img class="my-0 rounded-md" loading="lazy" alt="Imgur" src="https://i.imgur.com/mkyWIst.png" />
-
-  
-</figure>
-</p>
-<p>Đầu tiên kiểm tra sơ bộ bằng Detect It Easy.</p>
-<p>
-
-
-
-
-
-<figure>
-    <img class="my-0 rounded-md" loading="lazy" alt="Imgur" src="https://i.imgur.com/EAkCWzC.png" />
-
-  
-</figure>
-</p>
-<p>target laf file PE32, thông tin chi tiết trong ảnh.
-Tiến hành phân tích file bằng IDA ta thấy, sau khi nhận vào Input, chương trình khởi tạo vùng nhớ lên RAM bằng VirtualAlloc sử dụng memcpy để
-copy một số byte từ .data lên vùng nhớ mới tạo, protect bằng VirtualProtect, AddVectorHandler để giải mã byte trong vùng nhớ thành shell code
-, sau đó sử dụng để check buffer nhập vào:</p>
-<p>
-
-
-
-
-
-<figure>
-    <img class="my-0 rounded-md" loading="lazy" alt="Imgur" src="https://i.imgur.com/JSzU599.png" />
-
-  
-</figure>
-</p>
-<p>Debug chương trình ta thấy nó lặp lại quy trình này 2 lần, lúc này dự tính là sẽ đặt breakpoint khi chương trình call VirtualProtect có tham số
-là offset <em>lpAddress</em> của vùng nhớ ảo chứa shell code khi đó nhấn đúp vào lpAdress ta sẽ lấy được shellcode bằng cách dump phần byte được nạp vào ra:</p>
-<p>Như dự tính, ta xử lý phần bytecode thứ nhất có địa chỉ là 0x6E0000 và size là 0x140 như các tham số trong stack:</p>
-<p>
-
-
-
-
-
-<figure>
-    <img class="my-0 rounded-md" loading="lazy" alt="Imgur" src="https://i.imgur.com/TmarP3q.png" />
-
-  
-</figure>
-</p>
-<p>Dump đoạn bytecode đó ra, sau đó xem xét xem handle sẽ làm gì với vùng bytecode của ta:</p>
-<p>
-
-
-
-
-
-<figure>
-    <img class="my-0 rounded-md" loading="lazy" alt="Imgur" src="https://i.imgur.com/v3wOtKG.png" />
-
-  
-</figure>
-</p>
-<p>Chương trình sẽ kiểm tra quyền truy cập của vùng nhớ mới tạo, sau đó xor từng byte của vùng nhớ thứ nhất với 0x13 như hình. dựa vào đó ta viết một đoạn script để
-giải mã đoạn byte code đã dump ra:</p>
-<pre tabindex="0"><code>listByteDump = [0x46, 0x98, 0xFF, 0x92, 0xFF, 0x57, 0x12, 0x13, 0x13, 0xD4, 0x56, 0xFB, 0x06, 0x27, 0x55, 0x31, 0x20, 0xD3, 0xD4, 0x56, 0xFF, 0x11, 0xCA, 0x9F, 0xDD, 0xD4, 0x56, 0xE3, 0xA9, 0x3F, 0x58, 0x63, 0xD4, 0x56, 0xE7, 0x49, 0x62, 0x7C, 0x55, 0xD4, 0x56, 0xEB, 0x1C, 0x5B, 0x3F, 0x70, 0xD5, 0x56, 0xEF, 0x78, 0xD4, 0x56, 0xAF, 0x72, 0xC2, 0xE7, 0x16, 0xD4, 0x56, 0xD3, 0x65, 0xCD, 0x8D, 0xA8, 0xD4, 0x56, 0xD7, 0x1C, 0xD9, 0x23, 0x1C, 0xD4, 0x56, 0xDB, 0x06, 0x4D, 0xDE, 0x76, 0xD4, 0x56, 0xDF, 0xC7, 0x6A, 0xB4, 0x0B, 0xD4, 0x56, 0xC3, 0x47, 0x64, 0xFD, 0x37, 0xD4, 0x56, 0xC7, 0x46, 0x7D, 0xE7, 0xD7, 0xD4, 0x56, 0xCB, 0x8B, 0x32, 0x88, 0x3B, 0xD4, 0x56, 0xCF, 0x63, 0x71, 0x72, 0xB6, 0xD4, 0x56, 0xF3, 0x59, 0xC4, 0x11, 0x9B, 0x75, 0xD4, 0x56, 0xF7, 0xEE, 0x71, 0x75, 0x83, 0x9B, 0x97, 0x16, 0xAF, 0xED, 0xEC, 0xEC, 0x53, 0x2E, 0x13, 0x12, 0x13, 0x13, 0x6F, 0xE2, 0x45, 0x20, 0xE5, 0x40, 0x1C, 0x0C, 0x53, 0x13, 0x75, 0x1C, 0x0C, 0x97, 0x13, 0x13, 0x13, 0x13, 0x13, 0x99, 0x8F, 0x26, 0xAF, 0xED, 0xEC, 0xEC, 0xAB, 0x94, 0x72, 0x0B, 0x95, 0xE4, 0xF5, 0x98, 0xD5, 0x98, 0xDD, 0x38, 0xD1, 0xC2, 0xFB, 0x10, 0xD1, 0xD2, 0xFB, 0x17, 0x78, 0xD3, 0x06, 0x38, 0xDB, 0x1C, 0xA5, 0x57, 0x1E, 0xFB, 0x11, 0xD0, 0x1C, 0xA5, 0xDB, 0x1C, 0xA5, 0x97, 0x1E, 0xAF, 0xED, 0xEC, 0xEC, 0x9B, 0x97, 0x26, 0xAF, 0xED, 0xEC, 0xEC, 0x55, 0x9B, 0x8F, 0x1E, 0xAF, 0xED, 0xEC, 0xEC, 0x92, 0xED, 0x13, 0x12, 0x13, 0x13, 0x6F, 0xA4, 0x98, 0x5E, 0x1B, 0x9E, 0x66, 0xAF, 0x20, 0xC1, 0x38, 0xE2, 0x48, 0x98, 0xD1, 0x36, 0xEC, 0x13, 0x13, 0x93, 0x6A, 0x14, 0x5B, 0x1E, 0x13, 0xEC, 0xEC, 0xEC, 0x53, 0x1C, 0xA5, 0x97, 0x16, 0xAF, 0xED, 0xEC, 0xEC, 0x23, 0x12, 0x1C, 0xA5, 0x12, 0x29, 0x17, 0x1D, 0x66, 0x02, 0x51, 0x52, 0x90, 0xE9, 0x39, 0x6F, 0xC4, 0xAB, 0x12, 0x13, 0x13, 0x13, 0x4D, 0x98, 0xF6, 0x4E, 0xD0, 0x20, 0xD3, 0x4D, 0x98, 0xF6, 0x4E, 0xD0, 0xDF, 0xDF, 0xAB, 0x33, 0x23, 0x53, 0x13, 0xD0, 0xDF, 0xDF, 0xDF, 0xDF, 0xDF, 0xDF, 0xDF, 0xDF, 0xDF]
-
-listNewByte = [i ^ 0x13 for i in listByteDump]
-
-file = open(&#34;dump1.bin&#34;,&#34;wb&#34;)
-sentence = bytearray(listNewByte)
-file.write(sentence)
-file.close()
-</code></pre><p>Sau đó phân tích file dump bằng IDA sử dụng chức năng makecode của IDA để xem các câu lệnh, nếu có bản Pro thì có thể ấn P để IDA nhận diện các hàm sau đó ta có thể xem được giả
-mã C++:</p>
-<pre tabindex="0"><code>int __cdecl sub_0(_BYTE *buffer)
-{
-  int index; // eax
-  int i; // esi
-  char v3; // bl
-  int v4; // ecx
-  _BYTE *v5; // ecx
-  int v6; // edx
-  char v8[256]; // [esp+0h] [ebp-144h]
-  int v9[10]; // [esp+100h] [ebp-44h] BYREF
-  __int16 v10; // [esp+128h] [ebp-1Ch]
-  int v11[5]; // [esp+12Ch] [ebp-18h]
-  char v12; // [esp+140h] [ebp-4h]
-
-  v11[0] = 0x22463415;
-  index = 0;
-  v11[1] = 0xCE8CD902;
-  v11[2] = 0x704B2CBA;
-  v11[3] = 0x466F715A;
-  v11[4] = 0x632C480F;
-  v12 = 107;
-  v9[0] = 0x5F4D161;
-  v9[1] = -1147216266;
-  v9[2] = 254855695;
-  v9[3] = 1707957781;
-  v9[4] = 413628884;
-  v9[5] = 619607892;
-  v9[6] = -990613931;
-  v9[7] = 681255320;
-  v9[8] = -1520344464;
-  v9[9] = -2013079734;
-  v10 = 0x62FD;
-  do
-  {
-    v8[index] = index;
-    ++index;
-  }
-  while ( index &lt; 256 );
-  for ( i = 0; i &lt; 256; ++i )
-  {
-    v3 = v8[i];
-    v4 = (unsigned __int8)(v3 + *((_BYTE *)v11 + i % 21u));
-    v8[i] = v8[v4];
-    v8[v4] = v3;
-  }
-  v5 = buffer;
-  v6 = 0;
-  while ( 1 )
-  {
-    *v5 ^= v8[v6 % 256];
-    if ( *v5 != v5[(char *)v9 - buffer] )
-      break;
-    ++v6;
-    ++v5;
-    if ( v6 &gt;= 42 )
-      return 1;
-  }
-  return 0;
-}
-</code></pre><p>Đọc giả mã ta thấy v11 là key sẽ được handle, xor với input và so sánh với 42 BYTE trong v9 để có thể kiểm tra
-Ta viết một script theo mã giả sử dụng những byte trong v11 và v9 để tái tạo input:</p>
-<pre tabindex="0"><code>v11 = [0x15, 0x34, 0x46, 0x22, 0x02, 0xD9, 0x8C, 0xCE, 0xBA, 0x2C, 0x4B,\
-    0x70, 0x5A, 0x71, 0x6F, 0x46, 0x0F, 0x48, 0x2C, 0x63, 0x6B]
-
-v8 = [i for i in range(257)]
-
-v9 = [0x61, 0xD1, 0xF4, 0x05, 0x76, 0xDE, 0x9E, 0xBB, 0x0F, 0xCA,\
-        0x30, 0x0F, 0x15, 0x5E, 0xCD, 0x65, 0xD4, 0x79, 0xA7, 0x18,\
-        0x54, 0x77, 0xEE, 0x24, 0x55, 0x6E, 0xF4, 0xC4, 0x98, 0x21,\
-        0x9B, 0x28, 0x70, 0x62, 0x61, 0xA5, 0x4A, 0xD7, 0x02, 0x88,\
-        0xFD, 0x62]
-
-for i in range(257):
-    v3 = v8[i]
-    v4 = (v3 + v11[i % 21])%256
-    v8[i] = v8[v4]
-    v8[v4] = v3
+          
+<h1 class="relative group">👋 Hi, I&rsquo;m ckagngoc! 
+    <div id="-hi-im-ckagngoc" class="anchor"></div>
     
-password = &#34;&#34;.join(chr(v8[i]^v9[i]) for i in range(42))
-
-print(password)
-</code></pre><p>Kết quả:</p>
-<p>
-
-
-
-
-
-<figure>
-    <img class="my-0 rounded-md" loading="lazy" alt="Imgur" src="https://i.imgur.com/xThsDoT.png" />
-
-  
-</figure>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#-hi-im-ckagngoc" aria-label="Anchor">#</a>
+    </span>        
+    
+</h1>
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:232526,100:6a11cb&height=220&section=header&text=ckagngoc&fontSize=50&fontAlign=50&fontColor=ffffff&fontAlignY=40&desc=Reverse%20Engineer%20%7C%20Security%20Researcher&descAlign=50&descSize=22&font=Fira+Code" alt="header"/>
 </p>
-<p>Nhập input vào chương trình để lấy flag:</p>
-<p>
-
-
-
-
-
-<figure>
-    <img class="my-0 rounded-md" loading="lazy" alt="Imgur" src="https://i.imgur.com/EusDKJN.png" />
-
-  
-</figure>
+<p align="center">
+  <a href="https://ckagngoc.github.io" target="_blank">
+    <img src="https://img.shields.io/badge/My%20Blog-6A11CB?style=for-the-badge&logo=githubpages&logoColor=white" alt="My Blog"/>
+  </a>
 </p>
-<p>Đù, sai ạ, lúc đầu cứ nghĩ bị lừa nên làm tương tự để xem shellcode còn lại nhưng nó chỉ là shellcode kiểm tra chiều dài, khi đó thử thay cái chữ <em>G</em> vô duyên kia
-thành <em>e</em>:</p>
-<p>
-
-
-
-
-
-<figure>
-    <img class="my-0 rounded-md" loading="lazy" alt="Imgur" src="https://i.imgur.com/f7ZyU1Y.png" />
-
-  
-</figure>
+<h3 align="center">Reverse Engineer | Security Researcher</h3>
+<p align="center">
+  <a href="https://web.facebook.com/profile.php?id=100026147535753">
+    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"/>
+  </a>
+  <a href="mailto:pducminh178@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
+  <a href="https://github.com/ckagngoc">
+    <img src="https://img.shields.io/badge/GitHub-232526?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+  <a target="_blank" href="https://www.youtube.com/@coderlowtech0602"><img src="https://img.shields.io/badge/youtube-logo?style=for-the-badge&logo=youtube&logoColor=white&color=%23cc0000" alt="youtube" /></a>
 </p>
-<p><strong>Flag: mtactf{4uT0mAt1C_R1fl3_AK-47}</strong></p>
+<p align="center">
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="hacker typing" height="120"/>
+  <img src="https://media.giphy.com/media/26ufnwz3wDUli7GU0/giphy.gif" alt="matrix code" height="120"/>
+  <img src="https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif" alt="terminal hacker" height="120"/>
+</p>
+
+<h2 class="relative group">👨‍💻 Reverse Engineer | Software Cracker | Security Researcher 
+    <div id="-reverse-engineer--software-cracker--security-researcher" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#-reverse-engineer--software-cracker--security-researcher" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>🔍 <strong>Passionate about exploring software internals, analyzing obfuscated code, and breaking protection mechanisms.</strong><br>
+I specialize in reverse engineering, binary analysis, and debugging for educational and research purposes.<br>
+I love sharing tools, write-ups, and experiments to contribute to the infosec and RE communities.<br>
+Always learning. Always exploring the unknown.</p>
+<hr>
+
+<h3 class="relative group">🧑‍💼 About Me 
+    <div id="-about-me" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#-about-me" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<ul>
+<li>💼 <strong>Reverse Engineer, Programmer, Security Enthusiast</strong></li>
+<li>❤️ Enjoys C++, Java, C, and building fun type-level experiments</li>
+<li>🧠 Always curious, always learning</li>
+<li>💬 Ask me anything: <a href="https://web.facebook.com/profile.php?id=100026147535753" target="_blank">Facebook</a></li>
+</ul>
+<hr>
+
+<h3 class="relative group">🛠️ Languages &amp; Tools 
+    <div id="-languages--tools" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#-languages--tools" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>
+  <a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="42" height="42" /></a>
+  <a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="42" height="42" /></a>
+  <a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="42" height="42" /></a>
+  <a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="go" width="42" height="42" /></a>
+  <a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="42" height="42" /></a>
+  <a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="42" height="42" /></a>
+  <a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="42" height="42" /></a>
+  <a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="42" height="42" /></a>
+  <a target="_blank" href="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg"><img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="42" height="42" /></a>
+  <a target="_blank" href="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg"><img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" alt="kotlin" width="42" height="42" /></a>
+  <a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="42" height="42" /></a>
+  <a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="42" height="42" /></a>
+  <a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="oracle" width="42" height="42" /></a>
+  <a target="_blank" href="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg"><img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="42" height="42" /></a>
+  <a target="_blank" href="https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg"><img src="https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg" alt="elasticsearch" width="42" height="42" /></a>
+  <a target="_blank" href="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg"><img src="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg" alt="grafana" width="42" height="42" /></a>
+  <a target="_blank" href="https://www.vectorlogo.zone/logos/elasticco_kibana/elasticco_kibana-icon.svg"><img src="https://www.vectorlogo.zone/logos/elasticco_kibana/elasticco_kibana-icon.svg" alt="kibana" width="42" height="42" /></a>
+  <a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="42" height="42" /></a>
+  <a target="_blank" href="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg"><img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="42" height="42" /></a>
+  <a target="_blank" href="https://download.blender.org/branding/community/blender_community_badge_white.svg"><img src="https://download.blender.org/branding/community/blender_community_badge_white.svg" alt="blender" width="42" height="42" /></a>
+  <a target="_blank" href="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg"><img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator" width="42" height="42" /></a>
+  <a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="42" height="42" /></a>
+  <a target="_blank" href="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg"><img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="42" height="42" /></a>
+  <a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="42" height="42" /></a>
+  <a target="_blank" href="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="42" height="42" /></a>
+</p>
+<hr>
+
+<h3 class="relative group">📊 GitHub Stats 
+    <div id="-github-stats" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#-github-stats" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<table>
+<thead>
+<tr>
+<th><a href="https://github.com/ckagngoc/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api?username=ckagngoc&show_icons=true&theme=radical&hide_border=true" alt="ckagngoc's github stats" /></a></th>
+<th><a href="https://github.com/ckagngoc/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ckagngoc&layout=compact&theme=radical&hide_border=true" /></a></th>
+</tr>
+</thead>
+</table>
+<hr>
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=ckagngoc&theme=radical&no-frame=true&column=7" alt="trophy"/>
+</p>
+<hr>
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ckagngoc&theme=radical&hide_border=true" alt="GitHub Streak" />
+  <br /><br />
+</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ckagngoc/ckagngoc/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ckagngoc/ckagngoc/output/github-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/ckagngoc/ckagngoc/output/github-snake.svg" />
+</picture>
 
           
           
@@ -839,8 +779,8 @@ thành <em>e</em>:</p>
           
         
       <script>
-        var oid = "views_posts\\1749605320278-[Write-Up-RE]-Rifle-AK47\\index.md"
-        var oid_likes = "likes_posts\\1749605320278-[Write-Up-RE]-Rifle-AK47\\index.md"
+        var oid = "views_about\\1749605979515-AboutMe\\index.md"
+        var oid_likes = "likes_about\\1749605979515-AboutMe\\index.md"
       </script>
       
       
@@ -851,43 +791,6 @@ thành <em>e</em>:</p>
   <footer class="pt-8 max-w-prose print:hidden">
 
     
-  
-    
-    
-    
-    <div class="pt-8">
-      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
-      <div class="flex justify-between pt-3">
-        <span>
-          
-            <a class="flex group mr-3" href="/posts/1749604583563-idapython-cheat-sheet/">
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >IDApython cheat-sheet</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2025-06-11T00:00:00&#43;00:00">11 June 2025</time>
-                  
-                </span>
-              </span>
-            </a>
-          
-        </span>
-        <span>
-          
-        </span>
-      </div>
-    </div>
   
 
 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reverse on Ckagngoc</title>
+    <link>https://ckagngoc.github.io/tags/reverse/</link>
+    <description>Recent content in Reverse on Ckagngoc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2025 Ckagngoc</copyright>
+    <lastBuildDate>Tue, 10 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ckagngoc.github.io/tags/reverse/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>PicoCTF-WriteUp-ReverseEasy</title>
+      <link>https://ckagngoc.github.io/posts/1749543634746-picoctf-writeup-reverseeasy/</link>
+      <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://ckagngoc.github.io/posts/1749543634746-picoctf-writeup-reverseeasy/</guid>
+      <description>PicoCTF-WriteUp-Reverse #Easy - Transformation #Description #I wonder what this really is.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ckagngoc.github.io/posts/1749543634746-picoctf-writeup-reverseeasy/feature.png" />
+    </item>
+    
+  </channel>
+</rss>

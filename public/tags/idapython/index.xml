@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IDApython on Ckagngoc</title>
-    <link>https://ckagngoc.github.io/tags/idapython/</link>
+    <link>http://localhost:1313/tags/idapython/</link>
     <description>Recent content in IDApython on Ckagngoc</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 Ckagngoc</copyright>
-    <lastBuildDate>Wed, 11 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ckagngoc.github.io/tags/idapython/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/idapython/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>IDApython cheat-sheet</title>
-      <link>https://ckagngoc.github.io/posts/1749604583563-idapython-cheat-sheet/</link>
+      <link>http://localhost:1313/posts/1749604583563-idapython-cheat-sheet/</link>
       <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://ckagngoc.github.io/posts/1749604583563-idapython-cheat-sheet/</guid>
+      <guid>http://localhost:1313/posts/1749604583563-idapython-cheat-sheet/</guid>
       <description>Learn-IDApython #Học IDAPython với ckagngoc 💀</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ckagngoc.github.io/posts/1749604583563-idapython-cheat-sheet/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/1749604583563-idapython-cheat-sheet/feature.png" />
     </item>
     
   </channel>

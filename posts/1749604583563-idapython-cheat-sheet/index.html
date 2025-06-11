@@ -1,0 +1,472 @@
+<!doctype html><html lang=en dir=ltr class=scroll-smooth data-default-appearance=dark data-auto-appearance=true><head><meta charset=utf-8><meta http-equiv=content-language content="en"><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="ie=edge"><title>IDApython cheat-sheet &#183; Ckagngoc</title>
+<meta name=title content="IDApython cheat-sheet &#183; Ckagngoc"><meta name=description content="IDApython tutorial"><meta name=keywords content="IDApython,IDA,Scrips,Reverse,"><link rel=canonical href=https://ckagngoc.github.io/posts/1749604583563-idapython-cheat-sheet/><link type=text/css rel=stylesheet href=/css/main.bundle.min.29653ed199b7a749016920bb9715d240156e67049c90f12ffede5bb7f952606ecd8b0dd0c3f01d75af648960eddb25a879915d6e24858a75d11d9eed0607d9c6.css integrity="sha512-KWU+0Zm3p0kBaSC7lxXSQBVuZwSckPEv/t5bt/lSYG7Niw3Qw/Adda9kiWDt2yWoeZFdbiSFinXRHZ7tBgfZxg=="><script type=text/javascript src=/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj+e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script><script defer type=text/javascript id=script-bundle src=/js/main.bundle.min.c7b52510f6cfde2f0a7ee021ff022b4f6bd43a3fc0f343d27659053c818b447ff03ce4906c8cdaacd6c04ee00b9069a64ed580d258992b8b60bcb36b975c7d92.js integrity="sha512-x7UlEPbP3i8KfuAh/wIrT2vUOj/A80PSdlkFPIGLRH/wPOSQbIzarNbATuALkGmmTtWA0liZK4tgvLNrl1x9kg==" data-copy=Copy data-copied=Copied></script><script src=/lib/zoom/zoom.min.f592a181a15d2a5b042daa7f746c3721acf9063f8b6acd175d989129865a37d400ae0e85b640f9ad42cd98d1f8ad30931718cf8811abdcc5fcb264400d1a2b0c.js integrity="sha512-9ZKhgaFdKlsELap/dGw3Iaz5Bj+Las0XXZiRKYZaN9QArg6FtkD5rULNmNH4rTCTFxjPiBGr3MX8smRADRorDA=="></script><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><meta property="og:title" content="IDApython cheat-sheet"><meta property="og:description" content="IDApython tutorial"><meta property="og:type" content="article"><meta property="og:url" content="https://ckagngoc.github.io/posts/1749604583563-idapython-cheat-sheet/"><meta property="og:image" content="https://ckagngoc.github.io/posts/1749604583563-idapython-cheat-sheet/feature.png"><meta property="article:section" content="posts"><meta property="article:published_time" content="2025-06-11T00:00:00+00:00"><meta property="article:modified_time" content="2025-06-11T00:00:00+00:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://ckagngoc.github.io/posts/1749604583563-idapython-cheat-sheet/feature.png"><meta name=twitter:title content="IDApython cheat-sheet"><meta name=twitter:description content="IDApython tutorial"><script type=application/ld+json>[{"@context":"https://schema.org","@type":"Article","articleSection":"Posts","name":"IDApython cheat-sheet","headline":"IDApython cheat-sheet","description":"IDApython tutorial","abstract":"Learn-IDApython # Học IDAPython với ckagngoc 💀","inLanguage":"en","url":"https:\/\/ckagngoc.github.io\/posts\/1749604583563-idapython-cheat-sheet\/","author":{"@type":"Person","name":"Ckagngoc"},"copyrightYear":"2025","dateCreated":"2025-06-11T00:00:00\u002b00:00","datePublished":"2025-06-11T00:00:00\u002b00:00","dateModified":"2025-06-11T00:00:00\u002b00:00","keywords":["IDApython","IDA","Scrips","Reverse"],"mainEntityOfPage":"true","wordCount":"3710"}]</script><meta name=author content="Ckagngoc"><link href=https://www.facebook.com/pham.uc.minh.938347/ rel=me><link href=https://github.com/ckagngoc/ rel=me><link href=https://www.youtube.com/channel/UCQFvAyrte7EvoGSBnjy3F4g rel=me><script src=/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj+KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script><meta name=theme-color></head><body class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600"><div id=the-top class="absolute flex self-center"><a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600" href=#main-content><span class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>Skip to main content</a></div><div style=padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3"><div class="flex flex-1 items-center justify-between"><nav class="flex space-x-3"><a href=/ class="text-base font-medium text-gray-500 hover:text-gray-900">Ckagngoc</a></nav><nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12"><a href=/posts/ class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400"><p class="text-base font-medium" title>Posts</p></a><a href class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400"><p class="text-base font-medium" title></p></a><button id=search-button aria-label=Search class="text-base hover:text-primary-600 dark:hover:text-primary-400" title>
+<span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentcolor" d="M505 442.7 405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9.0 208 0S0 93.1.0 208s93.1 208 208 208c48.3.0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9.0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7.0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7.0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></span></button><div class="flex items-center"><button id=appearance-switcher aria-label="Dark mode switcher" type=button class="text-base hover:text-primary-600 dark:hover:text-primary-400"><div class="flex items-center justify-center dark:hidden"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentcolor" d="M32 256C32 132.2 132.3 32 255.8 32c11.36.0 29.7 1.668 40.9 3.746 9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3 9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480 132.1 480 32 379.6 32 256z"/></svg></span></div><div class="items-center justify-center hidden dark:flex"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentcolor" d="M256 159.1c-53.02.0-95.1 42.98-95.1 95.1s41.2 96.9 95.1 96.9 95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347l-63.2-91.9 63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89 164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6 12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256 2.74 347.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7 19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109 109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69.0-127.1-57.31-127.1-127.1.0-70.69 57.31-127.1 127.1-127.1S383.1 186.2 383.1 256c0 70.7-56.4 127.1-127.1 127.1z"/></svg></span></div></button></div></nav><div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12"><span></span>
+<button id=search-button-mobile aria-label=Search class="text-base hover:text-primary-600 dark:hover:text-primary-400" title>
+<span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentcolor" d="M505 442.7 405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9.0 208 0S0 93.1.0 208s93.1 208 208 208c48.3.0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9.0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7.0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7.0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span></button>
+<button id=appearance-switcher-mobile aria-label="Dark mode switcher" type=button class="text-base hover:text-primary-600 dark:hover:text-primary-400 ltr:mr-1 rtl:ml-1"><div class="flex items-center justify-center dark:hidden"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentcolor" d="M32 256C32 132.2 132.3 32 255.8 32c11.36.0 29.7 1.668 40.9 3.746 9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3 9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480 132.1 480 32 379.6 32 256z"/></svg></span></div><div class="items-center justify-center hidden dark:flex"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentcolor" d="M256 159.1c-53.02.0-95.1 42.98-95.1 95.1s41.2 96.9 95.1 96.9 95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347l-63.2-91.9 63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89 164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6 12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256 2.74 347.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7 19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109 109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69.0-127.1-57.31-127.1-127.1.0-70.69 57.31-127.1 127.1-127.1S383.1 186.2 383.1 256c0 70.7-56.4 127.1-127.1 127.1z"/></svg></span></div></button></div></div><div class="-my-2 md:hidden"><label id=menu-button class=block><div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentcolor" d="M0 96C0 78.33 14.33 64 32 64H416c17.7.0 32 14.33 32 32 0 17.7-14.3 32-32 32H32C14.33 128 0 113.7.0 96zM0 256c0-17.7 14.33-32 32-32H416c17.7.0 32 14.3 32 32s-14.3 32-32 32H32c-17.67.0-32-14.3-32-32zM416 448H32c-17.67.0-32-14.3-32-32s14.33-32 32-32H416c17.7.0 32 14.3 32 32s-14.3 32-32 32z"/></svg></span></div><div id=menu-wrapper style=padding-top:5px class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50"><ul class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl"><li id=menu-close-button><span class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentcolor" d="M310.6 361.4c12.5 12.5 12.5 32.75.0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3 54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75.0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75.0-45.25s32.75-12.5 45.25.0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25.0s12.5 32.75.0 45.25l-105.4 105.4L310.6 361.4z"/></svg></span></span></li><li class=mt-1><a href=/posts/ class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400"><p class="text-bg font-bg" title>Posts</p></a></li><li class=mt-1><a href class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400"><p class="text-bg font-bg" title></p></a></li></ul></div></label></div></div><div class="relative flex flex-col grow"><main id=main-content class=grow><article><header id=single_header class="mt-5 max-w-prose"><h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">IDApython cheat-sheet</h1><div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden"><div class="flex flex-row flex-wrap items-center"><time datetime=2025-06-11T00:00:00+00:00>11 June 2025</time><span class="px-2 text-primary-500">&#183;</span><span>3710 words</span><span class="px-2 text-primary-500">&#183;</span><span title="Reading time">18 mins</span></div></div><div class="flex author"><img class="!mt-0 !mb-0 h-24 w-24 rounded-full ltr:mr-4 rtl:ml-4" width=96 height=96 alt=Ckagngoc src=/49b3d869b7484e62a11b19925f45d66c_auto_x2_huf1e969631c52636a89b3bb5142e066c6_33191_192x192_fill_q75_box_center.jpg><div class=place-self-center><div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">Author</div><div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">Ckagngoc</div><div class="text-2xl sm:text-lg"><div class="flex flex-wrap text-neutral-400 dark:text-neutral-500"><a class="px-1 hover:text-primary-700 dark:hover:text-primary-400" href=https://www.facebook.com/pham.uc.minh.938347/ target=_blank aria-label=Facebook rel="me noopener noreferrer"><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentcolor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14.0 55.52 4.84 55.52 4.84v61h-31.28c-30.8.0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+</span></span></a><a class="px-1 hover:text-primary-700 dark:hover:text-primary-400" href=https://github.com/ckagngoc/ target=_blank aria-label=Github rel="me noopener noreferrer"><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentcolor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6.0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6.0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3.0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1.0-6.2-.3-40.4-.3-61.4.0.0-70 15-84.7-29.8.0.0-11.4-29.1-27.8-36.6.0.0-22.9-15.7 1.6-15.4.0.0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5.0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9.0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4.0 33.7-.3 75.4-.3 83.6.0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6.0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9.0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></span></a><a class="px-1 hover:text-primary-700 dark:hover:text-primary-400" href=https://www.youtube.com/channel/UCQFvAyrte7EvoGSBnjy3F4g target=_blank aria-label=Youtube rel="me noopener noreferrer"><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentcolor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78.0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg></span></span></a></div></div></div></div><div class=mb-5></div></header><section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row"><div class="min-w-0 min-h-0 max-w-fit"><div class="article-content max-w-prose mb-20"><h1 class="relative group">Learn-IDApython<div id=learn-idapython class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#learn-idapython aria-label=Anchor>#</a></span></h1><p>Học IDAPython với ckagngoc 💀</p><h2 class="relative group">Mục lục<div id=mục-lục class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#m%e1%bb%a5c-l%e1%bb%a5c aria-label=Anchor>#</a></span></h2><h2 class="relative group"><a href=#i-t%c3%a0i-li%e1%bb%87u-h%e1%bb%8dc-t%e1%ba%adp-%c4%91%c6%b0%e1%bb%a3c-%c4%91%e1%bb%81-xu%e1%ba%a5t-cho-ida-python>I. Tài liệu đề xuất</a><div id=i-tài-liệu-đề-xuấti-tài-liệu-học-tập-được-đề-xuất-cho-ida-python class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#i-t%c3%a0i-li%e1%bb%87u-%c4%91%e1%bb%81-xu%e1%ba%a5ti-t%c3%a0i-li%e1%bb%87u-h%e1%bb%8dc-t%e1%ba%adp-%c4%91%c6%b0%e1%bb%a3c-%c4%91%e1%bb%81-xu%e1%ba%a5t-cho-ida-python aria-label=Anchor>#</a></span></h2><h2 class="relative group"><a href=#ii-gi%e1%bb%9bi-thi%e1%bb%87u>II. Giới thiệu các mục cơ bản</a><div id=ii-giới-thiệu-các-mục-cơ-bảnii-giới-thiệu class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#ii-gi%e1%bb%9bi-thi%e1%bb%87u-c%c3%a1c-m%e1%bb%a5c-c%c6%a1-b%e1%ba%a3nii-gi%e1%bb%9bi-thi%e1%bb%87u aria-label=Anchor>#</a></span></h2><p><a href=#1-c%c3%a1c-thao-t%c3%a1c-c%c6%a1-b%e1%ba%a3n>1-các-thao-tác-cơ-bản</a></p><p><a href=#2-thao-t%c3%a1c-v%e1%bb%9bi-segment>2-thao-tác-với-segment</a></p><p><a href=#3-thao-t%c3%a1c-v%e1%bb%9bi-h%c3%a0m>3-thao-tác-với-hàm</a></p><p><a href=#4-thao-t%c3%a1c-v%e1%bb%9bi-c%c3%a2u-l%e1%bb%87nh>4-thao-tác-với-câu-lệnh</a></p><p><a href=#5-thao-t%c3%a1c-v%e1%bb%9bi-to%c3%a1n-h%e1%ba%a1ng>5-thao-tác-với-toán-hạng</a></p><p><a href=#6-gi%e1%ba%a3-l%e1%ba%adp-ida>6-giả-lập-ida</a></p><p><a href=#7-thao-t%c3%a1c-v%e1%bb%9bi-tham-chi%e1%ba%bfu>7-thao-tác-với-tham-chiếu</a></p><p><a href=#8-debug-hook-v%e1%bb%9bi-idapython>8-debug-hook-với-idapython</a></p><hr><h2 class="relative group">I. Tài liệu học tập được đề xuất cho IDA python<div id=i-tài-liệu-học-tập-được-đề-xuất-cho-ida-python class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#i-t%c3%a0i-li%e1%bb%87u-h%e1%bb%8dc-t%e1%ba%adp-%c4%91%c6%b0%e1%bb%a3c-%c4%91%e1%bb%81-xu%e1%ba%a5t-cho-ida-python aria-label=Anchor>#</a></span></h2><ul><li>ida权威指南第二版》</li><li>[https://wooyun.js.org/drops/IDAPython%20%E8%AE%A9%E4%BD%A0%E7%9A%84%E7%94%9F%E6%B4%BB%E6%9B%B4%E6%BB%8B%E6%B6%A6%20part1%20and%20part2.html](<a href=https://wooyun.js.org/drops/IDAPython target=_blank>https://wooyun.js.org/drops/IDAPython</a> 让你的生活更滋润 part1 and part2.html)</li><li><a href=https://cartermgj.github.io/2017/10/10/ida-python/ target=_blank>https://cartermgj.github.io/2017/10/10/ida-python/</a></li><li><a href=https://www.hex-rays.com/products/ida/support/idapython_docs/ target=_blank>https://www.hex-rays.com/products/ida/support/idapython_docs/</a>
+-《idapython book》有中文版本的翻译</li><li><a href=https://bbs.pediy.com/thread-225091.htm target=_blank>https://bbs.pediy.com/thread-225091.htm</a> python模拟执行x86，基于idapython</li><li>《The Beginner’s Guide to IDAPython version 6.0》</li></ul><h2 class="relative group">II. Giới thiệu<div id=ii-giới-thiệu class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#ii-gi%e1%bb%9bi-thi%e1%bb%87u aria-label=Anchor>#</a></span></h2><p>Lõi IDAPython có 3 module python sau:</p><ol><li><strong>idc</strong> Chịu trách nhiệm cung cấp tất cả chức năng trong IDC.</li><li><strong>idautils</strong> cung cấp các hàm tiện ích, nhiều hàm tạo ra danh sách</li><li><strong>idaapi</strong> cho phép người udngf truy cập nhiều dữ liệu cơ bản dưới dạng các lớp</li></ol><p>Hầu hết các script viết ra đều <strong>import</strong> các module này ngay từ đầu</p><h3 class="relative group">1. Các thao tác cơ bản<div id=1-các-thao-tác-cơ-bản class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#1-c%c3%a1c-thao-t%c3%a1c-c%c6%a1-b%e1%ba%a3n aria-label=Anchor>#</a></span></h3><p>Nhận địa chỉ hiện tại</p><pre tabindex=0><code>idc.here()
+idc.get_screen_ea()
+</code></pre><p>Lấy địa chỉ min và max của không gian địa chỉ</p><pre tabindex=0><code>idc.get_inf_attr(idc.INF_MIN_EA)
+idc.get_inf_attr(idc.INF_MAX_EA)
+</code></pre><p>Ví dụ trong IDA có câu lệnh sau</p><pre tabindex=0><code>.text:00012529 mov esi, [esp+4+arg_0]
+</code></pre><p>Ta có thể lấy các thông tin như sau:</p><pre tabindex=0><code>Python&gt; idc.get_segm_name(here())
+&#39;.text&#39;
+
+Python&gt; idc.GetDisasm(here())
+&#39;call    sub_405060&#39;
+
+Python&gt;idc.print_insn_mnem(here())
+&#39;call&#39;
+
+Python&gt;idc.print_operand(here(),0)
+&#39;sub_405060&#39;
+
+Python&gt;idc.print_operand(here(),1)
+&#39;&#39;
+</code></pre><hr><h3 class="relative group">2. Thao tác với segment<div id=2-thao-tác-với-segment class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#2-thao-t%c3%a1c-v%e1%bb%9bi-segment aria-label=Anchor>#</a></span></h3><p>Lặp qua các segments</p><pre tabindex=0><code>import idc
+import idaapi
+import idautils
+
+for seg in idautils.Segments():
+    print(idc.get_segm_name(seg), idc.gẻ_segm_start(seg), idc.get_segm_end(seg))
+</code></pre><hr><h3 class="relative group">3. Thao tác với hàm<div id=3-thao-tác-với-hàm class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#3-thao-t%c3%a1c-v%e1%bb%9bi-h%c3%a0m aria-label=Anchor>#</a></span></h3><p>Lặp qua tất cả các hàm</p><pre tabindex=0><code>for func in idautils.Functions():
+    print(func, idc.get_func_name(func))
+</code></pre><ul><li><strong>Functions()</strong> sẽ trả về địa chỉ đầu tiên của một hàm đã biết. Hàm này cũng được sử dụng để tìm địa chỉ các hàm trong danh sách được hcir định.</li><li><strong>get_func_name(ea)</strong> được sử dụng để lấy tên hàm, tham số ea có thể là bất cứ địa chỉ nào trong hàm</li><li><strong>idaapi.get_func_qty()</strong> lấy số lượng hàm đã nhận dạng được</li><li><strong>idaapi.get_func(1)</strong> lấy đối tượng func_t của hàm đầu tiên</li></ul><p>Lấy thông tin giới hạn của một hàm</p><pre tabindex=0><code>Python&gt;idaapi.get_func(here())
+&lt;ida_funcs.func_t; proxy of &lt;Swig Object of type &#39;func_t *&#39; at 0x000001711FC33C00&gt; &gt;
+Python&gt;idaapi.get_func(here()).start_ea
+0x40573c
+Python&gt;idaapi.get_func(here()).end_ea
+0x405918
+</code></pre><p>Bên cạnh đó có thể sử dụng hàm <strong>idc.get_next_func(ea)</strong> và <strong>idc.get_prev_func(ea)</strong> để lấy func_t của hàm trước và sau địa chỉ ea. Giá trị của ea cần phải nằm trong giá trị của 1 hàm nhất định đang được phân tích. Mã không được đánh dấu là hàm sẽ có chữ đỏ, lúc này ta cần sửa thủ công.
+Có thể sử dụng các api sau để lấy start và end của hàm</p><pre tabindex=0><code># Lấy start ea của hàm
+ea = idc.get_func_attr(idc.here(), idc.FUNCATTR_START)
+# Lấy end của hàm
+ea = idc.get_func_attr(idc.here(), idc.FUNCATTR_END)
+
+# Các tham số của hàm get_func_attr() có các giá trị như dưới đây
+FUNCATTR_START = 0          # địa chỉ bắt đầu hàm
+FUNCATTR_END = 4            # địa chỉ kết thúc hàm
+FUNCATTR_FLAGS = 8          # giá trị cờ của hàm
+FUNCATTR_FRAME = 10         # id khung stack của hàm
+FUNCATTR_FRSIZE = 14        # kích thước biến cục bộ
+FUNCATTR_FRREGS = 18        # kích thước vùng thanh ghi đã lưu
+FUNCATTR_ARGSIZE = 20       # số lượng bytes được xóa khỏi stack
+FUNCATTR_FPD = 24           # con trỏ khung delta
+FUNCATTR_COLOR = 28         # mã màu hàm
+FUNCATTR_OWNER = 10         # chunk owner
+FUNCATTR_REFQTY = 14        # số lượng chunk cha
+
+# Lấy địa chỉ hàm nếu có tên của nó
+idc.get_name_ea_simple(&#34;&lt;tên hàm&gt;&#34;)
+</code></pre><p>Để duyệt tất cả câu lệnh của 1 hàm sử dụng code sau</p><pre tabindex=0><code>import idc
+import idaapi
+import idautils
+
+start = idc.get_func_attr(idc.here(), idc.FUNCATTR_START)
+end = idc.get_func_attr(idc.here(), idc.FUNCATTR_END)
+
+curr_addr = start
+
+while curr_addr &lt;= end:
+    print(hex(curr_addr), idc.GetDisasm(curr_addr))
+    curr_addr = idc.next_head(curr_addr, end)
+</code></pre><p>Hàm <strong>idc.next_head(curr_addr, end)</strong> sẽ trả về địa chỉ đầu tiên của lệnh tiếp theo giữa curr_addr và end hoặc nếu không có lệnh nào sẽ trả về idc.BADADDR, ngược với nó là hàm <strong>idc.prev_head(curr_addr, end)</strong>. Cách duyệt câu lệnh này chỉ áp dụng đối với các hàm chỉ có các câu lệnh nằm giữa start và end nên nếu trong hàm có một lệnh <strong>jmp</strong> nhảy sang vị trí khác bên ngoài sau đó quay lại địa chỉ giữa start và end thì khi duyệt sẽ bị sót câu lệnh.
+Để duyệt đầy dủ các thành phần của hàm ta có thể sử dụng idautils.FuncItems(ea) để lặp các hướng dẫn trong hàm cụ thể ở phần dưới.</p><p>Để lấy cờ của hàm có thể sử dụng đoạn mã sau</p><pre tabindex=0><code>import idc
+import idaapi
+import idautils
+
+for func in idautils.Functions():
+    flags = idc.get_func_attr(func. idc.FUNCATTR_FLAGS)
+    if flags &amp; FUNC_NORET:
+        print(hex(func), &#34;FUNC_NORET&#34;)
+    if flags &amp; FUNC_FAR:
+        print(hex(func), &#34;FUNC_FAR&#34;)
+    if flags &amp; FUNC_USERFAR:
+        print(hex(func), &#34;FUNC_USERFAR&#34;)
+    if flags &amp; FUNC_LIB:
+        print(hex(func), &#34;FUNC_LIB&#34;)
+    if flags &amp; FUNC_FRAME:
+        print(hex(func), &#34;FUNC_FRAME&#34;)
+    if flags &amp; FUNC_BOTTOMBP:
+        print(hex(func), &#34;FUNC_BOTTOMBP&#34;)
+    if flags &amp; FUNC_HIDDEN:
+        print(hex(func), &#34;FUNC_HIDDEN&#34;)
+    if flags &amp; FUNC_THUNK:
+        print(hex(func), &#34;FUNC_THUNK&#34;)
+</code></pre><p>Ý nghĩa các cờ của hàm</p><pre tabindex=0><code>FUNC_NORET: Cờ này cho biết hàm có giá trị trả về hay không. Giá trị của nó là 1. Sau đây là hàm không có giá trị trả về. 
+Lưu ý rằng phần cuối của hàm không có giá trị trả về không phải là lệnh ret hoặc left.
+
+FUNC_FAR: Cờ này rất hiếm khi xuất hiện và cho biết chương trình có sử dụng bộ nhớ được phân đoạn hay không .
+
+FUNC_USERFAR: Cờ này cũng rất hiếm và hiếm khi được ghi lại. HexRays mô tả nó là &#34;người dùng đã chỉ định độ sâu 
+của hàm&#34; và giá trị của nó là 32.
+
+FUNC_LIB: Mã này thể hiện mã được sử dụng để tìm các hàm thư viện. Việc xác định mã hàm thư viện là rất cần thiết vì chúng ta 
+thường bỏ qua nó trong quá trình phân tích và giá trị của nó là 4 . Ví dụ sau đây cho thấy cách sử dụng cờ này.
+
+for func in idautils.Functions():
+    flags = idc.get_func_attr(func, FUNCATTR_FLAGS)
+
+    if flags &amp; FUNC_LIB:
+        print(hex(func), &#34;FUNC_LIB&#34;,get_func_name(func))
+
+FUNC_FRAME: Cờ này cho biết hàm có sử dụng thanh ghi ebp (con trỏ khung) hay không. Các hàm sử dụng thanh ghi ebp thường có các cài đặt cú pháp 
+sau để lưu khung ngăn xếp.
+
+.text:00404C90                 push    ebp
+.text:00404C91                 mov     ebp, esp
+.text:00404C96                 sub     esp, 65Ch
+
+FUNC_BOTTOMBP: Giống như FUNC_FRAME, cờ này được sử dụng để theo dõi con trỏ khung (ebp). Chức năng của nó là xác định xem con trỏ khung trong hàm có bằng con trỏ ngăn xếp (đặc biệt) 
+hay không .
+
+FUNC_HIDDEN: Các hàm có cờ FUNC_HIDDEN có nghĩa là chúng bị ẩn và hàm cần được mở rộng để xem được. 
+Nếu chúng ta chuyển đến một địa chỉ được đánh dấu ẨN, địa chỉ đó sẽ tự động mở rộng.
+
+FUNC_THUNK: Cho biết hàm này có phải là hàm thunk hay không. Hàm thunk đại diện cho một hàm nhảy đơn giản.
+
+.text:1A710606 Process32Next proc near
+.text:1A710606 jmp ds:__imp_Process32Next
+.text:1A710606 Process32Next endp
+
+Lưu ý rằng một hàm có thể có nhiều tổ hợp cờ.
+</code></pre><hr><h3 class="relative group">4. Thao tác với câu lệnh<div id=4-thao-tác-với-câu-lệnh class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#4-thao-t%c3%a1c-v%e1%bb%9bi-c%c3%a2u-l%e1%bb%87nh aria-label=Anchor>#</a></span></h3><p>Nếu có địa chỉ của một hàm có thể duyệt tất cả câu lệnh trong hàm bằng cách sử dụng idautils.FuncItems(ea) như sau</p><pre tabindex=0><code>import idc
+import idautils
+import idaapi
+
+items = idautils.FuncItems(idc.here())
+
+for item in items:
+    print(hex(item), idc.GetDisasm(item))
+</code></pre><h4 class="relative group">Ví dụ nhỏ<div id=ví-dụ-nhỏ class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#v%c3%ad-d%e1%bb%a5-nh%e1%bb%8f aria-label=Anchor>#</a></span></h4><p>Tìm tất cả các lệnh gọi động &lt;lệnh gọi có sử dụng operand là thanh ghi> hoặc lệnh nhảy với toán hạng và tô màu cho lệnh đó để dễ tìm kiếm</p><pre tabindex=0><code>import idc
+import idautils
+import idaapi
+
+for func in idc.Functions():
+    flags = idc.get_func_attr(func, idc.FUNCATTR_FLAGS)
+    if flags &amp; FUNC_LIB or flags &amp; FUNC_THUNK:
+        continue
+    dism_addr = idautils.FuncItems(func)
+    for line in dism_addr:
+        m = idc.print_insn_mnem(line)
+        if m == &#34;call&#34; or m == &#34;jmp&#34;:
+            op = idc.get_operand_type(line, 0)
+            if op == o_reg:
+                print(hex(line), idc.GetDisasm(line))
+</code></pre><p>idc.get_operand_type(ea, n) lấy loại toán hạng thứ n, các loại toán hạng sẽ được đề cập ở phần dưới.</p><h5 class="relative group">Note: Nếu muốn lấy địa chỉ tiếp theo mà không phải câu lệnh tiếp theo từ ea thì dùng lệnh <strong>idc.next_addr</strong> và <strong>idc.prev_addr</strong><div id=note-nếu-muốn-lấy-địa-chỉ-tiếp-theo-mà-không-phải-câu-lệnh-tiếp-theo-từ-ea-thì-dùng-lệnh-idcnext_addr-và-idcprev_addr class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#note-n%e1%ba%bfu-mu%e1%bb%91n-l%e1%ba%a5y-%c4%91%e1%bb%8ba-ch%e1%bb%89-ti%e1%ba%bfp-theo-m%c3%a0-kh%c3%b4ng-ph%e1%ba%a3i-c%c3%a2u-l%e1%bb%87nh-ti%e1%ba%bfp-theo-t%e1%bb%ab-ea-th%c3%ac-d%c3%b9ng-l%e1%bb%87nh-idcnext_addr-v%c3%a0-idcprev_addr aria-label=Anchor>#</a></span></h5><hr><h3 class="relative group">5. Thao tác với toán hạng<div id=5-thao-tác-với-toán-hạng class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#5-thao-t%c3%a1c-v%e1%bb%9bi-to%c3%a1n-h%e1%ba%a1ng aria-label=Anchor>#</a></span></h3><p>Để lấy loại toán hạng ta sử dụng hàm idc.get_operand_type(ea,n) trong đó ea là địa chỉ đầu lệnh và n là chỉ mục của toán hạng. Có các loại toán hạng như sau:</p><pre tabindex=0><code>o_void: Nếu lệnh không có toán hạng nào, nó sẽ trả về 0 . 
+----------------------------------------------------
+o_reg: Nếu toán hạng là một thanh ghi, hãy trả về loại này, giá trị của nó là 1
+----------------------------------------------------
+o_mem: Nếu toán hạng là địa chỉ bộ nhớ trực tiếp thì trả về loại này, giá trị của nó là 2 , loại này rất hữu ích cho việc tìm kiếm 
+các trích dẫn DỮ LIỆU rất hữu ích.
+
+Python&gt;print hex(ea), idc.GetDisasm(ea) 
+0xa05d86 cmp ds:dword_A152B8, 0
+Python&gt;print idc.GetOpType(ea, 0) 
+2
+----------------------------------------------------
+o_phrase: Nếu toán hạng là một thao tác đánh địa chỉ sử dụng thanh ghi địa chỉ cơ sở và thanh ghi chỉ mục thì loại này được trả về và giá trị là 3
+
+Python&gt;print hex(ea), idc.GetDisasm(ea) 
+0x1000b8c2 mov [edi+ecx], eax 
+Python&gt;print idc.GetOpType(ea, 0) 
+3
+----------------------------------------------------
+o_displ: Nếu toán hạng là một thao tác đánh địa chỉ sử dụng các thanh ghi và phép dịch chuyển, thì loại này được trả về và giá trị là 4. Độ dịch chuyển đề cập đến 0x18 như trong đoạn mã sau . Điều này rất phổ biến khi lấy dữ liệu nhất định trong một cấu trúc.
+
+Python&gt;print hex(ea), idc.GetDisasm(ea) 
+0xa05dc1 mov eax, [edi+ 18h] 
+Python&gt;print idc.GetOpType(ea, 1) 
+4
+----------------------------------------------------
+o_imm: Nếu toán hạng là giá trị xác định thì kiểu trả về là 5
+
+Python&gt;print hex(ea), idc.GetDisasm(ea) 
+0xa05da1 add esp, 0 Ch 
+Python&gt;print idc.get_operand_type(ea, 1) 
+5
+--------------------------------------------------- 
+o_far: Kiểu trả về này là nghịch đảo của x86 và x86_64 Không phổ biến. Nó được sử dụng để xác định toán hạng truy cập trực tiếp vào địa chỉ từ xa. Giá trị là 6
+----------------------------------------------------
+o_near: Kiểu trả về này không phổ biến trong kỹ thuật đảo ngược x86 và x86_64. Nó được sử dụng để xác định toán hạng truy cập trực tiếp vào địa chỉ cục bộ, giá trị là 7
+</code></pre><hr><h3 class="relative group">6. Giả lập IDA<div id=6-giả-lập-ida class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#6-gi%e1%ba%a3-l%e1%ba%adp-ida aria-label=Anchor>#</a></span></h3><p>Để lấy câu lệnh dạng đối tượng (inst_t) tại một địa chỉ ta có thể sử dụng lệnh sau</p><pre tabindex=0><code>inst = idautils.DecodeInstruction(idc.here())
+
+# Trong đó đối tượng inst sẽ có các thuộc tính như sau
+inst.itype : đây là số nguyên biểu diễn loại lệnh. Các opcode khác nhau có cùng itype và do đó opcode != itype .
+inst.size : đây là kích thước của lệnh được giải mã.
+inst.Operands[] : đây là mảng bắt đầu từ số 0 chứa thông tin toán hạng.
+inst.Op1 .. OpN : đây là các bí danh dựa trên 1 trong mảng Toán hạng .
+inst.ea : địa chỉ tuyến tính của lệnh được giải mã.
+</code></pre><p>Bạn có thể tự hỏi mối quan hệ giữa opcode và itype của nó là gì ? Câu trả lời rất đơn giản. Trong IDA, mô-đun bộ xử lý của cơ sở dữ liệu mở chịu trách nhiệm điền vào trường itype dựa trên opcode. Trong IDA SDK, bạn có thể tìm thấy tệp tiêu đề có tên là <strong>allins.hpp</strong> . Tệp tiêu đề này chứa các enum cho tất cả các mô-đun bộ xử lý được hỗ trợ cùng với các thành viên enum cho mỗi lệnh được hỗ trợ:</p><pre tabindex=0><code>// Trích đoạn từ allins.hpp
+// Kiểu x86/x64
+liệt kê
+{
+NN_null = 0,             // Hoạt động không xác định
+NN_aaa,                  // Điều chỉnh ASCII sau khi cộng
+NN_aad,                  // ASCII Điều chỉnh AX trước khi chia
+NN_aam,                  // ASCII Điều chỉnh AX sau khi Nhân
+NN_aas,                  // ASCII Điều chỉnh AL sau khi trừ
+.
+.
+.
+NN_jz,                   // Nhảy nếu bằng 0 (ZF=1)
+NN_jmp,                  // Nhảy
+NN_jmpfi,                // Nhảy xa gián tiếp
+NN_jmpni,                // Nhảy gần gián tiếp
+NN_jmpshort,             // Nhảy ngắn (không sử dụng)
+NN_lahf,                 // Tải cờ vào thanh ghi AH
+.
+.
+.
+// Hướng dẫn giả Pentium III
+NN_cmpeqps,              // EQ so sánh FP đơn được đóng gói
+NN_cmpltps,              // Đóng gói Single-FP So sánh LT
+NN_cmpleps,              // Đóng gói Single-FP So sánh LE
+NN_cmpunordps,           // Đóng gói Single-FP So sánh UNORD
+.
+.
+.
+}
+</code></pre><pre tabindex=0><code># Example
+# .text:00402085 74 09 jz short loc_402090
+inst = idautils.DecodeInstruction(0x402085)
+print(&#34;YES&#34; if inst.itype == idaapi.NN_jz else &#34;NO&#34;)
+</code></pre><p>Người ta có thể kiểm tra trực quan lệnh được giải mã bằng cách so sánh với một trong các hằng số idaapi.NN_xxxx .</p><p>Đối với toán hạng, người ta có thể truy cập chúng thông qua inst.Operands[] hoặc inst.OpN . Để có được số toán hạng được lệnh giải mã sử dụng, bạn không nên dựa vào độ dài của mảng Operands vì nó sẽ luôn giải quyết thành UA_MAXOP == 8 (xem ida.hpp ). Thay vào đó, hãy lặp lại từng toán hạng và xem loại của nó có phải là o_void hay không .</p><p>Toán hạng lệnh được định nghĩa bằng cách sử dụng kiểu cấu trúc op_t được xác định trong tệp tiêu đề ua.hpp .</p><pre tabindex=0><code>op.flags : cờ toán hạng.
+op.dtype : kiểu toán hạng. Một trong các hằng số dt_xxx . Người ta có thể sử dụng trường này để cho biết kích thước của toán hạng (1 == dt_byte , 2 == dt_word , v.v.).
+op.type : kiểu toán hạng. Một trong các hằng số o_xxx .
+specflag1 .. specflag4 : cờ cụ thể của bộ xử lý.    
+op.reg : thanh ghi( o_reg ).
+op.phrase : thanh ghi chỉ mục có chức năng truy cập bộ nhớ các toán hạng ( o_phrase ).
+op.value : giá trị tức thời (o_imm) hoặc độ dịch chuyển bên ngoài ( o_displ ).
+op.addr : địa chỉ bộ nhớ được toán hạng sử dụng ( o_mem , o_far , o_displ , o_near ).
+
+# Các kiểu toán hạng
+o_void : không có toán hạng nào hiện diện.
+o_reg : toán hạng là một thanh ghi (al, ax,es,ds…).
+o_mem : tham chiếu bộ nhớ trực tiếp (DATA).
+o_phrase : Tham chiếu bộ nhớ [Reg cơ sở + Reg chỉ mục].
+o_displ : bộ nhớ Reg [Reg cơ sở + Reg chỉ mục + Độ dịch chuyển].
+o_imm : giá trị tức thời.
+o_far : Địa chỉ xa tức thời (CODE).
+o_near : Địa chỉ gần nhất (CODE).
+o_idpspec0 ..  o_idpspec5 : cờ cụ thể của bộ xử lý.
+</code></pre><p>Khi kiểu toán hạng là o_reg hoặc o_phrase , thì các giá trị op.reg / op.phrase chứa giá trị enum của thanh ghi. Giống như thuật ngữ NN_xxx , IDA SDK cũng cung cấp tên hằng số thanh ghi và giá trị của chúng; tuy nhiên điều này chỉ đúng với mô-đun bộ xử lý x86/x64. Sau đây là một đoạn trích từ tệp tiêu đề intel.hpp :</p><p>Ví dụ phân tách hoàn tianf một lệnh</p><pre tabindex=0><code># .text:0040106F 35 90 8D 28 DA xor     eax, 0DA288D90h
+out = &#39;&#39;
+inst = idautils.DecodeInstruction(0x40106F)
+out += &#34;XOR &#34;     if inst.itype == idaapi.NN_xor else &#34;&#34;
+out += &#34;EAX&#34;      if (inst.Op1.type == idaapi.o_reg and inst.Op1.reg == 0) else &#34;&#34;
+out += &#34;, 0x%08X&#34; % inst.Op2.value if (inst.Op2.type == idaapi.o_imm) else &#34;&#34;
+print(out)
+</code></pre><p>Ví dụ để tìm một pattern code như sau</p><pre tabindex=0><code>\def scope_challenge_function(func_ea):
+    f = idaapi.get_func(func_ea)
+    if f is None:
+        return (False, &#34;No function at address!&#34;)
+        
+    emu_start, emu_end = f.startEA, f.endEA
+    
+    ea = emu_start
+    #    
+    # Find the start of the emulation pattern
+    #
+    stage = 0
+    while ea &lt;= emu_end:
+        inst = idautils.DecodeInstruction(ea)
+        if inst is None:
+            return (False, &#34;Could not decode&#34;)
+            
+        # Advance to next instruction
+        ea += inst.size
+        
+        # mov (eax|edx), [ebp+?]
+        if (inst.itype == idaapi.NN_mov) and (inst.Operands[0].type == idaapi.o_reg) and \
+           (inst.Operands[1].type == idaapi.o_displ) and (inst.Operands[1].phrase == REG_EBP):
+            # mov eax, [ebp+8]
+            if (stage == 0) and (inst.Operands[0].reg == REG_EAX) and (inst.Operands[1].addr == 8):
+                stage = 1
+            # mov edx, [ebp+0xC]
+            elif (stage == 1) and (inst.Operands[0].reg == REG_EDX) and (inst.Operands[1].addr == 0xC):
+                stage = 2
+                emu_start = ea
+        elif (stage == 2) and (inst.itype == idaapi.NN_popa):
+            # Let&#39;s decode backwards twice and double check the pattern
+            ea2 = idc.PrevHead(ea)
+            
+            # Disassemble backwards
+            for _ in range(0, 2):
+                ea2 = idc.PrevHead(ea2)
+                inst = idautils.DecodeInstruction(ea2)
+                if (inst.itype == idaapi.NN_mov) and (inst.Op1.type == idaapi.o_displ) and \
+                   (inst.Op1.reg == 5):
+                    if inst.Op2.reg == 2 and stage == 2:
+                        stage = 3
+                    elif inst.Op2.reg == 0 and stage == 3:
+                        stage = 4
+                        emu_end = ea2
+                        break
+                   
+            break
+            
+       
+    if stage != 4:
+        return (False, &#34;Could not find markers&#34;)
+            
+    return (True, (emu_start, emu_end))
+</code></pre><p>Một ví dụ khác</p><pre tabindex=0><code>def emulate_challenge_function(info, c1, c2, dbg = False):
+    emu_start, emu_end = info
+    if dbg:
+        print(&#34;Emulating from %x to %x (%d, %d)&#34; % (emu_start, emu_end, c1, c2))
+    # Reset registers    
+    regs = { 
+      REG_EAX: c1,
+      REG_EDX: c2
+    }
+    
+    def get_opr_val(inst, regs):
+        if inst.Op2.type == o_imm:
+            return (True, inst.Op2.value)
+        elif inst.Op2.type == idaapi.o_reg:
+            return (True, regs[inst.Op2.reg])
+        else:
+            return (False, 0)
+            
+    ea = emu_start
+    while ea &lt; emu_end:
+        out = &#34;&gt;%x: &#34; % ea
+        ok = True
+        inst = idautils.DecodeInstruction(ea)
+        ea += inst.size
+        if inst.itype == idaapi.NN_not:
+            out += &#34;NOT&#34;
+            regs[inst.Op1.reg] = ~regs.get(inst.Op1.reg, 0) &amp; 0xffffffff
+        elif inst.itype == idaapi.NN_dec and inst.Op1.type == idaapi.o_reg:
+            out += &#34;DEC&#34;        
+            regs[inst.Op1.reg] = (regs.get(inst.Op1.reg, 0) - 1) &amp; 0xffffffff
+        elif inst.itype == idaapi.NN_inc and inst.Op1.type == idaapi.o_reg:
+            out += &#34;INC&#34;        
+            regs[inst.Op1.reg] = (regs.get(inst.Op1.reg, 0) + 1) &amp; 0xffffffff
+        elif inst.itype == idaapi.NN_xor:
+            ok, val = get_opr_val(inst, regs)
+            regs[inst.Op1.reg] = (regs.get(inst.Op1.reg, 0) ^ val) &amp; 0xffffffff
+            out += &#34;XOR %08X&#34; % val
+        elif inst.itype == idaapi.NN_sub:
+            ok, val = get_opr_val(inst, regs)
+            regs[inst.Op1.reg] = (regs.get(inst.Op1.reg, 0) - val) &amp; 0xffffffff
+            out += &#34;SUB %08X&#34; % val
+        elif inst.itype == idaapi.NN_add:
+            ok, val = get_opr_val(inst, regs)
+            regs[inst.Op1.reg] = (regs.get(inst.Op1.reg, 0) + val) &amp; 0xffffffff
+            out += &#34;ADD %08X&#34; % val
+        else:
+            ok = False
+        # Dump registers
+        for k, v in regs.items():
+            out += (&#34; [%s: %08X] &#34; % (REG_NAMES.get(k, &#34;%x&#34; % k), v))
+        if not ok:
+            return (False, &#34;Emulation failed at %08X&#34; % ea)
+        if dbg:            
+            print(out)
+    
+    return (True, (regs[REG_EDX] &lt;&lt; 32) | regs[REG_EAX])
+</code></pre><p>Khi hàm bắt đầu, nó sẽ điền các giá trị ban đầu của các thanh ghi vào từ điển regs . Chúng ta sử dụng op.reg làm khóa vào từ điển đó. Bất kỳ thanh ghi nào chưa được khởi tạo sẽ chứa giá trị bằng không. Sau đó, hàm mô phỏng sẽ nhập một vòng lặp và giải mã từng lệnh. Đối với mỗi lệnh, nó sẽ kiểm tra loại lệnh (để biết thao tác nào cần mô phỏng) và các toán hạng của lệnh (để biết cách lấy các giá trị cần thiết). Khi kết thúc vòng lặp, một giá trị 64 bit sẽ được trả về.</p><p>Chúng ta có thể xác minh xem trình giả lập có chính xác hay không bằng cách so sánh kết quả trả về từ trình giả lập với kết quả chúng ta đã thu thập trước đó:</p><pre tabindex=0><code>for i in range(0, challenge_funcs_tbl_size):
+    func = idc.Dword(challenge_funcs_tbl +  i * 4)
+    
+    ok, info = scope_challenge_function(func)
+    if ok:
+        ok, val = emulate_challenge_function(info, 123, 456, dbg)
+        if (val != RESULTS[i]):
+            print(&#34;Mistmatch #%d: %16X vs %16X&#34; % (i, val, RESULTS[i]))
+            break
+        
+    else:
+        print(&#34;Failed to scope challenge function #%d&#34; % i)
+</code></pre><hr><h3 class="relative group">7. Thao tác với tham chiếu<div id=7-thao-tác-với-tham-chiếu class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#7-thao-t%c3%a1c-v%e1%bb%9bi-tham-chi%e1%ba%bfu aria-label=Anchor>#</a></span></h3><p>Xrefs trong IDApython được sử dụng để xử lý các phép tham chiếu và cross-reference (Xrefs) trong mã nguồn của chương trình phân tích. Dưới đây là một số hàm Xrefs thường được sử dụng và cách sử dụng:</p><p>Duyệt tham chiếu tới một địa chỉ</p><pre tabindex=0><code>for xref in idautils.XrefsTo(ea):
+    print(f&#34;From: {hex(xref.frm)}, To: {hex(xref.to)}&#34;)
+
+for xref in XrefsFrom(ea):
+    print(f&#34;From: {hex(xref.frm)}, To: {hex(xref.to)}&#34;)
+</code></pre><p>Lấy địa chỉ đầu tiên tham chiếu đến ea</p><pre tabindex=0><code>cref = idc.get_first_cref_to(ea)
+if cref != idaapi.BADADDR:
+    print(f&#34;First code reference to {hex(ea)} is from {hex(cref)}&#34;)
+</code></pre><p>Lấy địa chỉ tiếp theo tham chiếu đến ea</p><pre tabindex=0><code>next_cref = idc.get_next_cref_to(ea, current_cref)
+if next_cref != idaapi.BADADDR:
+    print(f&#34;Next code reference to {hex(ea)} is from {hex(next_cref)}&#34;)
+</code></pre><p>Lấy địa chỉ đầu tiên mà địa chỉ ea tham chiếu tới</p><pre tabindex=0><code>cref = idc.get_first_cref_from(ea)
+if cref != idaapi.BADADDR:
+    print(f&#34;First code reference from {hex(ea)} is to {hex(cref)}&#34;)
+
+# Địa chỉ tiếp theo mà ea tham chiếu tới sử dụng lệnh sau
+
+next_cref = get_next_cref_from(ea, current_cref)
+if next_cref != BADADDR:
+    print(f&#34;Next code reference from {hex(ea)} is to {hex(next_cref)}&#34;)
+</code></pre><hr><h4 class="relative group">Các Thuộc Tính của Đối Tượng Xrefs<div id=các-thuộc-tính-của-đối-tượng-xrefs class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#c%c3%a1c-thu%e1%bb%99c-t%c3%adnh-c%e1%bb%a7a-%c4%91%e1%bb%91i-t%c6%b0%e1%bb%a3ng-xrefs aria-label=Anchor>#</a></span></h4><p><em><strong>from</strong></em></p><pre tabindex=0><code>Mô tả: Địa chỉ (Effective Address - EA) từ đó tham chiếu được thực hiện.
+Loại: int
+Ví dụ: xref.from sẽ trả về địa chỉ nguồn của tham chiếu.
+</code></pre><p><em><strong>to</strong></em></p><pre tabindex=0><code>Mô tả: Địa chỉ (EA) mà tham chiếu trỏ tới.
+Loại: int
+Ví dụ: xref.to sẽ trả về địa chỉ đích của tham chiếu.
+</code></pre><p><em><strong>type</strong></em></p><pre tabindex=0><code>Mô tả: Loại tham chiếu. Các loại tham chiếu có thể bao gồm mã, dữ liệu, nhảy, gọi hàm, và các loại tham chiếu khác.
+Loại: int
+Ví dụ: xref.type sẽ trả về kiểu tham chiếu. Bạn có thể so sánh với các hằng số như XREF_DATA, XREF_CODE, XREF_CALL, v.v.
+</code></pre><p><em><strong>flags</strong></em></p><pre tabindex=0><code>Mô tả: Cờ (flag) cho biết loại tham chiếu, có thể bao gồm các flag như XREF_DATA, XREF_CODE, XREF_JUMP, v.v.
+Loại: int
+Ví dụ: xref.flags sẽ trả về cờ của tham chiếu.
+</code></pre><hr><h4 class="relative group">Các loại cờ của đối tượng xrefs<div id=các-loại-cờ-của-đối-tượng-xrefs class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#c%c3%a1c-lo%e1%ba%a1i-c%e1%bb%9d-c%e1%bb%a7a-%c4%91%e1%bb%91i-t%c6%b0%e1%bb%a3ng-xrefs aria-label=Anchor>#</a></span></h4><p>Khi làm việc với các hàm Xrefs, bạn có thể sử dụng các flag để chỉ định loại tham chiếu bạn quan tâm.</p><p><em><strong>1. XREF_DATA</strong></em></p><pre tabindex=0><code>Mô tả: Tham chiếu dữ liệu (data reference).
+Flag: 0x0001
+</code></pre><p><em><strong>2. XREF_CODE</strong></em></p><pre tabindex=0><code>Mô tả: Tham chiếu mã (code reference).
+Flag: 0x0002
+</code></pre><p><em><strong>3. XREF_USER</strong></em></p><pre tabindex=0><code>Mô tả: Tham chiếu do người dùng tạo (user-defined reference).
+Flag: 0x0004
+</code></pre><p><em><strong>4. XREF_JUMP</strong></em></p><pre tabindex=0><code>Mô tả: Tham chiếu nhảy (jump reference).
+Flag: 0x0008
+</code></pre><p><em><strong>5. XREF_CALL</strong></em></p><pre tabindex=0><code>Mô tả: Tham chiếu gọi hàm (call reference).
+Flag: 0x0010
+</code></pre><p><em><strong>6. XREF_DUMMY</strong></em></p><pre tabindex=0><code>Mô tả: Tham chiếu giả (dummy reference) – thường không quan trọng trong phân tích thông thường.
+Flag: 0x0020
+</code></pre><p><em><strong>7. XREF_TYPE_MASK</strong></em></p><pre tabindex=0><code>Mô tả: Mask để lọc các loại tham chiếu.
+Flag: 0x003F
+</code></pre><hr><h3 class="relative group">8. Debug hook với IDApython<div id=8-debug-hook-với-idapython class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#8-debug-hook-v%e1%bb%9bi-idapython aria-label=Anchor>#</a></span></h3><p>Tạo một file Python mới để chứa script. Dưới đây là ví dụ về một script đơn giản để thiết lập và sử dụng debug hook.</p><pre tabindex=0><code>import idaapi
+
+class MyDebugHook(idaapi.DBG_Hooks):
+    def __init__(self):
+        super(MyDebugHook, self).__init__()
+    
+    def dbg_bpt(self, tid, ea):
+        print(f&#34;Breakpoint hit at address: {hex(ea)}&#34;)
+        return idaapi.DBG_CONTINUE
+    
+    def dbg_step_into(self, tid):
+        print(f&#34;Stepped into thread: {tid}&#34;)
+        return idaapi.DBG_CONTINUE
+
+    def dbg_step_over(self, tid):
+        print(f&#34;Stepped over thread: {tid}&#34;)
+        return idaapi.DBG_CONTINUE
+
+    def dbg_step_out(self, tid):
+        print(f&#34;Stepped out of thread: {tid}&#34;)
+        return idaapi.DBG_CONTINUE
+
+    def dbg_ret(self, tid):
+        print(f&#34;Function return in thread: {tid}&#34;)
+        return idaapi.DBG_CONTINUE
+
+    def dbg_exception(self, tid, exception):
+        print(f&#34;Exception in thread {tid}: {exception}&#34;)
+        return idaapi.DBG_CONTINUE
+
+# Initialize and hook
+debug_hook = MyDebugHook()
+debug_hook.hook()
+print(&#34;Debug hook installed&#34;)
+</code></pre></div></div><script>var oid="views_posts/1749604583563-IDApython-cheat-sheet/index.md",oid_likes="likes_posts/1749604583563-IDApython-cheat-sheet/index.md"</script><script type=text/javascript src=/js/page.min.b06a29d42a4ed16787978e2eee1e8c797b7698db2bc14ccee78f5c80ac566fc996190a73ad80a5e987558474b20b96fa38f7d85b405f165ff72b7b163c5ad11b.js integrity="sha512-sGop1CpO0WeHl44u7h6MeXt2mNsrwUzO549cgKxWb8mWGQpzrYCl6YdVhHSyC5b6OPfYW0BfFl/3K3sWPFrRGw=="></script></section><footer class="pt-8 max-w-prose print:hidden"><div class=pt-8><hr class="border-dotted border-neutral-300 dark:border-neutral-600"><div class="flex justify-between pt-3"><span><a class="flex group mr-3" href=/posts/1749543634746-picoctf-writeup-reverseeasy/><span class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400">&larr;</span>
+<span class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400">&rarr;</span>
+<span class="flex flex-col"><span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500">PicoCTF-WriteUp-ReverseEasy</span>
+<span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400"><time datetime=2025-06-10T00:00:00+00:00>10 June 2025</time>
+</span></span></a></span><span></span></div></div></footer></article><div id=top-scroller class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0"><a href=#the-top class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400" aria-label="Scroll to top" title="Scroll to top">&uarr;</a></div></main><footer id=site-footer class="py-10 print:hidden"><nav class="flex flex-row pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400"><ul class="flex flex-col list-none sm:flex-row"><li class="flex mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0"><a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center" href title></a></li></ul></nav><div class="flex items-center justify-between"><p class="text-sm text-neutral-500 dark:text-neutral-400">&copy;
+2025
+Ckagngoc</p><p class="text-xs text-neutral-500 dark:text-neutral-400">Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href=https://gohugo.io/ target=_blank rel="noopener noreferrer">Hugo</a> & <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href=https://blowfish.page/ target=_blank rel="noopener noreferrer">Blowfish</a></p></div><script>mediumZoom(document.querySelectorAll("img:not(.nozoom)"),{margin:24,background:"rgba(0,0,0,0.5)",scrollOffset:0})</script><script type=text/javascript src=/js/process.min.62060bb247f4de2b6dde45903668fefb68d792f365587605177b1227c0cf43588701edaca0cb40e2c8e2789bd5ce67c1d2a215b9fb258c3496a7cd25e7cb5fdf.js integrity="sha512-YgYLskf03itt3kWQNmj++2jXkvNlWHYFF3sSJ8DPQ1iHAe2soMtA4sjieJvVzmfB0qIVufsljDSWp80l58tf3w=="></script></footer><div id=search-wrapper class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]" data-url=https://ckagngoc.github.io/ style=z-index:500><div id=search-modal class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"><header class="relative z-10 flex items-center justify-between flex-none px-2"><form class="flex items-center flex-auto min-w-0"><div class="flex items-center justify-center w-8 h-8 text-neutral-400"><span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentcolor" d="M505 442.7 405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9.0 208 0S0 93.1.0 208s93.1 208 208 208c48.3.0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9.0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7.0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7.0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></span></div><input type=search id=search-query class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent" placeholder=Search tabindex=0></form><button id=close-search-button class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400" title="Close (Esc)">
+<span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentcolor" d="M310.6 361.4c12.5 12.5 12.5 32.75.0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3 54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75.0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75.0-45.25s32.75-12.5 45.25.0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25.0s12.5 32.75.0 45.25l-105.4 105.4L310.6 361.4z"/></svg></span></button></header><section class="flex-auto px-2 overflow-auto"><ul id=search-results></ul></section></div></div></div></body></html>

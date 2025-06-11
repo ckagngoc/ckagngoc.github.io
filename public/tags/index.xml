@@ -10,6 +10,16 @@
     <lastBuildDate>Wed, 11 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ckagngoc.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>CTF</title>
+      <link>https://ckagngoc.github.io/tags/ctf/</link>
+      <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://ckagngoc.github.io/tags/ctf/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>IDA</title>
       <link>https://ckagngoc.github.io/tags/ida/</link>
       <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
@@ -40,21 +50,21 @@
     </item>
     
     <item>
-      <title>Scrips</title>
-      <link>https://ckagngoc.github.io/tags/scrips/</link>
+      <title>Reverser</title>
+      <link>https://ckagngoc.github.io/tags/reverser/</link>
       <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://ckagngoc.github.io/tags/scrips/</guid>
+      <guid>https://ckagngoc.github.io/tags/reverser/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>CTF</title>
-      <link>https://ckagngoc.github.io/tags/ctf/</link>
-      <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
+      <title>Scrips</title>
+      <link>https://ckagngoc.github.io/tags/scrips/</link>
+      <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://ckagngoc.github.io/tags/ctf/</guid>
+      <guid>https://ckagngoc.github.io/tags/scrips/</guid>
       <description></description>
       
     </item>

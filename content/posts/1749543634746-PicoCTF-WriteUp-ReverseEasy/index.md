@@ -14,13 +14,17 @@ I wonder what this really is... enc ''.join([chr((ord(flag[i]) << 8) + ord(flag[
 ```
 
 Bài cho một file **enc** có nội dung như sau
-![image](feature_image.png)
+
+![alt text](image.png)
+
 Cái đoạn trong miêu tả kia là cách mã hóa bằng cách xử lý 2 ký tự một của flag theo các bước sau:
 - Đổi các ký tự sang giá trị ASCII
 - Ký tự đầu sẽ được dịch trái 8 bit sau đó cộng với ký tự thứ 2
 - Sau đó chuyển kết quả thành char và lưu vào string
 sau đó sẽ ghi cái string thu được vào enc, cơ bản thì nó đang cố decode flag , ta chỉ việc encode là xong. Có thể sử dụng cyberchef hoặc script dưới đây
-![image](https://github.com/user-attachments/assets/f6252c49-5b1c-49c5-a733-3547af76f3ab)
+
+![alt text](image-1.png)
+
 ```
 ct = "灩捯䍔䙻ㄶ形楴獟楮獴㌴摟潦弸強㕤㐸㤸扽"
 print(ct.encode('utf-16-be'))
@@ -28,12 +32,14 @@ print(ct.encode('utf-16-be'))
 
 ## Easy - vault-door-training
 Bài cho một file code java với cờ bên trong 
-![image](https://github.com/user-attachments/assets/14ca7218-28e0-4ccd-984d-e714e853a92e)
+
+![alt text](image-2.png)
 
 ## Medium - vault-door-1
 ### Description
 This vault uses some complicated arrays! I hope you can make sense of it, special agent. The source code for this vault is here: VaultDoor1.java
-![image](https://github.com/user-attachments/assets/466b0ca4-4501-4291-86c4-11d8d9bc210f)
+
+![alt text](image-3.png)
 
 Cơ bản thì cũng không khó lắm khi mà ta có thể nhờ Chat-GPT sắp xếp trong một nốt nhạc hoặc sửa lại mã để in ra password khi check
 ```
@@ -82,15 +88,15 @@ This challenge binary file is a Windows console application and you can start wi
 
 Bài cho 2 file 
 
-![image](https://github.com/user-attachments/assets/2e021c4e-e683-4674-8532-83cbaf873e5c)
+![alt text](image-4.png)
 
 Khi chạy nhận được kết quả như sau:
 
-![image](https://github.com/user-attachments/assets/f5023e70-100e-413d-90c0-8e8094833e05)
+![alt text](image-5.png)
 
 Mình tiến hành debug và đọc hàm main như sau từ IDA
 
-![image](https://github.com/user-attachments/assets/93129e04-a4f6-498a-9584-cd07d8f5d42d)
+![alt text](image-6.png)
 
 Cơ bản thì bài này sử dụng tổng hợp các kỹ thuật anti debug và nếu mình debug được vào hàm **OutputDebugStringW(L"### Good job! Here's your flag:\n");** thì oke
 Các hàm mình sẽ phải thỏa mãn là 
@@ -102,13 +108,13 @@ Mình tiến hành check từng hàm một
 
 #### sub_ab1130 và IsDebuggerPresent()
 
-![image](https://github.com/user-attachments/assets/61d3a3a3-565f-4c31-9114-6d3bebeb43b2)
+![alt text](image-7.png)
 
 Hàm này sử dụng 2 kỹ thuật check debug bằng cách tra thông tin process có đang bị debug bằng hàm **NtQueryInformationProcess** và PEB của PE32
 Cách xử lý nhanh là mình patch 2 lệnh **jnz** thành **jz** là oke
 Cách xử lý tương tự với hàm IsDebuggerPresent()
 
-![image](https://github.com/user-attachments/assets/7ae189b2-20da-4c01-98cf-8e82f62352f7)
+![alt text](image-8.png)
 
 #### sub_ab1200()
 

@@ -7,16 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 Ckagngoc</copyright>
-    <lastBuildDate>Wed, 11 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/tag/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/tag/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>AboutMe</title>
-      <link>http://localhost:1313/about/1749605979515-aboutme/</link>
-      <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
+      <title>Cryptohack-WriteUp-IntroductionToCryptoHack</title>
+      <link>http://localhost:1313/posts/1750168061161-cryptohack-writeup-introductiontocryptohack/</link>
+      <pubDate>Tue, 17 Jun 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/about/1749605979515-aboutme/</guid>
+      <guid>http://localhost:1313/posts/1750168061161-cryptohack-writeup-introductiontocryptohack/</guid>
       <description>an example to get you started</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/about/1749605979515-aboutme/featured.JPG" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/1750168061161-cryptohack-writeup-introductiontocryptohack/featured.png" />
     </item>
     
   </channel>

@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 Ckagngoc</copyright>
-    <lastBuildDate>Wed, 11 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ckagngoc.github.io/tags/reverse/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ckagngoc.github.io/tags/reverse/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>[Write-Up RE] Flag_Checker KCSC</title>
+      <link>https://ckagngoc.github.io/posts/1750168872583-write-up-re-flag_checker-kcsc/</link>
+      <pubDate>Tue, 17 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://ckagngoc.github.io/posts/1750168872583-write-up-re-flag_checker-kcsc/</guid>
+      <description>Đề cho như sau: #Tiến hành #Cho file vào Detect It Easy ta được các thông tin như sau:</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ckagngoc.github.io/posts/1750168872583-write-up-re-flag_checker-kcsc/featured.png" />
+    </item>
     
     <item>
       <title>IDApython cheat-sheet</title>

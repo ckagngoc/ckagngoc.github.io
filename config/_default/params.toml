@@ -1,4 +1,4 @@
-colorScheme = "background"
+colorScheme = "blowfish"
 defaultAppearance = "dark"
 autoSwitchAppearance = true
 enableSearch = true
@@ -15,13 +15,15 @@ selineAnalytics = { }
 buymeacoffee = { }
 verification = { }
 rssnext = { }
-defaultBackgroundImage = "anime-girl-red-eyes-phone-wallpaper-4k-uhdpaper.com-34@5@f.jpg"
-defaultFeaturedImage = "bg.jpg"
-defaultSocialImage = "bg.jpg"
-highlightCurrentMenuArea = ""
+defaultBackgroundImage = "svgator.svg"
+defaultFeaturedImage = "/img/featured.svg"
+defaultSocialImage = "/img/blowfish.jpg"
+highlightCurrentMenuArea = true
+smartTOC = true
+smartTOCHideUnfocusedChildren = false
 
 [header]
-layout = "basic"
+layout = "fixed-fill-blur"
 
 [footer]
 showMenu = true
@@ -31,26 +33,28 @@ showAppearanceSwitcher = true
 showScrollToTop = true
 
 [homepage]
-layout = "background"
+layout = "background" # valid options: page, profile, hero, card, background, custom
 showRecent = true
-showRecentItems = "5"
-showMoreLink = false
+showRecentItems = 12
+showMoreLink = true
 showMoreLinkDest = "/posts/"
 cardView = true
 cardViewScreenWidth = false
-layoutBackgroundBlur = true
+layoutBackgroundBlur = true # only used when layout equals background
+disableHeroImageFilter = false # only used when layout equals hero
 
 [article]
 showDate = true
-showViews = false
-showLikes = false
+showViews = true
+showLikes = true
 showDateOnlyInArticle = false
 showDateUpdated = false
 showAuthor = true
-showHero = ""
+showHero = true
+heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
 layoutBackgroundBlur = true
 layoutBackgroundHeaderSpace = true
-showBreadcrumbs = false
+showBreadcrumbs = true
 showDraftLabel = true
 showEdit = false
 editAppendPath = true
@@ -60,25 +64,29 @@ showPagination = true
 invertPagination = false
 showReadingTime = true
 showTableOfContents = true
-showTaxonomies = false
-showCategoryOnly = false
-showAuthorsBadges = false
-showWordCount = true
-showZenMode = false
+showRelatedContent = true
+relatedContentLimit = 6
+showTaxonomies = true
+showCategoryOnly = true
+showAuthorsBadges = true
+showWordCount = false
+sharingLinks = [ "linkedin", "twitter", "bluesky", "reddit", "whatsapp", "telegram", "pinterest", "facebook", "email"]
+showZenMode = true
 
 [list]
-showHero = false
-layoutBackgroundBlur = true
-layoutBackgroundHeaderSpace = true
+showHero = true
+heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+layoutBackgroundBlur = true # only used when heroStyle equals background
+layoutBackgroundHeaderSpace = false
 showBreadcrumbs = false
 showSummary = false
 showViews = false
 showLikes = false
-showTableOfContents = false
-showCards = false
-orderByWeight = false
-groupByYear = true
-cardView = false
+showTableOfContents = true
+showCards = true
+orderByWeight = true
+groupByYear = false
+cardView = true
 cardViewScreenWidth = false
 constrainItemsWidth = false
 
@@ -87,19 +95,22 @@ excludedKinds = [ "taxonomy", "term" ]
 
 [taxonomy]
 showTermCount = true
-showHero = false
+showHero = true
+heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
 showBreadcrumbs = false
 showViews = false
 showLikes = false
-showTableOfContents = false
+showTableOfContents = true
 cardView = false
 
 [term]
-showHero = false
+showHero = true
+heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
 showBreadcrumbs = false
 showViews = false
 showLikes = false
 showTableOfContents = true
 groupByYear = false
-cardView = false
+cardView = true
 cardViewScreenWidth = false
+

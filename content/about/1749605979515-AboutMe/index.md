@@ -7,46 +7,51 @@ tags: ["profiles"]
 ---
 
 # 👋 Hi, I'm ckagngoc!
-
+<!-- Hacker & RE tools GIFs -->
+<div align="center" style="margin: 20px 0;">
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="hacker typing" height="120" style="margin: 0 10px; border-radius: 10px;"/>
+</div>
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:232526,100:6a11cb&height=220&section=header&text=ckagngoc&fontSize=50&fontAlign=50&fontColor=ffffff&fontAlignY=40&desc=Reverse%20Engineer%20%7C%20Security%20Researcher&descAlign=50&descSize=22&font=Fira+Code" alt="header"/>
 </p>
-<p align="center">
-  <a href="https://ckagngoc.github.io" target="_blank">
-    <img src="https://img.shields.io/badge/My%20Blog-6A11CB?style=for-the-badge&logo=githubpages&logoColor=white" alt="My Blog"/>
-  </a>
-</p>
-<h3 align="center">Reverse Engineer | Security Researcher</h3>
 
-<p align="center">
-  <a href="https://web.facebook.com/profile.php?id=100026147535753">
-    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"/>
-  </a>
-  <a href="mailto:pducminh178@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
-  </a>
-  <a href="https://github.com/ckagngoc">
-    <img src="https://img.shields.io/badge/GitHub-232526?style=for-the-badge&logo=github&logoColor=white"/>
-  </a>
-  <a target="_blank" href="https://www.youtube.com/@coderlowtech0602"><img src="https://img.shields.io/badge/youtube-logo?style=for-the-badge&logo=youtube&logoColor=white&color=%23cc0000" alt="youtube" /></a>
-</p>
+## 📫 Contact Me 
 
-<p align="center">
-  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="hacker typing" height="120"/>
-  <img src="https://media.giphy.com/media/26ufnwz3wDUli7GU0/giphy.gif" alt="matrix code" height="120"/>
-  <img src="https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif" alt="terminal hacker" height="120"/>
-</p>
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://web.facebook.com/profile.php?id=100026147535753" target="_blank">
+        <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook"/>
+      </a>
+    </td>
+    <td align="center">
+      <a href="mailto:pducminh178@gmail.com" target="_blank">
+        <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/ckagngoc" target="_blank">
+        <img src="https://img.shields.io/badge/GitHub-232526?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.youtube.com/@coderlowtech0602" target="_blank">
+        <img src="https://img.shields.io/badge/YouTube-CC0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"/>
+      </a>
+    </td>
+  </tr>
+</table>
 
-## 👨‍💻 Reverse Engineer | Software Cracker | Security Researcher
+---
+
+## 🧑‍💼 About Me
+
+### 👨‍💻 Reverse Engineer | Software Cracker | Security Researcher
 
 🔍 **Passionate about exploring software internals, analyzing obfuscated code, and breaking protection mechanisms.**  
 I specialize in reverse engineering, binary analysis, and debugging for educational and research purposes.  
 I love sharing tools, write-ups, and experiments to contribute to the infosec and RE communities.  
 Always learning. Always exploring the unknown.
-
----
-
-### 🧑‍💼 About Me
 
 - 💼 **Reverse Engineer, Programmer, Security Enthusiast**
 - ❤️ Enjoys C++, Java, C, and building fun type-level experiments
@@ -57,35 +62,52 @@ Always learning. Always exploring the unknown.
 
 ### 🛠️ Languages & Tools
 
-<p>
-  <a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="42" height="42" /></a>
-  <a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="42" height="42" /></a>
-  <a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="42" height="42" /></a>
-  <a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="go" width="42" height="42" /></a>
-  <a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="42" height="42" /></a>
-  <a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="42" height="42" /></a>
-  <a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="42" height="42" /></a>
-  <a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="42" height="42" /></a>
-  <a target="_blank" href="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg"><img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="42" height="42" /></a>
-  <a target="_blank" href="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg"><img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" alt="kotlin" width="42" height="42" /></a>
-  <a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="42" height="42" /></a>
-  <a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="42" height="42" /></a>
-  <a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="oracle" width="42" height="42" /></a>
-  <a target="_blank" href="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg"><img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="42" height="42" /></a>
-  <a target="_blank" href="https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg"><img src="https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg" alt="elasticsearch" width="42" height="42" /></a>
-  <a target="_blank" href="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg"><img src="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg" alt="grafana" width="42" height="42" /></a>
-  <a target="_blank" href="https://www.vectorlogo.zone/logos/elasticco_kibana/elasticco_kibana-icon.svg"><img src="https://www.vectorlogo.zone/logos/elasticco_kibana/elasticco_kibana-icon.svg" alt="kibana" width="42" height="42" /></a>
-  <a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="42" height="42" /></a>
-  <a target="_blank" href="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg"><img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="42" height="42" /></a>
-  <a target="_blank" href="https://download.blender.org/branding/community/blender_community_badge_white.svg"><img src="https://download.blender.org/branding/community/blender_community_badge_white.svg" alt="blender" width="42" height="42" /></a>
-  <a target="_blank" href="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg"><img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator" width="42" height="42" /></a>
-  <a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="42" height="42" /></a>
-  <a target="_blank" href="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg"><img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="42" height="42" /></a>
-  <a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="42" height="42" /></a>
-  <a target="_blank" href="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="42" height="42" /></a>
-</p>
+<div align="center">
 
----
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" width="42" height="42" alt="C"/><br/><sub>C</sub>
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" width="42" height="42" alt="C++"/><br/><sub>C++</sub>
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" width="42" height="42" alt="Java"/><br/><sub>Java</sub>
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="42" height="42" alt="Python"/><br/><sub>Python</sub>
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" width="42" height="42" alt="Go"/><br/><sub>Go</sub>
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" width="42" height="42" alt="React"/><br/><sub>React</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" width="42" height="42" alt="Docker"/><br/><sub>Docker</sub>
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" width="42" height="42" alt="Linux"/><br/><sub>Linux</sub>
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="42" height="42" alt="Git"/><br/><sub>Git</sub>
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" width="42" height="42" alt="Android"/><br/><sub>Android</sub>
+    </td>
+    <td align="center">
+      <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" width="42" height="42" alt="Flutter"/><br/><sub>Flutter</sub>
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" width="42" height="42" alt="MongoDB"/><br/><sub>MongoDB</sub>
+    </td>
+  </tr>
+</table>
+
+</div>
 
 ### 📊 GitHub Stats
 

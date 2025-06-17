@@ -10,6 +10,7 @@ isoCode = "en"
 rtl = false
 dateFormat = "2 January 2006"
 logo = "none"
+secondaryLogo = "none"
 
 [[params.author.links]]
 facebook = "https://www.facebook.com/pham.uc.minh.938347/"

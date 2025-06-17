@@ -2,51 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ckagngoc</title>
-    <link>http://localhost:16454/</link>
+    <link>https://ckagngoc.github.io/</link>
     <description>Recent content on Ckagngoc</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 Ckagngoc</copyright>
-    <lastBuildDate>Wed, 11 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:16454/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ckagngoc.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>[Write Up RE] Rifle-AK47</title>
-      <link>http://localhost:16454/posts/1749605320278-write-up-re-rifle-ak47/</link>
+      <link>https://ckagngoc.github.io/posts/1749605320278-write-up-re-rifle-ak47/</link>
       <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:16454/posts/1749605320278-write-up-re-rifle-ak47/</guid>
+      <guid>https://ckagngoc.github.io/posts/1749605320278-write-up-re-rifle-ak47/</guid>
       <description>Đầu tiên kiểm tra sơ bộ bằng Detect It Easy.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:16454/posts/1749605320278-write-up-re-rifle-ak47/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ckagngoc.github.io/posts/1749605320278-write-up-re-rifle-ak47/featured.png" />
     </item>
     
     <item>
       <title>AboutMe</title>
-      <link>http://localhost:16454/about/1749605979515-aboutme/</link>
+      <link>https://ckagngoc.github.io/about/1749605979515-aboutme/</link>
       <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:16454/about/1749605979515-aboutme/</guid>
+      <guid>https://ckagngoc.github.io/about/1749605979515-aboutme/</guid>
       <description>👋 Hi, I&amp;rsquo;m ckagngoc!</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:16454/about/1749605979515-aboutme/featured.JPG" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ckagngoc.github.io/about/1749605979515-aboutme/featured.JPG" />
     </item>
     
     <item>
       <title>IDApython cheat-sheet</title>
-      <link>http://localhost:16454/posts/1749604583563-idapython-cheat-sheet/</link>
+      <link>https://ckagngoc.github.io/posts/1749604583563-idapython-cheat-sheet/</link>
       <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:16454/posts/1749604583563-idapython-cheat-sheet/</guid>
+      <guid>https://ckagngoc.github.io/posts/1749604583563-idapython-cheat-sheet/</guid>
       <description>Learn-IDApython #Học IDAPython với ckagngoc 💀</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:16454/posts/1749604583563-idapython-cheat-sheet/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ckagngoc.github.io/posts/1749604583563-idapython-cheat-sheet/feature.png" />
     </item>
     
     <item>
       <title>PicoCTF-WriteUp-ReverseEasy</title>
-      <link>http://localhost:16454/posts/1749543634746-picoctf-writeup-reverseeasy/</link>
+      <link>https://ckagngoc.github.io/posts/1749543634746-picoctf-writeup-reverseeasy/</link>
       <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:16454/posts/1749543634746-picoctf-writeup-reverseeasy/</guid>
+      <guid>https://ckagngoc.github.io/posts/1749543634746-picoctf-writeup-reverseeasy/</guid>
       <description>PicoCTF-WriteUp-Reverse #Easy - Transformation #Description #I wonder what this really is.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:16454/posts/1749543634746-picoctf-writeup-reverseeasy/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ckagngoc.github.io/posts/1749543634746-picoctf-writeup-reverseeasy/feature.png" />
     </item>
     
   </channel>

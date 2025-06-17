@@ -606,7 +606,93 @@
   
   <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
     
-    
+     <div
+      class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
+
+         <details open id="TOCView" class="toc-right mt-0 overflow-y-auto overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#mục-lục">Mục lục</a></li>
+    <li><a href="#i-tài-liệu-đề-xuấti-tài-liệu-học-tập-được-đề-xuất-cho-ida-python"><a href="#i-t%C3%A0i-li%E1%BB%87u-h%E1%BB%8Dc-t%E1%BA%ADp-%C4%91%C6%B0%E1%BB%A3c-%C4%91%E1%BB%81-xu%E1%BA%A5t-cho-ida-python">I. Tài liệu đề xuất</a></a></li>
+    <li><a href="#ii-giới-thiệu-các-mục-cơ-bảnii-giới-thiệu"><a href="#ii-gi%E1%BB%9Bi-thi%E1%BB%87u">II. Giới thiệu các mục cơ bản</a></a></li>
+    <li><a href="#i-tài-liệu-học-tập-được-đề-xuất-cho-ida-python">I. Tài liệu học tập được đề xuất cho IDA python</a></li>
+    <li><a href="#ii-giới-thiệu">II. Giới thiệu</a>
+      <ul>
+        <li><a href="#1-các-thao-tác-cơ-bản">1. Các thao tác cơ bản</a></li>
+        <li><a href="#2-thao-tác-với-segment">2. Thao tác với segment</a></li>
+        <li><a href="#3-thao-tác-với-hàm">3. Thao tác với hàm</a></li>
+        <li><a href="#4-thao-tác-với-câu-lệnh">4. Thao tác với câu lệnh</a>
+          <ul>
+            <li><a href="#ví-dụ-nhỏ">Ví dụ nhỏ</a></li>
+          </ul>
+        </li>
+        <li><a href="#5-thao-tác-với-toán-hạng">5. Thao tác với toán hạng</a></li>
+        <li><a href="#6-giả-lập-ida">6. Giả lập IDA</a></li>
+        <li><a href="#7-thao-tác-với-tham-chiếu">7. Thao tác với tham chiếu</a>
+          <ul>
+            <li><a href="#các-thuộc-tính-của-đối-tượng-xrefs">Các Thuộc Tính của Đối Tượng Xrefs</a></li>
+            <li><a href="#các-loại-cờ-của-đối-tượng-xrefs">Các loại cờ của đối tượng xrefs</a></li>
+          </ul>
+        </li>
+        <li><a href="#8-debug-hook-với-idapython">8. Debug hook với IDApython</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#mục-lục">Mục lục</a></li>
+    <li><a href="#i-tài-liệu-đề-xuấti-tài-liệu-học-tập-được-đề-xuất-cho-ida-python"><a href="#i-t%C3%A0i-li%E1%BB%87u-h%E1%BB%8Dc-t%E1%BA%ADp-%C4%91%C6%B0%E1%BB%A3c-%C4%91%E1%BB%81-xu%E1%BA%A5t-cho-ida-python">I. Tài liệu đề xuất</a></a></li>
+    <li><a href="#ii-giới-thiệu-các-mục-cơ-bảnii-giới-thiệu"><a href="#ii-gi%E1%BB%9Bi-thi%E1%BB%87u">II. Giới thiệu các mục cơ bản</a></a></li>
+    <li><a href="#i-tài-liệu-học-tập-được-đề-xuất-cho-ida-python">I. Tài liệu học tập được đề xuất cho IDA python</a></li>
+    <li><a href="#ii-giới-thiệu">II. Giới thiệu</a>
+      <ul>
+        <li><a href="#1-các-thao-tác-cơ-bản">1. Các thao tác cơ bản</a></li>
+        <li><a href="#2-thao-tác-với-segment">2. Thao tác với segment</a></li>
+        <li><a href="#3-thao-tác-với-hàm">3. Thao tác với hàm</a></li>
+        <li><a href="#4-thao-tác-với-câu-lệnh">4. Thao tác với câu lệnh</a>
+          <ul>
+            <li><a href="#ví-dụ-nhỏ">Ví dụ nhỏ</a></li>
+          </ul>
+        </li>
+        <li><a href="#5-thao-tác-với-toán-hạng">5. Thao tác với toán hạng</a></li>
+        <li><a href="#6-giả-lập-ida">6. Giả lập IDA</a></li>
+        <li><a href="#7-thao-tác-với-tham-chiếu">7. Thao tác với tham chiếu</a>
+          <ul>
+            <li><a href="#các-thuộc-tính-của-đối-tượng-xrefs">Các Thuộc Tính của Đối Tượng Xrefs</a></li>
+            <li><a href="#các-loại-cờ-của-đối-tượng-xrefs">Các loại cờ của đối tượng xrefs</a></li>
+          </ul>
+        </li>
+        <li><a href="#8-debug-hook-với-idapython">8. Debug hook với IDApython</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+<script>
+
+</script>
+   </div>
+      </div>
+      
 
       <div class="min-w-0 min-h-0 max-w-fit">
         

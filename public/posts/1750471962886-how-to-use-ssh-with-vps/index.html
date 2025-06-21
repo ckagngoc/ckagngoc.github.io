@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>[Write-Up RE] Flag_Checker KCSC &middot; Ckagngoc</title>
-  <meta name="title" content="[Write-Up RE] Flag_Checker KCSC &middot; Ckagngoc" />
+  <title>How to use SSH with VPS &middot; Ckagngoc</title>
+  <meta name="title" content="How to use SSH with VPS &middot; Ckagngoc" />
   
-  <meta name="description" content="a description" />
-  <meta name="keywords" content="WriteUp, reverse, " />
+  <meta name="description" content="Hướng dẫn sử dụng SSH với VPS: cài đặt, cấu hình, tạo key, mẹo và tài liệu tham khảo." />
+  <meta name="keywords" content="ssh, trick, " />
   
   
-  <link rel="canonical" href="https://ckagngoc.github.io/posts/1750168872583-write-up-re-flag_checker-kcsc/" />
+  <link rel="canonical" href="https://ckagngoc.github.io/posts/1750471962886-how-to-use-ssh-with-vps/" />
   
   
   
@@ -64,16 +64,16 @@
   
   
   
-  <meta property="og:title" content="[Write-Up RE] Flag_Checker KCSC" />
-<meta property="og:description" content="a description" />
+  <meta property="og:title" content="How to use SSH with VPS" />
+<meta property="og:description" content="Hướng dẫn sử dụng SSH với VPS: cài đặt, cấu hình, tạo key, mẹo và tài liệu tham khảo." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ckagngoc.github.io/posts/1750168872583-write-up-re-flag_checker-kcsc/" /><meta property="og:image" content="https://ckagngoc.github.io/posts/1750168872583-write-up-re-flag_checker-kcsc/featured.png" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2025-06-17T00:00:00+00:00" />
-<meta property="article:modified_time" content="2025-06-17T00:00:00+00:00" />
+<meta property="og:url" content="https://ckagngoc.github.io/posts/1750471962886-how-to-use-ssh-with-vps/" /><meta property="og:image" content="https://ckagngoc.github.io/posts/1750471962886-how-to-use-ssh-with-vps/featured.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-06-21T00:00:00+00:00" />
+<meta property="article:modified_time" content="2025-06-21T00:00:00+00:00" />
 
   <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://ckagngoc.github.io/posts/1750168872583-write-up-re-flag_checker-kcsc/featured.png" /><meta name="twitter:title" content="[Write-Up RE] Flag_Checker KCSC"/>
-<meta name="twitter:description" content="a description"/>
+<meta name="twitter:image" content="https://ckagngoc.github.io/posts/1750471962886-how-to-use-ssh-with-vps/featured.png" /><meta name="twitter:title" content="How to use SSH with VPS"/>
+<meta name="twitter:description" content="Hướng dẫn sử dụng SSH với VPS: cài đặt, cấu hình, tạo key, mẹo và tài liệu tham khảo."/>
 
   
   <script type="application/ld+json">
@@ -81,26 +81,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Posts",
-    "name": "[Write-Up RE] Flag_Checker KCSC",
-    "headline": "[Write-Up RE] Flag_Checker KCSC",
-    "description": "a description",
-    "abstract": "Đề cho như sau: #\rTiến hành #\rCho file vào Detect It Easy ta được các thông tin như sau:",
+    "name": "How to use SSH with VPS",
+    "headline": "How to use SSH with VPS",
+    "description": "Hướng dẫn sử dụng SSH với VPS: cài đặt, cấu hình, tạo key, mẹo và tài liệu tham khảo.",
+    "abstract": "Hướng dẫn sử dụng SSH với VPS #\r1.",
     "inLanguage": "en",
-    "url" : "https:\/\/ckagngoc.github.io\/posts\/1750168872583-write-up-re-flag_checker-kcsc\/",
+    "url" : "https:\/\/ckagngoc.github.io\/posts\/1750471962886-how-to-use-ssh-with-vps\/",
     "author" : {
       "@type": "Person",
       "name": "Ckagngoc"
     },
     "copyrightYear": "2025",
-    "dateCreated": "2025-06-17T00:00:00\u002b00:00",
-    "datePublished": "2025-06-17T00:00:00\u002b00:00",
+    "dateCreated": "2025-06-21T00:00:00\u002b00:00",
+    "datePublished": "2025-06-21T00:00:00\u002b00:00",
     
-    "dateModified": "2025-06-17T00:00:00\u002b00:00",
+    "dateModified": "2025-06-21T00:00:00\u002b00:00",
     
-    "keywords": ["WriteUp","reverse"],
+    "keywords": ["ssh","trick"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "975"
+    "wordCount": "609"
   }]
   </script>
 
@@ -471,7 +471,7 @@
 
     
     <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
-    style="background-image:url(/posts/1750168872583-write-up-re-flag_checker-kcsc/featured_hu52abc2fed2cc57f604693f06748cbeb6_102717_1200x0_resize_box_3.png);">
+    style="background-image:url(/posts/1750471962886-how-to-use-ssh-with-vps/featured_huc97702e25bc7d589dddff07e687ad942_480071_1200x0_resize_box_3.png);">
     
 
 
@@ -524,8 +524,8 @@
   <li class="hidden">
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
-      href="/posts/1750168872583-write-up-re-flag_checker-kcsc/"
-      >[Write-Up RE] Flag_Checker KCSC</a
+      href="/posts/1750471962886-how-to-use-ssh-with-vps/"
+      >How to use SSH with VPS</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -534,7 +534,7 @@
 
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      [Write-Up RE] Flag_Checker KCSC
+      How to use SSH with VPS
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -585,7 +585,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2025-06-17T00:00:00&#43;00:00">17 June 2025</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2025-06-21T00:00:00&#43;00:00">21 June 2025</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
   
   
     
@@ -598,7 +598,7 @@
       
     
   
-  <span id="views_posts\1750168872583-[Write-Up-RE]-Flag_Checker-KCSC\index.md" class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400" title="views">loading</span>
+  <span id="views_posts\1750471962886-how-to-use-ssh-with-vps\index.md" class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400" title="views">loading</span>
   <span class="inline-block align-text-bottom">
 
   <span class="relative block icon">
@@ -620,7 +620,7 @@
       
     
   
-  <span id="likes_posts\1750168872583-[Write-Up-RE]-Flag_Checker-KCSC\index.md"
+  <span id="likes_posts\1750471962886-how-to-use-ssh-with-vps\index.md"
     class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400"
     title="likes">loading</span>
   <span class="inline-block align-text-bottom">
@@ -712,18 +712,18 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/writeup/&#34;,'_self');return false;">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ssh/&#34;,'_self');return false;">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    WriteUp
+    Ssh
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/reverse/&#34;,'_self');return false;">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/trick/&#34;,'_self');return false;">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Reverse
+    Trick
   </span>
 </span>
   </span>
@@ -872,8 +872,24 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#đề-cho-như-sau">Đề cho như sau:</a></li>
-    <li><a href="#tiến-hành">Tiến hành</a></li>
+    <li><a href="#1-ssh-là-gì">1. SSH là gì?</a></li>
+    <li><a href="#2-cài-đặt-ssh">2. Cài đặt SSH</a>
+      <ul>
+        <li><a href="#21-cài-đặt-ssh-server-trên-vps-ubuntudebian">2.1. Cài đặt SSH Server trên VPS (Ubuntu/Debian)</a></li>
+        <li><a href="#22-cài-đặt-ssh-client-trên-máy-cá-nhân">2.2. Cài đặt SSH Client trên máy cá nhân</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-kết-nối-ssh-tới-vps">3. Kết nối SSH tới VPS</a></li>
+    <li><a href="#4-tạo-và-sử-dụng-ssh-key-rsa">4. Tạo và sử dụng SSH Key (RSA)</a>
+      <ul>
+        <li><a href="#41-tạo-ssh-key-trên-máy-cá-nhân">4.1. Tạo SSH Key trên máy cá nhân</a></li>
+        <li><a href="#42-copy-public-key-lên-vps">4.2. Copy public key lên VPS</a></li>
+        <li><a href="#43-đăng-nhập-bằng-ssh-key">4.3. Đăng nhập bằng SSH Key</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-cấu-hình-ssh-cơ-bản-trên-vps">5. Cấu hình SSH cơ bản trên VPS</a></li>
+    <li><a href="#6-một-số-mẹo-khi-dùng-ssh">6. Một số mẹo khi dùng SSH</a></li>
+    <li><a href="#7-tài-liệu-tham-khảo">7. Tài liệu tham khảo</a></li>
   </ul>
 </nav>
   </div>
@@ -887,8 +903,24 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#đề-cho-như-sau">Đề cho như sau:</a></li>
-    <li><a href="#tiến-hành">Tiến hành</a></li>
+    <li><a href="#1-ssh-là-gì">1. SSH là gì?</a></li>
+    <li><a href="#2-cài-đặt-ssh">2. Cài đặt SSH</a>
+      <ul>
+        <li><a href="#21-cài-đặt-ssh-server-trên-vps-ubuntudebian">2.1. Cài đặt SSH Server trên VPS (Ubuntu/Debian)</a></li>
+        <li><a href="#22-cài-đặt-ssh-client-trên-máy-cá-nhân">2.2. Cài đặt SSH Client trên máy cá nhân</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-kết-nối-ssh-tới-vps">3. Kết nối SSH tới VPS</a></li>
+    <li><a href="#4-tạo-và-sử-dụng-ssh-key-rsa">4. Tạo và sử dụng SSH Key (RSA)</a>
+      <ul>
+        <li><a href="#41-tạo-ssh-key-trên-máy-cá-nhân">4.1. Tạo SSH Key trên máy cá nhân</a></li>
+        <li><a href="#42-copy-public-key-lên-vps">4.2. Copy public key lên VPS</a></li>
+        <li><a href="#43-đăng-nhập-bằng-ssh-key">4.3. Đăng nhập bằng SSH Key</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-cấu-hình-ssh-cơ-bản-trên-vps">5. Cấu hình SSH cơ bản trên VPS</a></li>
+    <li><a href="#6-một-số-mẹo-khi-dùng-ssh">6. Một số mẹo khi dùng SSH</a></li>
+    <li><a href="#7-tài-liệu-tham-khảo">7. Tài liệu tham khảo</a></li>
   </ul>
 </nav>
   </div>
@@ -945,422 +977,262 @@
 
         <div class="article-content max-w-prose mb-20">
           
-<h2 class="relative group">Đề cho như sau: 
-    <div id="đề-cho-như-sau" class="anchor"></div>
+<h1 class="relative group">Hướng dẫn sử dụng SSH với VPS 
+    <div id="hướng-dẫn-sử-dụng-ssh-với-vps" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%c4%91%e1%bb%81-cho-nh%c6%b0-sau" aria-label="Anchor">#</a>
-    </span>        
-    
-</h2>
-<p>
-
-
-
-
-
-<figure>
-    <img class="my-0 rounded-md" loading="lazy" alt="Imgur" src="https://i.imgur.com/s9uBvtP.png" />
-
-  
-</figure>
-</p>
-
-<h2 class="relative group">Tiến hành 
-    <div id="tiến-hành" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#ti%e1%ba%bfn-h%c3%a0nh" aria-label="Anchor">#</a>
-    </span>        
-    
-</h2>
-<p>Cho file vào Detect It Easy ta được các thông tin như sau:</p>
-<p>
-
-
-
-
-
-<figure>
-    <img class="my-0 rounded-md" loading="lazy" alt="Imgur" src="https://i.imgur.com/u2WGKQj.png" />
-
-  
-</figure>
-</p>
-<p><em>Packer: UPX</em>
-<em>Compiler:AutoIT</em>
-<em>PE_32</em></p>
-<p>Đầu tiên dùng tool của UPX unpack file</p>
-<p>
-
-
-
-
-
-<figure>
-    <img class="my-0 rounded-md" loading="lazy" alt="Imgur" src="https://i.imgur.com/HgrbgTC.png" />
-
-  
-</figure>
-</p>
-<p>Sau đó dùng UnautoIT để convert về source file AutoIT</p>
-<p>
-
-
-
-
-
-<figure>
-    <img class="my-0 rounded-md" loading="lazy" alt="Imgur" src="https://i.imgur.com/Yh4iWv4.png" />
-
-  
-</figure>
-</p>
-<p>Khi chạy thấy chương trình xuất xâu &ldquo;Incorrect !&rdquo; Ctrl + F để tìm ta thấy được hàm checker() load một nùi opcode vào để load thành shellcode và check pass ta nhập vào như trên.
-Sau khi chuyển đống opcode vào các param hàm gọi DllCall với param là các string chỉ thị &ldquo;user32.dll&rdquo; gọi hàm &ldquo;CallWindowProcA&rdquo;, và các var chứa shellcode và input:</p>
-<p>
-
-
-
-
-
-<figure>
-    <img class="my-0 rounded-md" loading="lazy" alt="Imgur" src="https://i.imgur.com/nIAJZEp.png" />
-
-  
-</figure>
-</p>
-<p>Ý tưởng là ta sẽ đặt breakpoint vào hàm <em>CallWindowProcA</em> để khi chương trình load các tham số ta sẽ đọc được shellcode bằng IDA. Nhưng khi debug chưa kịp đến chỗ nhập input thì nhận
-được msgBox sau:</p>
-<p>
-
-
-
-
-
-<figure>
-    <img class="my-0 rounded-md" loading="lazy" alt="Imgur" src="https://i.imgur.com/FBR5ZEJ.png" />
-
-  
-</figure>
-</p>
-<p>Xem xét các hàm được gọi trong main ta tìm được hàm antiDebug <em>IsDebuggerPresent</em></p>
-<p>
-
-
-
-
-
-<figure>
-    <img class="my-0 rounded-md" loading="lazy" alt="Imgur" src="https://i.imgur.com/Qlu4WbM.png" />
-
-  
-</figure>
-</p>
-<p>Đặt breakpoint tại câu lệnh nhảy để bypass ta tiến hành debug lại chương trình, khi đến BP sửa cờ ZF để bypass.
-Lúc này trong Modules view ta thấy chương trình đã load <em>User32.dll</em> ta tiến hành tìm và đặt BP trong hàm <em>CallWindowProcA</em> dể debug với pass bất kỳ</p>
-<p>
-
-
-
-
-
-<figure>
-    <img class="my-0 rounded-md" loading="lazy" alt="Imgur" src="https://i.imgur.com/NiFdPGq.png" />
-
-  
-</figure>
-</p>
-<p>Lúc này ta trace qua các param để tìm shellcode. Và sử dụng MakeData để xem xét các param, kết quả được như sau:</p>
-<p>
-
-
-
-
-
-<figure>
-    <img class="my-0 rounded-md" loading="lazy" alt="Imgur" src="https://i.imgur.com/GfL9xXy.png" />
-
-  
-</figure>
-</p>
-<p>
-
-
-
-
-
-<figure>
-    <img class="my-0 rounded-md" loading="lazy" alt="Imgur" src="https://i.imgur.com/NLKQV2s.png" />
-
-  
-</figure>
-</p>
-<p>Kiểm tra lại trong source AutoIT ta thấy đây chính là đoạn shellcode cần tìm. Vì shellcode là đoạn mã độc lập, thao tác với các param của chương trình qua địa chỉ và sử dụng
-các hàm API qua <em>GetProcAddress</em>, hàm này sử dụng các string để truy xuất đến các dll nên khi MakeCode trong IDA ta sẽ để ý các đoạn byte là các string liên tục sẽ không được
-make. Tiến hành từ đầu shellcode ta thấy trong hexview có đoạn string liên tục là &ldquo;user32.dll&rdquo;</p>
-<p>
-
-
-
-
-
-<figure>
-    <img class="my-0 rounded-md" loading="lazy" alt="Imgur" src="https://i.imgur.com/VAk4LUA.png" />
-
-  
-</figure>
-</p>
-<p>Tiến hành debug vào shellcode ta xem xét các hàm con của hàm trên. Hai hàm đầu là hai hàm load lib của kernel32.dll và các hàm crytoAPI để mã hóa, hàm con cuối cùng là
-messageBoxA nên tiến hành đổi tên chúng cho tiện theo dõi.</p>
-<p>
-
-
-
-
-
-<figure>
-    <img class="my-0 rounded-md" loading="lazy" alt="Imgur" src="https://i.imgur.com/hOkrVlp.png" />
-
-  
-</figure>
-</p>
-<p>Hàm MsgBoxA được load vào [ebp-10h] còn input được mov vào [ebp+8h] sau đó nó call hàm lstrlen(input) và so sánh với 28 nếu khác thì exit.</p>
-<p>
-
-
-
-
-
-<figure>
-    <img class="my-0 rounded-md" loading="lazy" alt="Imgur" src="https://i.imgur.com/WIkyQKK.png" />
-
-  
-</figure>
-</p>
-<p>Chỉnh giá trị của cờ ZF để tiếp tục debug. Sau khi load một số byte &ldquo;Lạ&rdquo; chương trình mov input vào eax, offset_CryptAcquireContextA vào ecx, offset_LoadLibraryA vào edx làm
-tham số cho hàm <em>loc_3DD288B</em></p>
-<p>
-
-
-
-
-
-<figure>
-    <img class="my-0 rounded-md" loading="lazy" alt="Imgur" src="https://i.imgur.com/0PH9wRE.png" />
-
-  
-</figure>
-</p>
-<p>Trace vào trong tiếp tục Make shellcode như trên ta thu được 1 link youtube &ldquo;<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ%22" target="_blank">https://www.youtube.com/watch?v=dQw4w9WgXcQ"</a>. Tiếp theo chương trình tính độ dài chuỗi input sau đó nó gọi hàm CryptAcquireContextA đơn giản là nó sẽ tạo một con trỏ trỏ đến đối tượng sẽ giúp handle mã hóa nó muốn, ở đây là mã hóa RSA với thông tin trong link sau:
-<em><a href="https://learn.microsoft.com/en-us/windows/win32/seccrypto/prov-rsa-full" target="_blank">https://learn.microsoft.com/en-us/windows/win32/seccrypto/prov-rsa-full</a></em>, nếu không tạo được sẽ thoát chương trình, viết lại hàm bằng C++ sẽ như sau:</p>
-<p>
-
-
-
-
-
-<figure>
-    <img class="my-0 rounded-md" loading="lazy" alt="Imgur" src="https://i.imgur.com/UaBbHiN.png" />
-
-  
-</figure>
-</p>
-<p>Tiếp theo nó tạo đối tượng băm và băm cái link youtube kia ra</p>
-<p>
-
-
-
-
-
-<figure>
-    <img class="my-0 rounded-md" loading="lazy" alt="Imgur" src="https://i.imgur.com/KrTq83q.png" />
-
-  
-</figure>
-</p>
-<p>Sau đó chương trình sử dụng <em>CryptDeriveKey</em> để tạo khóa và <em>CryptDestroyHash</em> để giải phóng handle tiếp theo nó mã hóa độ dài input bằng khóa và tạo một vùng nhớ mới chứa input để mã hóa.</p>
-<p>
-
-
-
-
-
-<figure>
-    <img class="my-0 rounded-md" loading="lazy" alt="Imgur" src="https://i.imgur.com/bRPhJYN.png" />
-
-  
-</figure>
-</p>
-<p>Cuối cùng chương trình sử dụng vùng nhớ <em>new_memories</em> để so sánh với đoạn byte &ldquo;Lạ&rdquo; mà nó load vào lúc đầu. Vì mã hóa tạo ra sau thuật toán khóa và CSP đều gióng nhau sau các lần nên ta có đoạn code decrypt &lt;mượn của bài wu&gt; khác như sau:</p>
-
-<h1 class="relative group">Đoạn giả mã 
-    <div id="đoạn-giả-mã" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%c4%91o%e1%ba%a1n-gi%e1%ba%a3-m%c3%a3" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#h%c6%b0%e1%bb%9bng-d%e1%ba%abn-s%e1%bb%ad-d%e1%bb%a5ng-ssh-v%e1%bb%9bi-vps" aria-label="Anchor">#</a>
     </span>        
     
 </h1>
-<pre tabindex="0"><code>#include &lt;stdio.h&gt;
 
-int main() {
-    char inputpass[] = &#34;minh&#34;;
-    HMODULE user32 = LoadLibraryA(L&#34;user32.dll&#34;);
-    if(user32 == NULL) {
-        exit(0);
-    }
-    FARPROC msgBoxA = GetProcAddess(user32, &#34;MessageBoxA&#34;);
-    if(lstrlen(input) != 28) {
-        exit(0);
-    }
-    int len = lstrlen(input);
-    // input -&gt; eax
-    // offset_CryptAcquireContextA -&gt;ecx
-    // offset_LoadLibraryA -&gt; edx
-
-    char link[] = &#34;https://www.youtube.com/watch?v=dQw4w9WgXcQ&#34;;
-
-    HCRYPTPROV *phProv; // ebp-0Ch
-    // PROV_RSA_FULL = 1
-    if(!CryptAcquireContextA(phProv,0,0,PROV_RSA_FULL,0)){
-        exit(0);
-    };
-    //CALG_SHA : 0x8004
-    HCRYPTHASH *phHash // ebp+0Ch
-    if(!CryptCreateHash(phProv,CALG_SHA,0,0,phHash)){
-        exit(0);
-    };
-    if(!phHash) {
-        exit(0);
-    }
-
-    // push(link)
-    // call lstrlen
-
-    // push lstrlen(link)
-    // push offset_link
-    // push(*empty_1) is phHash
-    // call CryptHashData
-    if(!CryptHashData(phHash, link, lstrlen(link),0)) {
-        exit(0);
-    }
-
-    HCRYPTKEY  *phKey // push empty_memories
-    // push 0
-    // push phHash
-    // push 0x6801 CALG_RC4
-    // push phProv
-
-    if(!CryptDeriveKey(phProv,CALG_RC4,phHash,0,phKey)) {
-        exit(0);
-    }
-
-    // push phProv
-
-    // push phHash
-    // call CryptDestroyHash
-    CryptDestroyHash(phHash);
-
-    // push 0
-    if(!CryptEncrypt(phKey,0,1,0,0,len,0)){
-        exit(0);
-    }
-    // push 4
-    // push 0x1000
-    // push len + 1
-    // push 0
-    LPVOID new_memories = VirtualAlloc(0,len+1,0x1000,4);
-    if(!new_memories) {
-        exit(0);
-    }
-    for(int i = 0;i&lt;len+1;i++) {
-        new_memories[i] = input[i];
-    }
-    len2 = strlen(new_memories);
-    if(!CryptEncrypt(phKey,0,1,0,new_memories,len,len2)){
-        exit(0);
-    };
-    return 0;
-}
-
-//ebp-8 : user32
-//ebp-10 : MessageBoxA
-//ebp+8 : input
-//cipherRealPass : ebp-44 -&gt; ebp-29
-</code></pre>
-<h1 class="relative group">Decrypt 
-    <div id="decrypt" class="anchor"></div>
+<h2 class="relative group">1. SSH là gì? 
+    <div id="1-ssh-là-gì" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#decrypt" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#1-ssh-l%c3%a0-g%c3%ac" aria-label="Anchor">#</a>
     </span>        
     
-</h1>
-<pre tabindex="0"><code>#pragma comment(lib, &#34;crypt32.lib&#34;)
+</h2>
+<p><strong>SSH</strong> (Secure Shell) là giao thức mạng giúp bạn kết nối, quản lý và truyền dữ liệu giữa máy tính cá nhân và máy chủ từ xa (VPS) một cách an toàn. SSH mã hóa toàn bộ dữ liệu truyền đi, giúp bảo vệ thông tin đăng nhập và dữ liệu khỏi bị nghe lén.</p>
+<hr>
 
-#include &lt;stdio.h&gt;
-#include &lt;tchar.h&gt;
-#include &lt;windows.h&gt;
-#include &lt;Wincrypt.h&gt;
-#include&lt;string.h&gt;
-unsigned char cipher[] =
-{
-0xF8, 0x50, 0xCC, 0xEF, 0xE6, 0x3C, 0x35, 0x96, 0x1D, 0x61,
-0xAE, 0xC0, 0xC5, 0x31, 0xCE, 0xB0, 0xE7, 0x1D, 0xED, 0xBC,
-0x5D, 0x81, 0x69, 0x8A, 0x35, 0x74, 0x57, 0xB6
-};
-int main(void)
-{
- HCRYPTPROV hProv;
- if (CryptAcquireContextA(&amp;hProv, 0, 0, PROV_RSA_FULL, 0)) {
-     fprintf(stdout, &#34;Success CryptAcquireContextA\n&#34;);
-     
- };
- HCRYPTHASH phHash;
+<h2 class="relative group">2. Cài đặt SSH 
+    <div id="2-cài-đặt-ssh" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#2-c%c3%a0i-%c4%91%e1%ba%b7t-ssh" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
 
- if (CryptCreateHash(hProv, CALG_SHA, 0, 0, &amp;phHash)) {
-     fprintf(stdout, &#34;Success CreateHash\n&#34;);
-     
- };
+<h3 class="relative group">2.1. Cài đặt SSH Server trên VPS (Ubuntu/Debian) 
+    <div id="21-cài-đặt-ssh-server-trên-vps-ubuntudebian" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#21-c%c3%a0i-%c4%91%e1%ba%b7t-ssh-server-tr%c3%aan-vps-ubuntudebian" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>SSH server là dịch vụ chạy trên VPS, cho phép bạn kết nối từ xa.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt update
+</span></span><span class="line"><span class="cl">sudo apt install openssh-server
+</span></span><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> ssh
+</span></span><span class="line"><span class="cl">sudo systemctl start ssh
+</span></span></code></pre></div><ul>
+<li><code>sudo apt update</code>: Cập nhật danh sách gói phần mềm.</li>
+<li><code>sudo apt install openssh-server</code>: Cài đặt dịch vụ SSH server.</li>
+<li><code>sudo systemctl enable ssh</code>: Thiết lập SSH tự khởi động cùng hệ thống.</li>
+<li><code>sudo systemctl start ssh</code>: Khởi động dịch vụ SSH ngay lập tức.</li>
+</ul>
 
- BYTE text[] = &#34;https://www.youtube.com/watch?v=dQw4w9WgXcQ&#34;;
+<h3 class="relative group">2.2. Cài đặt SSH Client trên máy cá nhân 
+    <div id="22-cài-đặt-ssh-client-trên-máy-cá-nhân" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#22-c%c3%a0i-%c4%91%e1%ba%b7t-ssh-client-tr%c3%aan-m%c3%a1y-c%c3%a1-nh%c3%a2n" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<ul>
+<li>
+<p><strong>Windows 10 trở lên</strong>: Đã tích hợp sẵn OpenSSH, bạn có thể dùng trực tiếp trong PowerShell hoặc Command Prompt.</p>
+</li>
+<li>
+<p><strong>Hoặc dùng phần mềm giao diện</strong>:</p>
+<ul>
+<li><a href="https://www.putty.org/" target="_blank">PuTTY</a></li>
+<li><a href="https://mobaxterm.mobatek.net/" target="_blank">MobaXterm</a></li>
+</ul>
+</li>
+<li>
+<p><strong>Linux/macOS</strong>: SSH client thường đã được cài sẵn. Kiểm tra bằng:</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh -V
+</span></span></code></pre></div><p>Nếu có kết quả phiên bản SSH, bạn đã sẵn sàng sử dụng.</p>
+<hr>
 
- if (CryptHashData(phHash, text,strlen((const char*)text), 0)) {
-     fprintf(stdout, &#34;Success CryptHashData\n PassWord : %s ,\n Length : %d\n&#34;,text, strlen((const char*)text));
- };
- HCRYPTKEY phKey;
- if (CryptDeriveKey(hProv, CALG_RC4, phHash, 0, &amp;phKey)) {
-     fprintf(stdout, &#34;Success CryptDeriveKey\n&#34;);
- };
- CryptDestroyHash(phHash);
- DWORD len1 = 0x1c;
- DWORD len2 = 0x1c;
- //CryptEncrypt(phKey, 0, 1, 0, (BYTE*)newspace, (DWORD*)&amp;len1, len2);
- CryptDecrypt(phKey, 0, 1, 0, (BYTE*)cipher, (DWORD*)&amp;len1);
- printf(&#34;flag : %s \n&#34;, cipher);
+<h2 class="relative group">3. Kết nối SSH tới VPS 
+    <div id="3-kết-nối-ssh-tới-vps" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#3-k%e1%ba%bft-n%e1%bb%91i-ssh-t%e1%bb%9bi-vps" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>Cú pháp cơ bản:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh username@ip_vps
+</span></span></code></pre></div><ul>
+<li><code>username</code>: Tên tài khoản trên VPS (thường là <code>root</code>).</li>
+<li><code>ip_vps</code>: Địa chỉ IP của VPS.</li>
+</ul>
+<p><strong>Ví dụ:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh root@123.45.67.89
+</span></span></code></pre></div><p>Sau khi nhập lệnh, bạn sẽ được yêu cầu nhập mật khẩu của tài khoản trên VPS.</p>
+<hr>
 
+<h2 class="relative group">4. Tạo và sử dụng SSH Key (RSA) 
+    <div id="4-tạo-và-sử-dụng-ssh-key-rsa" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#4-t%e1%ba%a1o-v%c3%a0-s%e1%bb%ad-d%e1%bb%a5ng-ssh-key-rsa" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>Đăng nhập bằng SSH key giúp bảo mật hơn so với dùng mật khẩu.</p>
 
+<h3 class="relative group">4.1. Tạo SSH Key trên máy cá nhân 
+    <div id="41-tạo-ssh-key-trên-máy-cá-nhân" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#41-t%e1%ba%a1o-ssh-key-tr%c3%aan-m%c3%a1y-c%c3%a1-nh%c3%a2n" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh-keygen -t rsa -b <span class="m">4096</span> -C <span class="s2">&#34;your_email@example.com&#34;</span>
+</span></span></code></pre></div><ul>
+<li><code>-t rsa</code>: Chọn thuật toán RSA.</li>
+<li><code>-b 4096</code>: Độ dài key 4096 bit (bảo mật cao).</li>
+<li><code>-C</code>: Thêm comment (thường là email).</li>
+</ul>
+<p>Sau khi chạy, bạn sẽ được hỏi nơi lưu key (mặc định là <code>~/.ssh/id_rsa</code>) và đặt passphrase (mật khẩu bảo vệ key, có thể bỏ qua).</p>
 
- if(CryptReleaseContext(hProv, 0))
- {
-     printf(&#34;The handle has been released.\n&#34;);
- }
- else
- {
-     printf(&#34;The handle could not be released.\n&#34;);
- }
- return 1;
-}
-</code></pre><p>Flag: <strong>KCSC{rC4_8uT_1T_L00k2_W31Rd}</strong></p>
+<h3 class="relative group">4.2. Copy public key lên VPS 
+    <div id="42-copy-public-key-lên-vps" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#42-copy-public-key-l%c3%aan-vps" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Cách nhanh nhất:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh-copy-id username@ip_vps
+</span></span></code></pre></div><ul>
+<li>Lệnh này sẽ tự động copy nội dung file <code>~/.ssh/id_rsa.pub</code> lên VPS vào file <code>~/.ssh/authorized_keys</code>.</li>
+</ul>
+<p><strong>Nếu không có ssh-copy-id, dùng lệnh thủ công:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat ~/.ssh/id_rsa.pub <span class="p">|</span> ssh username@ip_vps <span class="s2">&#34;mkdir -p ~/.ssh &amp;&amp; cat &gt;&gt; ~/.ssh/authorized_keys&#34;</span>
+</span></span></code></pre></div>
+<h3 class="relative group">4.3. Đăng nhập bằng SSH Key 
+    <div id="43-đăng-nhập-bằng-ssh-key" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#43-%c4%91%c4%83ng-nh%e1%ba%adp-b%e1%ba%b1ng-ssh-key" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh -i ~/.ssh/id_rsa username@ip_vps
+</span></span></code></pre></div><ul>
+<li><code>-i</code>: Chỉ định file private key để đăng nhập.</li>
+</ul>
+<hr>
+
+<h2 class="relative group">5. Cấu hình SSH cơ bản trên VPS 
+    <div id="5-cấu-hình-ssh-cơ-bản-trên-vps" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#5-c%e1%ba%a5u-h%c3%acnh-ssh-c%c6%a1-b%e1%ba%a3n-tr%c3%aan-vps" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>Mở file cấu hình SSH:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo nano /etc/ssh/sshd_config
+</span></span></code></pre></div><p><strong>Một số tùy chọn nên chỉnh:</strong></p>
+<ul>
+<li><strong>Đổi port mặc định (giảm nguy cơ bị quét cổng):</strong>
+<pre tabindex="0"><code>Port 2222
+</code></pre></li>
+<li><strong>Chỉ cho phép đăng nhập bằng key (tăng bảo mật):</strong>
+<pre tabindex="0"><code>PasswordAuthentication no
+</code></pre></li>
+<li><strong>Chỉ cho phép user nhất định đăng nhập:</strong>
+<pre tabindex="0"><code>AllowUsers youruser
+</code></pre></li>
+</ul>
+<p><strong>Sau khi chỉnh sửa, lưu file và khởi động lại SSH:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo systemctl restart ssh
+</span></span></code></pre></div><hr>
+
+<h2 class="relative group">6. Một số mẹo khi dùng SSH 
+    <div id="6-một-số-mẹo-khi-dùng-ssh" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#6-m%e1%bb%99t-s%e1%bb%91-m%e1%ba%b9o-khi-d%c3%b9ng-ssh" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<ul>
+<li>
+<p><strong>Chuyển file giữa máy và VPS bằng SCP:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">scp file.txt username@ip_vps:/path/to/dest/
+</span></span></code></pre></div><ul>
+<li><code>scp</code>: Lệnh copy file qua SSH.</li>
+<li><code>file.txt</code>: File cần gửi.</li>
+<li><code>/path/to/dest/</code>: Thư mục đích trên VPS.</li>
+</ul>
+</li>
+<li>
+<p><strong>Tạo SSH config để quản lý nhiều VPS dễ dàng:</strong>
+Tạo file <code>~/.ssh/config</code> với nội dung:</p>
+<pre tabindex="0"><code>Host myvps
+    HostName 123.45.67.89
+    User root
+    Port 2222
+    IdentityFile ~/.ssh/id_rsa
+</code></pre><p>Kết nối nhanh bằng:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh myvps
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Tạo tunnel (forward port) để truy cập dịch vụ nội bộ trên VPS:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh -L 8080:localhost:80 username@ip_vps
+</span></span></code></pre></div><ul>
+<li>Truy cập <code>localhost:8080</code> trên máy cá nhân sẽ chuyển tiếp tới <code>localhost:80</code> trên VPS.</li>
+</ul>
+</li>
+</ul>
+<hr>
+
+<h2 class="relative group">7. Tài liệu tham khảo 
+    <div id="7-tài-liệu-tham-khảo" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#7-t%c3%a0i-li%e1%bb%87u-tham-kh%e1%ba%a3o" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys" target="_blank">DigitalOcean - SSH Essentials</a></li>
+<li><a href="https://linuxize.com/post/using-the-ssh-config-file/" target="_blank">SSH Config File</a></li>
+<li><a href="https://man.openbsd.org/ssh" target="_blank">OpenSSH Manual</a></li>
+</ul>
+<hr>
 
           
           
@@ -1378,7 +1250,7 @@ int main(void)
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://ckagngoc.github.io/posts/1750168872583-write-up-re-flag_checker-kcsc/&amp;title=[Write-Up%20RE]%20Flag_Checker%20KCSC"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://ckagngoc.github.io/posts/1750471962886-how-to-use-ssh-with-vps/&amp;title=How%20to%20use%20SSH%20with%20VPS"
       title="Share on LinkedIn"
       aria-label="Share on LinkedIn"
       >
@@ -1397,7 +1269,7 @@ int main(void)
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://ckagngoc.github.io/posts/1750168872583-write-up-re-flag_checker-kcsc/&amp;text=[Write-Up%20RE]%20Flag_Checker%20KCSC"
+      href="https://twitter.com/intent/tweet/?url=https://ckagngoc.github.io/posts/1750471962886-how-to-use-ssh-with-vps/&amp;text=How%20to%20use%20SSH%20with%20VPS"
       title="Tweet on Twitter"
       aria-label="Tweet on Twitter"
       >
@@ -1415,7 +1287,7 @@ int main(void)
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://bsky.app/intent/compose?text=[Write-Up%20RE]%20Flag_Checker%20KCSC&#43;https://ckagngoc.github.io/posts/1750168872583-write-up-re-flag_checker-kcsc/"
+      href="https://bsky.app/intent/compose?text=How%20to%20use%20SSH%20with%20VPS&#43;https://ckagngoc.github.io/posts/1750471962886-how-to-use-ssh-with-vps/"
       title="Post on Bluesky"
       aria-label="Post on Bluesky"
       >
@@ -1433,7 +1305,7 @@ int main(void)
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://ckagngoc.github.io/posts/1750168872583-write-up-re-flag_checker-kcsc/&amp;resubmit=true&amp;title=[Write-Up%20RE]%20Flag_Checker%20KCSC"
+      href="https://reddit.com/submit/?url=https://ckagngoc.github.io/posts/1750471962886-how-to-use-ssh-with-vps/&amp;resubmit=true&amp;title=How%20to%20use%20SSH%20with%20VPS"
       title="Submit to Reddit"
       aria-label="Submit to Reddit"
       >
@@ -1452,7 +1324,7 @@ int main(void)
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://ckagngoc.github.io/posts/1750168872583-write-up-re-flag_checker-kcsc/&amp;resubmit=true&amp;title=[Write-Up%20RE]%20Flag_Checker%20KCSC"
+      href="https://api.whatsapp.com/send?text=https://ckagngoc.github.io/posts/1750471962886-how-to-use-ssh-with-vps/&amp;resubmit=true&amp;title=How%20to%20use%20SSH%20with%20VPS"
       title="Share via WhatsApp"
       aria-label="Share via WhatsApp"
       >
@@ -1471,7 +1343,7 @@ int main(void)
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://ckagngoc.github.io/posts/1750168872583-write-up-re-flag_checker-kcsc/&amp;resubmit=true&amp;title=[Write-Up%20RE]%20Flag_Checker%20KCSC"
+      href="https://t.me/share/url?url=https://ckagngoc.github.io/posts/1750471962886-how-to-use-ssh-with-vps/&amp;resubmit=true&amp;title=How%20to%20use%20SSH%20with%20VPS"
       title="Share via Telegram"
       aria-label="Share via Telegram"
       >
@@ -1490,7 +1362,7 @@ int main(void)
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=https://ckagngoc.github.io/posts/1750168872583-write-up-re-flag_checker-kcsc/&amp;description=[Write-Up%20RE]%20Flag_Checker%20KCSC"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://ckagngoc.github.io/posts/1750471962886-how-to-use-ssh-with-vps/&amp;description=How%20to%20use%20SSH%20with%20VPS"
       title="Pin on Pinterest"
       aria-label="Pin on Pinterest"
       >
@@ -1509,7 +1381,7 @@ int main(void)
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://ckagngoc.github.io/posts/1750168872583-write-up-re-flag_checker-kcsc/&amp;quote=[Write-Up%20RE]%20Flag_Checker%20KCSC"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://ckagngoc.github.io/posts/1750471962886-how-to-use-ssh-with-vps/&amp;quote=How%20to%20use%20SSH%20with%20VPS"
       title="Share on Facebook"
       aria-label="Share on Facebook"
       >
@@ -1528,7 +1400,7 @@ int main(void)
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://ckagngoc.github.io/posts/1750168872583-write-up-re-flag_checker-kcsc/&amp;subject=[Write-Up%20RE]%20Flag_Checker%20KCSC"
+      href="mailto:?body=https://ckagngoc.github.io/posts/1750471962886-how-to-use-ssh-with-vps/&amp;subject=How%20to%20use%20SSH%20with%20VPS"
       title="Send via email"
       aria-label="Send via email"
       >
@@ -1551,6 +1423,191 @@ int main(void)
 
 <h2 class="mt-8 text-2xl font-extrabold mb-10">Related</h2>
 <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+  
+  
+
+  <a href="/posts/1750168872583-write-up-re-flag_checker-kcsc/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/1750168872583-write-up-re-flag_checker-kcsc/featured_hu52abc2fed2cc57f604693f06748cbeb6_102717_600x0_resize_box_3.png);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/posts/1750168872583-write-up-re-flag_checker-kcsc/">[Write-Up RE] Flag_Checker KCSC</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2025-06-17T00:00:00&#43;00:00">17 June 2025</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span id="views_posts\1750168872583-[Write-Up-RE]-Flag_Checker-KCSC\index.md" class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400" title="views">loading</span>
+  <span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg>
+  </span>
+
+</span>
+</span><span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span id="likes_posts\1750168872583-[Write-Up-RE]-Flag_Checker-KCSC\index.md"
+    class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+    title="likes">loading</span>
+  <span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+  </span>
+
+</span>
+</span>
+  
+
+  
+  
+</div>
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/writeup/&#34;,'_self');return false;">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    WriteUp
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/reverse/&#34;,'_self');return false;">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Reverse
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+</div>
+
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
   
   
 
@@ -2517,191 +2574,6 @@ int main(void)
   </a>
 
   
-  
-
-  <a href="/posts/1749543634746-picoctf-writeup-reverseeasy/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/1749543634746-picoctf-writeup-reverseeasy/feature_hu1a5d39055ab9a6495b90e2e620fe0bb1_180139_600x0_resize_box_3.png);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/posts/1749543634746-picoctf-writeup-reverseeasy/">PicoCTF-WriteUp-ReverseEasy</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2025-06-10T00:00:00&#43;00:00">10 June 2025</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
-  
-  
-    
-    
-      
-      
-        
-        
-      
-      
-    
-  
-  <span id="views_posts\1749543634746-PicoCTF-WriteUp-ReverseEasy\index.md" class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400" title="views">loading</span>
-  <span class="inline-block align-text-bottom">
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg>
-  </span>
-
-</span>
-</span><span class="px-2 text-primary-500">&middot;</span><span>
-  
-  
-    
-    
-      
-      
-        
-        
-      
-      
-    
-  
-  <span id="likes_posts\1749543634746-PicoCTF-WriteUp-ReverseEasy\index.md"
-    class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400"
-    title="likes">loading</span>
-  <span class="inline-block align-text-bottom">
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-<path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
-  </span>
-
-</span>
-</span>
-  
-
-  
-  
-</div>
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</div>
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ctf/&#34;,'_self');return false;">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    CTF
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/reverse/&#34;,'_self');return false;">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Reverse
-  </span>
-</span>
-  </span>
-  
-  
-  
-  
-</div>
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-</div>
-
-
-
-
-        </div>
-
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-
-  
 </section>
 
   
@@ -2715,8 +2587,8 @@ int main(void)
           
         
       <script>
-        var oid = "views_posts\\1750168872583-[Write-Up-RE]-Flag_Checker-KCSC\\index.md"
-        var oid_likes = "likes_posts\\1750168872583-[Write-Up-RE]-Flag_Checker-KCSC\\index.md"
+        var oid = "views_posts\\1750471962886-how-to-use-ssh-with-vps\\index.md"
+        var oid_likes = "likes_posts\\1750471962886-how-to-use-ssh-with-vps\\index.md"
       </script>
       
       
@@ -2736,7 +2608,7 @@ int main(void)
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/posts/1750170084049-write-up-re-get2thehell/">
+            <a class="flex group mr-3" href="/posts/1750168872583-write-up-re-flag_checker-kcsc/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -2748,7 +2620,7 @@ int main(void)
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >[Write-Up RE] Get2TheHell</span
+                  >[Write-Up RE] Flag_Checker KCSC</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
@@ -2760,28 +2632,6 @@ int main(void)
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/posts/1750471962886-how-to-use-ssh-with-vps/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >How to use SSH with VPS</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2025-06-21T00:00:00&#43;00:00">21 June 2025</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>

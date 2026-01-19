@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>WriteUp on Ckagngoc</title>
-    <link>http://localhost:1313/tags/writeup/</link>
+    <link>https://ckagngoc.github.io/tags/writeup/</link>
     <description>Recent content in WriteUp on Ckagngoc</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2025 Ckagngoc</copyright>
-    <lastBuildDate>Tue, 17 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/writeup/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2026 Ckagngoc</copyright>
+    <lastBuildDate>Tue, 17 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ckagngoc.github.io/tags/writeup/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>[Write-Up RE] Flag_Checker KCSC</title>
-      <link>http://localhost:1313/posts/1750168872583-write-up-re-flag_checker-kcsc/</link>
+      <link>https://ckagngoc.github.io/posts/1750168872583-write-up-re-flag_checker-kcsc/</link>
       <pubDate>Tue, 17 Jun 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/1750168872583-write-up-re-flag_checker-kcsc/</guid>
-      <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/1750168872583-write-up-re-flag_checker-kcsc/featured.png" />
+      <guid>https://ckagngoc.github.io/posts/1750168872583-write-up-re-flag_checker-kcsc/</guid>
+      <description>Đề cho như sau: #Tiến hành #Cho file vào Detect It Easy ta được các thông tin như sau:</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ckagngoc.github.io/posts/1750168872583-write-up-re-flag_checker-kcsc/featured.png" />
     </item>
     
     <item>
       <title>[Write-Up RE] Get2TheHell</title>
-      <link>http://localhost:1313/posts/1750170084049-write-up-re-get2thehell/</link>
+      <link>https://ckagngoc.github.io/posts/1750170084049-write-up-re-get2thehell/</link>
       <pubDate>Tue, 17 Jun 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/1750170084049-write-up-re-get2thehell/</guid>
-      <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/1750170084049-write-up-re-get2thehell/featured.png" />
+      <guid>https://ckagngoc.github.io/posts/1750170084049-write-up-re-get2thehell/</guid>
+      <description>Hì hì bài sửa chữa sai lầm và vực dậy chút tinh thần sau kỳ thi 😂😂😂</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ckagngoc.github.io/posts/1750170084049-write-up-re-get2thehell/featured.png" />
     </item>
     
     <item>
       <title>[Write-Up RE] PTITCTF RE02</title>
-      <link>http://localhost:1313/posts/1750169562669-write-up-re-ptitctf-re02/</link>
+      <link>https://ckagngoc.github.io/posts/1750169562669-write-up-re-ptitctf-re02/</link>
       <pubDate>Tue, 17 Jun 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/1750169562669-write-up-re-ptitctf-re02/</guid>
-      <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/1750169562669-write-up-re-ptitctf-re02/featured.png" />
+      <guid>https://ckagngoc.github.io/posts/1750169562669-write-up-re-ptitctf-re02/</guid>
+      <description>Challenge #1.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ckagngoc.github.io/posts/1750169562669-write-up-re-ptitctf-re02/featured.png" />
     </item>
     
   </channel>

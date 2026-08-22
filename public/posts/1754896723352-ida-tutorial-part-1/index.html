@@ -111,7 +111,7 @@
     "keywords": ["reverse-engineering","ida-pro","disassembler","tutorial","security"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "784"
+    "wordCount": "1312"
   }]
   </script>
 
@@ -596,7 +596,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2025-08-11T00:00:00&#43;00:00">11 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2025-08-11T00:00:00&#43;00:00">11 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">7 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
   
   
     
@@ -943,7 +943,14 @@
         <li><a href="#2-sử-dụng-cross-references">2. Sử dụng Cross-references</a></li>
         <li><a href="#3-đặt-tên-có-ý-nghĩa">3. Đặt tên có ý nghĩa</a></li>
         <li><a href="#4-thêm-comments">4. Thêm comments</a></li>
-        <li><a href="#5-hiểu-calling-conventions">5. Hiểu calling conventions</a></li>
+        <li><a href="#5-hiểu-calling-conventions">5. Hiểu calling conventions</a>
+          <ul>
+            <li><a href="#cdecl-caller-dọn-stack"><code>cdecl</code>: caller dọn stack</a></li>
+            <li><a href="#stdcall-callee-dọn-stack"><code>stdcall</code>: callee dọn stack</a></li>
+            <li><a href="#fastcall-ưu-tiên-register"><code>fastcall</code>: ưu tiên register</a></li>
+            <li><a href="#cách-nhận-diện-nhanh-trong-ida">Cách nhận diện nhanh trong IDA</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
     <li><a href="#cấu-trúc-một-chương-trình-pe">Cấu trúc một chương trình PE</a>
@@ -1004,7 +1011,14 @@
         <li><a href="#2-sử-dụng-cross-references">2. Sử dụng Cross-references</a></li>
         <li><a href="#3-đặt-tên-có-ý-nghĩa">3. Đặt tên có ý nghĩa</a></li>
         <li><a href="#4-thêm-comments">4. Thêm comments</a></li>
-        <li><a href="#5-hiểu-calling-conventions">5. Hiểu calling conventions</a></li>
+        <li><a href="#5-hiểu-calling-conventions">5. Hiểu calling conventions</a>
+          <ul>
+            <li><a href="#cdecl-caller-dọn-stack"><code>cdecl</code>: caller dọn stack</a></li>
+            <li><a href="#stdcall-callee-dọn-stack"><code>stdcall</code>: callee dọn stack</a></li>
+            <li><a href="#fastcall-ưu-tiên-register"><code>fastcall</code>: ưu tiên register</a></li>
+            <li><a href="#cách-nhận-diện-nhanh-trong-ida">Cách nhận diện nhanh trong IDA</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
     <li><a href="#cấu-trúc-một-chương-trình-pe">Cấu trúc một chương trình PE</a>
@@ -1428,11 +1442,98 @@
     </span>        
     
 </h3>
-<ul>
-<li><strong>stdcall</strong>: Callee dọn stack</li>
-<li><strong>cdecl</strong>: Caller dọn stack</li>
-<li><strong>fastcall</strong>: Tham số đầu qua register</li>
-</ul>
+<p><strong>Calling convention</strong> là quy ước giữa caller (hàm gọi) và callee (hàm được gọi) về cách truyền arguments, nơi đặt giá trị trả về, register nào phải được bảo toàn và ai chịu trách nhiệm dọn stack. Biết quy ước này giúp bạn đọc đúng function signature trong IDA thay vì chỉ đoán từ tên hàm.</p>
+
+<h4 class="relative group"><code>cdecl</code>: caller dọn stack 
+    <div id="cdecl-caller-dọn-stack" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#cdecl-caller-d%e1%bb%8dn-stack" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>Với x86 32-bit, arguments của <code>cdecl</code> thường được đưa lên stack theo thứ tự từ phải sang trái. Ví dụ với:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">add</span><span class="p">(</span><span class="kt">int</span> <span class="n">left</span><span class="p">,</span> <span class="kt">int</span> <span class="n">right</span><span class="p">);</span>
+</span></span></code></pre></div><p>caller có thể tạo lời gọi như sau:</p>
+<pre tabindex="0"><code class="language-assembly" data-lang="assembly">push    2              ; right
+push    3              ; left
+call    add
+add     esp, 8         ; caller dọn 2 arguments, mỗi argument 4 bytes
+; eax = 5
+</code></pre><p>Trong callee, sau prologue chuẩn, <code>left</code> nằm ở <code>[ebp+8]</code> và <code>right</code> nằm ở <code>[ebp+0Ch]</code>:</p>
+<pre tabindex="0"><code class="language-assembly" data-lang="assembly">add:
+push    ebp
+mov     ebp, esp
+mov     eax, [ebp+8]   ; left = 3
+add     eax, [ebp+0Ch] ; right = 2
+pop     ebp
+retn                  ; không có số bytes đi kèm
+</code></pre><p>Dấu hiệu quan trọng trong IDA là instruction <code>add esp, 8</code> xuất hiện <strong>sau <code>call</code></strong>. <code>cdecl</code> phù hợp với hàm có số lượng arguments thay đổi như <code>printf</code>, vì caller biết chính xác cần dọn bao nhiêu bytes.</p>
+
+<h4 class="relative group"><code>stdcall</code>: callee dọn stack 
+    <div id="stdcall-callee-dọn-stack" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#stdcall-callee-d%e1%bb%8dn-stack" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>Với cùng prototype, callee sẽ dọn arguments khi return:</p>
+<pre tabindex="0"><code class="language-assembly" data-lang="assembly">push    2
+push    3
+call    add_stdcall
+; không cần add esp, 8 ở đây
+</code></pre><p>Cuối callee thường có <code>retn 8</code>:</p>
+<pre tabindex="0"><code class="language-assembly" data-lang="assembly">add_stdcall:
+push    ebp
+mov     ebp, esp
+mov     eax, [ebp+8]
+add     eax, [ebp+0Ch]
+pop     ebp
+retn    8              ; return và bỏ 8 bytes arguments khỏi stack
+</code></pre><p>Nếu thấy <code>retn N</code>, hãy xem <code>N</code> có khớp với tổng kích thước arguments hay không. Đây là một dấu hiệu tốt để kiểm tra IDA đã nhận diện đúng calling convention chưa, nhưng không nên dùng nó một mình vì compiler có thể tối ưu prologue/epilogue.</p>
+
+<h4 class="relative group"><code>fastcall</code>: ưu tiên register 
+    <div id="fastcall-ưu-tiên-register" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#fastcall-%c6%b0u-ti%c3%aan-register" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p><code>fastcall</code> giảm số lần truy cập stack bằng cách truyền một vài arguments đầu tiên qua register. Một biến thể thường gặp trên x86 dùng <code>ecx</code> cho argument đầu tiên và <code>edx</code> cho argument thứ hai; các arguments còn lại mới được đặt trên stack:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">multiply</span><span class="p">(</span><span class="kt">int</span> <span class="n">left</span><span class="p">,</span> <span class="kt">int</span> <span class="n">right</span><span class="p">);</span>
+</span></span></code></pre></div><p>Một lời gọi có thể trông như sau:</p>
+<pre tabindex="0"><code class="language-assembly" data-lang="assembly">mov     ecx, 6         ; left
+mov     edx, 7         ; right
+call    multiply
+; eax = 42
+</code></pre><p>Trong thực tế, quy tắc register của <code>fastcall</code> phụ thuộc compiler và nền tảng. Vì vậy, hãy đặt con trỏ vào function, nhấn <code>Y</code> để xem hoặc chỉnh calling convention, rồi đối chiếu với các instruction đọc <code>ecx</code>, <code>edx</code> và stack.</p>
+
+<h4 class="relative group">Cách nhận diện nhanh trong IDA 
+    <div id="cách-nhận-diện-nhanh-trong-ida" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#c%c3%a1ch-nh%e1%ba%adn-di%e1%bb%87n-nhanh-trong-ida" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>Khi phân tích một <code>call</code>, hãy kiểm tra theo thứ tự:</p>
+<ol>
+<li>Ngay trước <code>call</code>, arguments được <code>push</code> lên stack hay được đưa vào register nào?</li>
+<li>Ngay sau <code>call</code>, có <code>add esp, N</code> không?</li>
+<li>Ở cuối callee là <code>retn</code> hay <code>retn N</code>?</li>
+<li>Giá trị trả về có được đọc từ <code>eax</code> (x86) hoặc <code>rax</code> (x64) không?</li>
+</ol>
+<p>Ví dụ, chuỗi <code>push</code>, <code>call</code>, <code>add esp, 8</code> gợi ý <code>cdecl</code>, còn <code>call</code> kết thúc bằng <code>retn 8</code> gợi ý <code>stdcall</code>. Đây là các dấu hiệu để hình thành giả thuyết; hãy xác nhận lại bằng nhiều caller và bằng cách sửa prototype trong Hex-Rays nếu pseudo-code vẫn không hợp lý.</p>
 
 <h2 class="relative group">Cấu trúc một chương trình PE 
     <div id="cấu-trúc-một-chương-trình-pe" class="anchor"></div>

@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>Iptables Docker And Confuse &middot; Ckagngoc</title>
-  <meta name="title" content="Iptables Docker And Confuse &middot; Ckagngoc" />
+  <title>Hướng dẫn IDA Pro cơ bản cho Reverse Engineering - Phần 2 &middot; Ckagngoc</title>
+  <meta name="title" content="Hướng dẫn IDA Pro cơ bản cho Reverse Engineering - Phần 2 &middot; Ckagngoc" />
   
-  <meta name="description" content="Một vài kiến thức về iptables và tương quan với docker container của nó thu thập được trên mạng" />
-  <meta name="keywords" content="iptables, docker, trick, " />
+  <meta name="description" content="Hướng dẫn cơ bản về IDA Pro - công cụ disassembler mạnh mẽ cho reverse engineering. Phần 2: Nâng cấp kỹ năng IDA Pro" />
+  <meta name="keywords" content="reverse-engineering, ida-pro, disassembler, tutorial, security, " />
   
   
-  <link rel="canonical" href="https://ckagngoc.github.io/posts/1768841486834-iptables-docker-and-confuse/" />
+  <link rel="canonical" href="https://ckagngoc.github.io/posts/ida-tutorial-part-2/" />
   
   
   
@@ -64,25 +64,27 @@
   
   
   
-  <meta property="og:url" content="https://ckagngoc.github.io/posts/1768841486834-iptables-docker-and-confuse/">
+  <meta property="og:url" content="https://ckagngoc.github.io/posts/ida-tutorial-part-2/">
 	<meta property="og:site_name" content="Ckagngoc">
-	<meta property="og:title" content="Iptables Docker And Confuse">
-	<meta property="og:description" content="Một vài kiến thức về iptables và tương quan với docker container của nó thu thập được trên mạng">
+	<meta property="og:title" content="Hướng dẫn IDA Pro cơ bản cho Reverse Engineering - Phần 2">
+	<meta property="og:description" content="Hướng dẫn cơ bản về IDA Pro - công cụ disassembler mạnh mẽ cho reverse engineering. Phần 2: Nâng cấp kỹ năng IDA Pro">
 	<meta property="og:locale" content="en">
 	<meta property="og:type" content="article">
 		<meta property="article:section" content="posts">
-		<meta property="article:published_time" content="2026-01-19T00:00:00+00:00">
-		<meta property="article:modified_time" content="2026-01-19T00:00:00+00:00">
-		<meta property="article:tag" content="Iptables">
-		<meta property="article:tag" content="Docker">
-		<meta property="article:tag" content="Trick">
-		<meta property="og:image" content="https://ckagngoc.github.io/posts/1768841486834-iptables-docker-and-confuse/feature.png">
+		<meta property="article:published_time" content="2026-08-21T00:00:00+00:00">
+		<meta property="article:modified_time" content="2026-08-21T00:00:00+00:00">
+		<meta property="article:tag" content="Reverse-Engineering">
+		<meta property="article:tag" content="Ida-Pro">
+		<meta property="article:tag" content="Disassembler">
+		<meta property="article:tag" content="Tutorial">
+		<meta property="article:tag" content="Security">
+		<meta property="og:image" content="https://ckagngoc.github.io/posts/ida-tutorial-part-2/feature.jpg">
 
   
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:image" content="https://ckagngoc.github.io/posts/1768841486834-iptables-docker-and-confuse/feature.png">
-	<meta name="twitter:title" content="Iptables Docker And Confuse">
-	<meta name="twitter:description" content="Một vài kiến thức về iptables và tương quan với docker container của nó thu thập được trên mạng">
+	<meta name="twitter:image" content="https://ckagngoc.github.io/posts/ida-tutorial-part-2/feature.jpg">
+	<meta name="twitter:title" content="Hướng dẫn IDA Pro cơ bản cho Reverse Engineering - Phần 2">
+	<meta name="twitter:description" content="Hướng dẫn cơ bản về IDA Pro - công cụ disassembler mạnh mẽ cho reverse engineering. Phần 2: Nâng cấp kỹ năng IDA Pro">
 
   
   <script type="application/ld+json">
@@ -90,26 +92,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Posts",
-    "name": "Iptables Docker And Confuse",
-    "headline": "Iptables Docker And Confuse",
-    "description": "Một vài kiến thức về iptables và tương quan với docker container của nó thu thập được trên mạng",
+    "name": "Hướng dẫn IDA Pro cơ bản cho Reverse Engineering - Phần 2",
+    "headline": "Hướng dẫn IDA Pro cơ bản cho Reverse Engineering - Phần 2",
+    "description": "Hướng dẫn cơ bản về IDA Pro - công cụ disassembler mạnh mẽ cho reverse engineering. Phần 2: Nâng cấp kỹ năng IDA Pro",
     
     "inLanguage": "en",
-    "url" : "https:\/\/ckagngoc.github.io\/posts\/1768841486834-iptables-docker-and-confuse\/",
+    "url" : "https:\/\/ckagngoc.github.io\/posts\/ida-tutorial-part-2\/",
     "author" : {
       "@type": "Person",
       "name": "Ckagngoc"
     },
     "copyrightYear": "2026",
-    "dateCreated": "2026-01-19T00:00:00\u002b00:00",
-    "datePublished": "2026-01-19T00:00:00\u002b00:00",
+    "dateCreated": "2026-08-21T00:00:00\u002b00:00",
+    "datePublished": "2026-08-21T00:00:00\u002b00:00",
     
-    "dateModified": "2026-01-19T00:00:00\u002b00:00",
+    "dateModified": "2026-08-21T00:00:00\u002b00:00",
     
-    "keywords": ["iptables","docker","trick"],
+    "keywords": ["reverse-engineering","ida-pro","disassembler","tutorial","security"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1118"
+    "wordCount": "1834"
   }]
   </script>
 
@@ -480,7 +482,7 @@
 
     
     <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
-    style="background-image:url(/posts/1768841486834-iptables-docker-and-confuse/feature_hu_1c890b06260baf8d.png);">
+    style="background-image:url(/posts/ida-tutorial-part-2/feature_hu_a1cefc07a42d768d.jpg);">
     
 
 
@@ -533,8 +535,8 @@
   <li class="hidden">
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
-      href="/posts/1768841486834-iptables-docker-and-confuse/"
-      >Iptables Docker And Confuse</a
+      href="/posts/ida-tutorial-part-2/"
+      >Hướng dẫn IDA Pro cơ bản cho Reverse Engineering - Phần 2</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -543,7 +545,7 @@
 
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      Iptables Docker And Confuse
+      Hướng dẫn IDA Pro cơ bản cho Reverse Engineering - Phần 2
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -594,7 +596,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2026-01-19T00:00:00&#43;00:00">19 January 2026</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">6 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2026-08-21T00:00:00&#43;00:00">21 August 2026</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">9 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
   
   
     
@@ -607,7 +609,7 @@
       
     
   
-  <span id="views_posts\1768841486834-iptables-docker-and-confuse\index.md" class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400" title="views">loading</span>
+  <span id="views_posts\ida-tutorial-part-2\index.md" class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400" title="views">loading</span>
   <span class="inline-block align-text-bottom">
 
   <span class="relative block icon">
@@ -629,7 +631,7 @@
       
     
   
-  <span id="likes_posts\1768841486834-iptables-docker-and-confuse\index.md"
+  <span id="likes_posts\ida-tutorial-part-2\index.md"
     class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400"
     title="likes">loading</span>
   <span class="inline-block align-text-bottom">
@@ -721,26 +723,42 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/iptables/&#34;,'_self');return false;">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/reverse-engineering/&#34;,'_self');return false;">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Iptables
+    Reverse-Engineering
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/docker/&#34;,'_self');return false;">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ida-pro/&#34;,'_self');return false;">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Docker
+    Ida-Pro
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/trick/&#34;,'_self');return false;">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/disassembler/&#34;,'_self');return false;">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Trick
+    Disassembler
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/tutorial/&#34;,'_self');return false;">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Tutorial
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/security/&#34;,'_self');return false;">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Security
   </span>
 </span>
   </span>
@@ -889,26 +907,39 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#1-cú-sốc-đầu-tiên-input-không-có-tác-dụng">1. Cú sốc đầu tiên: INPUT không có tác dụng</a></li>
-    <li><a href="#2-docker-và-ma-trận-iptables">2. Docker và “ma trận” iptables</a></li>
-    <li><a href="#3-sai-lầm-phổ-biến-cố-gắng-đấu-với-docker">3. Sai lầm phổ biến: cố gắng “đấu” với Docker</a></li>
-    <li><a href="#4-chặn-ở-nat-không-phải-filter">4. Chặn ở NAT, không phải FILTER</a>
+    <li><a href="#1-đọc-function-signature">1. Đọc function signature</a>
       <ul>
-        <li><a href="#bước-1-tạo-chain-trung-gian-docker-block">Bước 1: Tạo chain trung gian <code>DOCKER-BLOCK</code></a></li>
-        <li><a href="#bước-2-gắn-docker-block-vào-đầu-prerouting">Bước 2: Gắn <code>DOCKER-BLOCK</code> vào đầu PREROUTING</a></li>
-        <li><a href="#bước-3-trạng-thái-ban-đầu--mặc-định-chặn-kết-nối-mới">Bước 3: Trạng thái ban đầu – mặc định chặn kết nối mới</a></li>
-        <li><a href="#bước-4-cho-phép-từng-dịch-vụ-cụ-thể">Bước 4: Cho phép từng dịch vụ cụ thể</a></li>
-        <li><a href="#bước-5-luồng-xử-lý-sau-khi-allow">Bước 5: Luồng xử lý sau khi allow</a>
-          <ul>
-            <li><a href="#với-traffic-được-phép">Với traffic được phép:</a></li>
-            <li><a href="#với-traffic-không-được-phép">Với traffic không được phép:</a></li>
-          </ul>
-        </li>
+        <li><a href="#arguments-trên-stack">Arguments trên stack</a></li>
+        <li><a href="#arguments-trong-register">Arguments trong register</a></li>
       </ul>
     </li>
-    <li><a href="#5-một-bài-học-khác-reload-firewall-không-được-làm-gián-đoạn-hệ-thống">5. Một bài học khác: reload firewall không được làm gián đoạn hệ thống</a></li>
-    <li><a href="#6-điều-kiện-áp-dụng-đừng-bỏ-qua">6. Điều kiện áp dụng (đừng bỏ qua!)</a></li>
-    <li><a href="#7-tổng-kết--những-gì-tôi-rút-ra">7. Tổng kết – những gì tôi rút ra</a></li>
+    <li><a href="#2-phân-tích-local-variables">2. Phân tích local variables</a>
+      <ul>
+        <li><a href="#phân-biệt-giá-trị-và-địa-chỉ">Phân biệt giá trị và địa chỉ</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-stack-frame-và-calling-conventions">3. Stack frame và calling conventions</a>
+      <ul>
+        <li><a href="#prologue-và-epilogue">Prologue và epilogue</a></li>
+        <li><a href="#các-calling-convention-phổ-biến">Các calling convention phổ biến</a></li>
+        <li><a href="#quy-trình-theo-dõi-một-lời-gọi-hàm">Quy trình theo dõi một lời gọi hàm</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-nhận-diện-và-xử-lý-anti-analysis">4. Nhận diện và xử lý anti-analysis</a>
+      <ul>
+        <li><a href="#một-số-dấu-hiệu">Một số dấu hiệu</a></li>
+        <li><a href="#quy-trình-phân-tích-thực-tế">Quy trình phân tích thực tế</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-script-automation-với-idapython">5. Script automation với IDAPython</a>
+      <ul>
+        <li><a href="#liệt-kê-function-và-xuất-json">Liệt kê function và xuất JSON</a></li>
+        <li><a href="#tìm-các-lệnh-gọi-api-đáng-chú-ý">Tìm các lệnh gọi API đáng chú ý</a></li>
+        <li><a href="#mẹo-viết-script-bền-vững">Mẹo viết script bền vững</a></li>
+      </ul>
+    </li>
+    <li><a href="#6-checklist-phân-tích">6. Checklist phân tích</a></li>
+    <li><a href="#kết-luận">Kết luận</a></li>
   </ul>
 </nav>
   </div>
@@ -922,26 +953,39 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#1-cú-sốc-đầu-tiên-input-không-có-tác-dụng">1. Cú sốc đầu tiên: INPUT không có tác dụng</a></li>
-    <li><a href="#2-docker-và-ma-trận-iptables">2. Docker và “ma trận” iptables</a></li>
-    <li><a href="#3-sai-lầm-phổ-biến-cố-gắng-đấu-với-docker">3. Sai lầm phổ biến: cố gắng “đấu” với Docker</a></li>
-    <li><a href="#4-chặn-ở-nat-không-phải-filter">4. Chặn ở NAT, không phải FILTER</a>
+    <li><a href="#1-đọc-function-signature">1. Đọc function signature</a>
       <ul>
-        <li><a href="#bước-1-tạo-chain-trung-gian-docker-block">Bước 1: Tạo chain trung gian <code>DOCKER-BLOCK</code></a></li>
-        <li><a href="#bước-2-gắn-docker-block-vào-đầu-prerouting">Bước 2: Gắn <code>DOCKER-BLOCK</code> vào đầu PREROUTING</a></li>
-        <li><a href="#bước-3-trạng-thái-ban-đầu--mặc-định-chặn-kết-nối-mới">Bước 3: Trạng thái ban đầu – mặc định chặn kết nối mới</a></li>
-        <li><a href="#bước-4-cho-phép-từng-dịch-vụ-cụ-thể">Bước 4: Cho phép từng dịch vụ cụ thể</a></li>
-        <li><a href="#bước-5-luồng-xử-lý-sau-khi-allow">Bước 5: Luồng xử lý sau khi allow</a>
-          <ul>
-            <li><a href="#với-traffic-được-phép">Với traffic được phép:</a></li>
-            <li><a href="#với-traffic-không-được-phép">Với traffic không được phép:</a></li>
-          </ul>
-        </li>
+        <li><a href="#arguments-trên-stack">Arguments trên stack</a></li>
+        <li><a href="#arguments-trong-register">Arguments trong register</a></li>
       </ul>
     </li>
-    <li><a href="#5-một-bài-học-khác-reload-firewall-không-được-làm-gián-đoạn-hệ-thống">5. Một bài học khác: reload firewall không được làm gián đoạn hệ thống</a></li>
-    <li><a href="#6-điều-kiện-áp-dụng-đừng-bỏ-qua">6. Điều kiện áp dụng (đừng bỏ qua!)</a></li>
-    <li><a href="#7-tổng-kết--những-gì-tôi-rút-ra">7. Tổng kết – những gì tôi rút ra</a></li>
+    <li><a href="#2-phân-tích-local-variables">2. Phân tích local variables</a>
+      <ul>
+        <li><a href="#phân-biệt-giá-trị-và-địa-chỉ">Phân biệt giá trị và địa chỉ</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-stack-frame-và-calling-conventions">3. Stack frame và calling conventions</a>
+      <ul>
+        <li><a href="#prologue-và-epilogue">Prologue và epilogue</a></li>
+        <li><a href="#các-calling-convention-phổ-biến">Các calling convention phổ biến</a></li>
+        <li><a href="#quy-trình-theo-dõi-một-lời-gọi-hàm">Quy trình theo dõi một lời gọi hàm</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-nhận-diện-và-xử-lý-anti-analysis">4. Nhận diện và xử lý anti-analysis</a>
+      <ul>
+        <li><a href="#một-số-dấu-hiệu">Một số dấu hiệu</a></li>
+        <li><a href="#quy-trình-phân-tích-thực-tế">Quy trình phân tích thực tế</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-script-automation-với-idapython">5. Script automation với IDAPython</a>
+      <ul>
+        <li><a href="#liệt-kê-function-và-xuất-json">Liệt kê function và xuất JSON</a></li>
+        <li><a href="#tìm-các-lệnh-gọi-api-đáng-chú-ý">Tìm các lệnh gọi API đáng chú ý</a></li>
+        <li><a href="#mẹo-viết-script-bền-vững">Mẹo viết script bền vững</a></li>
+      </ul>
+    </li>
+    <li><a href="#6-checklist-phân-tích">6. Checklist phân tích</a></li>
+    <li><a href="#kết-luận">Kết luận</a></li>
   </ul>
 </nav>
   </div>
@@ -997,374 +1041,446 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          
-<h1 class="relative group">IPTables và Docker – Bài học “đau thương” sau một lần tin nhầm INPUT 
-    <div id="iptables-và-docker--bài-học-đau-thương-sau-một-lần-tin-nhầm-input" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#iptables-v%c3%a0-docker--b%c3%a0i-h%e1%bb%8dc-%c4%91au-th%c6%b0%c6%a1ng-sau-m%e1%bb%99t-l%e1%ba%a7n-tin-nh%e1%ba%a7m-input" aria-label="Anchor">#</a>
-    </span>        
-    
-</h1>
-<p>Lần đầu làm firewall cho server chạy Docker, tôi từng rất tự tin.</p>
-<p>iptables mà, quá quen rồi.</p>
-<p>Cho đến khi tôi nhận ra:  <strong>Docker không chơi theo luật INPUT</strong> .</p>
-
-<h2 class="relative group">1. Cú sốc đầu tiên: INPUT không có tác dụng 
-    <div id="1-cú-sốc-đầu-tiên-input-không-có-tác-dụng" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#1-c%c3%ba-s%e1%bb%91c-%c4%91%e1%ba%a7u-ti%c3%aan-input-kh%c3%b4ng-c%c3%b3-t%c3%a1c-d%e1%bb%a5ng" aria-label="Anchor">#</a>
-    </span>        
-    
-</h2>
-<p>Kịch bản rất quen thuộc:</p>
-<ul>
-<li>Server chạy Docker</li>
-<li>Một container expose cổng 443</li>
-<li>Tôi chỉ muốn cho phép traffic từ load balancer nội bộ</li>
-</ul>
-<p>Tôi viết rule quen tay:</p>
-<pre tabindex="0"><code class="language-iptables" data-lang="iptables">iptables -A INPUT -p tcp --dport 443 -s 172.16.0.0/26 -m state --state NEW,ESTABLISHED -j ACCEPT
-iptables -A INPUT -j DROP
-</code></pre><p>Test từ bên ngoài → <strong>cổng vẫn mở</strong> 😐</p>
-<p>Lúc đó tôi nghĩ:</p>
+          <p>Phần 1 đã giới thiệu giao diện và quy trình điều hướng cơ bản trong IDA Pro. Ở phần này, chúng ta sẽ đi sâu hơn vào một function: dữ liệu đi vào bằng cách nào, biến cục bộ nằm ở đâu, compiler tạo stack frame ra sao, và làm thế nào để hỗ trợ phân tích những binary có anti-analysis.</p>
 <blockquote>
-<p>“Chắc mình viết sai rule…”</p>
+<p>Chỉ phân tích các binary mà bạn sở hữu hoặc được phép kiểm thử. Các kỹ thuật trong bài nên được dùng trong lab, CTF, malware sandbox và hoạt động nghiên cứu có ủy quyền.</p>
 </blockquote>
-<p>Nhưng không.</p>
-<p>Rule đúng, logic đúng,  <strong>chỉ là nó không bao giờ được chạy</strong> .</p>
 
-<h2 class="relative group">2. Docker và “ma trận” iptables 
-    <div id="2-docker-và-ma-trận-iptables" class="anchor"></div>
+<h2 class="relative group">1. Đọc function signature 
+    <div id="1-đọc-function-signature" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#2-docker-v%c3%a0-ma-tr%e1%ba%adn-iptables" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#1-%c4%91%e1%bb%8dc-function-signature" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<p>Đọc bài viết của Edouard Buschini, tôi mới vỡ ra một điều rất cơ bản mà trước đó  <strong>chưa từng để ý nghiêm túc</strong> :</p>
-<blockquote>
-<p><strong>iptables không chỉ có một bảng.</strong></p>
-</blockquote>
-<p>Trước giờ tôi chỉ chăm chăm vào <code>filter</code> (INPUT / OUTPUT / FORWARD), nhưng Docker thì khác.</p>
-<p>Docker  <strong>can thiệp rất sâu vào bảng <code>nat</code></strong> , đặc biệt là:</p>
-<ul>
-<li><code>nat PREROUTING</code></li>
-<li>chain <code>DOCKER</code></li>
-<li>DNAT trước khi packet kịp chạm INPUT</li>
-</ul>
-<p>Nói cách khác:</p>
-<p>👉  <strong>Gói tin đã bị đổi đích sang IP container từ PREROUTING</strong> ,</p>
-<p>👉 nên  <strong>INPUT của host không bao giờ thấy port 443 nữa</strong> .</p>
-<p>Đó là lý do:</p>
-<ul>
-<li>Bạn DROP INPUT vẫn không chặn được container</li>
-<li>Firewall “trông có vẻ đúng” nhưng thực tế vô dụng</li>
-</ul>
+<p>Khi mở một function bằng Hex-Rays (<code>F5</code>), việc đầu tiên không phải là tin ngay vào pseudo-code. Hãy kiểm tra signature, các cross-reference và assembly xung quanh những lệnh <code>call</code>. IDA có thể suy luận sai kiểu dữ liệu hoặc số lượng arguments, đặc biệt khi binary bị tối ưu hóa.</p>
+<p>Ví dụ một function nhận chuỗi và độ dài:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">check_input</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">input</span><span class="p">,</span> <span class="kt">size_t</span> <span class="n">length</span><span class="p">);</span>
+</span></span></code></pre></div><p>Trong IDA, có thể chỉnh prototype bằng cách đặt con trỏ trong function rồi nhấn <code>Y</code>. Kiểu dữ liệu đúng giúp Hex-Rays hiển thị phép dereference, phép tính pointer và giá trị trả về dễ hiểu hơn.</p>
 
-<h2 class="relative group">3. Sai lầm phổ biến: cố gắng “đấu” với Docker 
-    <div id="3-sai-lầm-phổ-biến-cố-gắng-đấu-với-docker" class="anchor"></div>
+<h3 class="relative group">Arguments trên stack 
+    <div id="arguments-trên-stack" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#3-sai-l%e1%ba%a7m-ph%e1%bb%95-bi%e1%ba%bfn-c%e1%bb%91-g%e1%ba%afng-%c4%91%e1%ba%a5u-v%e1%bb%9bi-docker" aria-label="Anchor">#</a>
-    </span>        
-    
-</h2>
-<p>Sau khi hiểu vấn đề, tôi thấy rất nhiều giải pháp trên mạng kiểu:</p>
-<ul>
-<li>Tắt Docker quản lý iptables</li>
-<li>Ghi đè rule Docker mỗi lần restart</li>
-<li>Hack DOCKER-USER rồi cầu may</li>
-</ul>
-<p>Thẳng thắn mà nói:  <strong>đó là những giải pháp nguy hiểm</strong> .</p>
-<p>Docker quản lý iptables  <strong>tốt hơn chúng ta tưởng</strong> :</p>
-<ul>
-<li>Nó xử lý NAT</li>
-<li>Nó đảm bảo container hoạt động</li>
-<li>Nó không nên bị “đánh úp” bằng cách disable</li>
-</ul>
-<p>Vấn đề không phải Docker sai.</p>
-<p>Vấn đề là  <strong>mình cần chặn ở đúng chỗ</strong> .</p>
-
-<h2 class="relative group">4. Chặn ở NAT, không phải FILTER 
-    <div id="4-chặn-ở-nat-không-phải-filter" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#4-ch%e1%ba%b7n-%e1%bb%9f-nat-kh%c3%b4ng-ph%e1%ba%a3i-filter" aria-label="Anchor">#</a>
-    </span>        
-    
-</h2>
-<p>
-
-
-
-
-
-<figure>
-      <img
-    class="my-0 rounded-md" loading="lazy" decoding="async" fetchpriority="low" alt="1768842090183"
-    srcset="
-      /posts/1768841486834-iptables-docker-and-confuse/image/index/1768842090183_hu_dd6f847d3f693e92.png 330w,
-      /posts/1768841486834-iptables-docker-and-confuse/image/index/1768842090183_hu_d6e1f215143b732d.png 660w,
-      /posts/1768841486834-iptables-docker-and-confuse/image/index/1768842090183_hu_39d4b406954ccb1c.png 1280w"
-    data-zoom-src="/posts/1768841486834-iptables-docker-and-confuse/image/index/1768842090183.png"
-    src="/posts/1768841486834-iptables-docker-and-confuse/image/index/1768842090183.png"
-  />
-
-  
-</figure>
-</p>
-<p>Điểm tôi tâm đắc nhất từ bài viết là ý tưởng:</p>
-<blockquote>
-<p><strong>Muốn kiểm soát traffic vào container → phải can thiệp từ PREROUTING</strong></p>
-</blockquote>
-<p>Giải pháp DOCKER-BLOCK rất “đẹp” về mặt kiến trúc:</p>
-<ul>
-<li>Không phá Docker</li>
-<li>Không disable iptables tự động</li>
-<li>Không động vào DOCKER chain gốc</li>
-<li>Chỉ “đứng trước cửa” và quyết định ai được đi tiếp</li>
-</ul>
-<p>Luồng xử lý trở nên rõ ràng:</p>
-<pre tabindex="0"><code>PREROUTING
-  └─ DOCKER-BLOCK (deny all)
-       └─ allow rule → DOCKER
-</code></pre><p>Mặc định  <strong>deny everything</strong> ,</p>
-<p>chỉ khi <strong>explicit allow</strong> thì mới cho Docker xử lý tiếp.</p>
-<p>Ý tưởng cốt lõi  <strong>không phải là “chặn bằng RETURN”</strong> , mà là  <strong>kiểm soát luồng xử lý trong <code>nat PREROUTING</code> trước khi Docker DNAT</strong> .</p>
-
-<h3 class="relative group">Bước 1: Tạo chain trung gian <code>DOCKER-BLOCK</code> 
-    <div id="bước-1-tạo-chain-trung-gian-docker-block" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#b%c6%b0%e1%bb%9bc-1-t%e1%ba%a1o-chain-trung-gian-docker-block" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#arguments-tr%c3%aan-stack" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
-<pre class="overflow-visible! px-0!" data-start="439" data-end="482"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="sticky top-[calc(--spacing(9)+var(--header-height))] @w-xl/main:top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-bg-elevated-secondary text-token-text-secondary flex items-center gap-4 rounded-sm px-2 font-sans text-xs"></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>iptables -t nat -N DOCKER-BLOCK
-</span></span></code></div></div></pre>
-<p>Chain này đóng vai trò là <strong>điểm kiểm soát trung tâm</strong> cho toàn bộ traffic đi vào container.</p>
-<hr>
+<p>Với chương trình x86 32-bit dùng <code>cdecl</code>, arguments thường được <code>push</code> theo thứ tự từ phải sang trái. Sau prologue chuẩn, argument đầu tiên nằm tại <code>[ebp+8]</code>:</p>
+<pre tabindex="0"><code class="language-assembly" data-lang="assembly">push    ebp
+mov     ebp, esp
+sub     esp, 10h
+mov     eax, [ebp+8]       ; arg_0
+mov     edx, [ebp+0Ch]      ; arg_1
+mov     [ebp-4], eax        ; var_4
+</code></pre><p>Vị trí thường gặp:</p>
+<table>
+	<thead>
+			<tr>
+					<th>Địa chỉ tương đối</th>
+					<th>Ý nghĩa</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>[ebp+8]</code></td>
+					<td>argument đầu tiên</td>
+			</tr>
+			<tr>
+					<td><code>[ebp+0Ch]</code></td>
+					<td>argument thứ hai</td>
+			</tr>
+			<tr>
+					<td><code>[ebp-4]</code></td>
+					<td>local variable</td>
+			</tr>
+			<tr>
+					<td><code>[ebp-8]</code></td>
+					<td>local variable tiếp theo</td>
+			</tr>
+			<tr>
+					<td><code>[ebp+4]</code></td>
+					<td>địa chỉ trả về</td>
+			</tr>
+			<tr>
+					<td><code>[ebp]</code></td>
+					<td>giá trị <code>ebp</code> của caller</td>
+			</tr>
+	</tbody>
+</table>
+<p>Đây chỉ là quy ước của prologue cụ thể. Compiler có thể bỏ frame pointer, vì vậy hãy nhìn vào cách <code>esp</code> thay đổi thay vì áp dụng cứng các offset trên.</p>
 
-<h3 class="relative group">Bước 2: Gắn <code>DOCKER-BLOCK</code> vào đầu PREROUTING 
-    <div id="bước-2-gắn-docker-block-vào-đầu-prerouting" class="anchor"></div>
+<h3 class="relative group">Arguments trong register 
+    <div id="arguments-trong-register" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#b%c6%b0%e1%bb%9bc-2-g%e1%ba%afn-docker-block-v%c3%a0o-%c4%91%e1%ba%a7u-prerouting" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#arguments-trong-register" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
-<pre class="overflow-visible! px-0!" data-start="634" data-end="720"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="sticky top-[calc(--spacing(9)+var(--header-height))] @w-xl/main:top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-bg-elevated-secondary text-token-text-secondary flex items-center gap-4 rounded-sm px-2 font-sans text-xs"></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>iptables -t nat -I PREROUTING -m addrtype --dst-type LOCAL -g DOCKER-BLOCK
-</span></span></code></div></div></pre>
-<p>Ý nghĩa:</p>
-<ul>
-<li>Mọi packet có <strong>đích là IP local của host</strong></li>
-<li>Đều <strong>đi vào DOCKER-BLOCK trước</strong></li>
-<li>Sử dụng <code>-g</code> (GOTO) để sau khi <code>RETURN</code> sẽ  <strong>quay lại PREROUTING</strong> , không nhảy sang chain khác</li>
-</ul>
-<hr>
+<p>Ở x64, arguments thường đi qua register trước khi dùng stack:</p>
+<table>
+	<thead>
+			<tr>
+					<th>ABI</th>
+					<th>Arguments integer/pointer đầu tiên</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Windows x64</td>
+					<td><code>RCX</code>, <code>RDX</code>, <code>R8</code>, <code>R9</code></td>
+			</tr>
+			<tr>
+					<td>System V AMD64 (Linux/macOS)</td>
+					<td><code>RDI</code>, <code>RSI</code>, <code>RDX</code>, <code>RCX</code>, <code>R8</code>, <code>R9</code></td>
+			</tr>
+			<tr>
+					<td>ARM64</td>
+					<td><code>X0</code> đến <code>X7</code></td>
+			</tr>
+	</tbody>
+</table>
+<p>Với Windows x64, caller còn dành sẵn 32 bytes <em>shadow space</em> trên stack cho callee. Argument thứ năm trở đi thường nằm trên stack. Với System V AMD64, arguments vượt quá số register khả dụng cũng được đặt trên stack. Khi phân tích một <code>call</code>, hãy ghi lại giá trị register ngay trước lệnh gọi và theo dõi nơi callee đọc chúng.</p>
 
-<h3 class="relative group">Bước 3: Trạng thái ban đầu – mặc định chặn kết nối mới 
-    <div id="bước-3-trạng-thái-ban-đầu--mặc-định-chặn-kết-nối-mới" class="anchor"></div>
+<h2 class="relative group">2. Phân tích local variables 
+    <div id="2-phân-tích-local-variables" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#b%c6%b0%e1%bb%9bc-3-tr%e1%ba%a1ng-th%c3%a1i-ban-%c4%91%e1%ba%a7u--m%e1%ba%b7c-%c4%91%e1%bb%8bnh-ch%e1%ba%b7n-k%e1%ba%bft-n%e1%bb%91i-m%e1%bb%9bi" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<p>Ở thời điểm này, <code>DOCKER-BLOCK</code>  <strong>chưa có rule nào</strong> .</p>
-<p>Hệ quả:</p>
-<ul>
-<li>Packet đi vào <code>DOCKER-BLOCK</code></li>
-<li>Không match rule nào</li>
-<li>Kết thúc chain → implicit <code>RETURN</code></li>
-<li>Quay lại PREROUTING <strong>nhưng không đi qua Docker DNAT</strong></li>
-</ul>
-<p>➡️  <strong>Không có rule nào cho phép chuyển sang chain <code>DOCKER</code></strong> ,</p>
-<p>➡️ nên  <strong>Docker không thể DNAT traffic vào container</strong> .</p>
-<p>📌 <strong>Đây chính là trạng thái “default deny”</strong></p>
-<p>Luồng lúc này:</p>
-<pre class="overflow-visible! px-0!" data-start="1372" data-end="1489"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="sticky top-[calc(--spacing(9)+var(--header-height))] @w-xl/main:top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-bg-elevated-secondary text-token-text-secondary flex items-center gap-4 rounded-sm px-2 font-sans text-xs"></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre!"><span><span>PREROUTING
- └─ DOCKER-BLOCK
-     └─ RETURN (implicit)
-        └─ PREROUTING tiế</span><span>p</span><span> tục (không chạm Docker DNAT)
-</span></span></code></div></div></pre>
-<hr>
-
-<h3 class="relative group">Bước 4: Cho phép từng dịch vụ cụ thể 
-    <div id="bước-4-cho-phép-từng-dịch-vụ-cụ-thể" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#b%c6%b0%e1%bb%9bc-4-cho-ph%c3%a9p-t%e1%bb%abng-d%e1%bb%8bch-v%e1%bb%a5-c%e1%bb%a5-th%e1%bb%83" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<p>Khi muốn mở cổng 443 cho container, ta  <strong>explicit allow</strong> :</p>
-<pre class="overflow-visible! px-0!" data-start="1598" data-end="1697"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="sticky top-[calc(--spacing(9)+var(--header-height))] @w-xl/main:top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-bg-elevated-secondary text-token-text-secondary flex items-center gap-4 rounded-sm px-2 font-sans text-xs"></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>iptables -t nat -A DOCKER-BLOCK \
--p tcp --dport 443 \
--m state --state NEW \
--j DOCKER
-</span></span></code></div></div></pre>
-<p>Ý nghĩa:</p>
-<ul>
-<li>Chỉ khi:
-<ul>
-<li>TCP</li>
-<li>Port 443</li>
-<li>Là kết nối mới</li>
-</ul>
-</li>
-<li>Mới được <strong>chuyển giao cho Docker xử lý DNAT</strong></li>
-</ul>
-<hr>
-
-<h3 class="relative group">Bước 5: Luồng xử lý sau khi allow 
-    <div id="bước-5-luồng-xử-lý-sau-khi-allow" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#b%c6%b0%e1%bb%9bc-5-lu%e1%bb%93ng-x%e1%bb%ad-l%c3%bd-sau-khi-allow" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<p>Bây giờ luồng packet trở nên rõ ràng:</p>
-
-<h4 class="relative group">Với traffic được phép: 
-    <div id="với-traffic-được-phép" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#v%e1%bb%9bi-traffic-%c4%91%c6%b0%e1%bb%a3c-ph%c3%a9p" aria-label="Anchor">#</a>
-    </span>        
-    
-</h4>
-<pre class="overflow-visible! px-0!" data-start="1917" data-end="1989"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="sticky top-[calc(--spacing(9)+var(--header-height))] @w-xl/main:top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-bg-elevated-secondary text-token-text-secondary flex items-center gap-4 rounded-sm px-2 font-sans text-xs"></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre!"><span><span>PREROUTING
- └─ DOCKER-BLOCK
-     └─ DOCKER (DNAT sang container)
-</span></span></code></div></div></pre>
-
-<h4 class="relative group">Với traffic không được phép: 
-    <div id="với-traffic-không-được-phép" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#v%e1%bb%9bi-traffic-kh%c3%b4ng-%c4%91%c6%b0%e1%bb%a3c-ph%c3%a9p" aria-label="Anchor">#</a>
-    </span>        
-    
-</h4>
-<pre class="overflow-visible! px-0!" data-start="2025" data-end="2144"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="sticky top-[calc(--spacing(9)+var(--header-height))] @w-xl/main:top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-bg-elevated-secondary text-token-text-secondary flex items-center gap-4 rounded-sm px-2 font-sans text-xs"></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre!"><span><span>PREROUTING
- └─ DOCKER</span><span>-</span><span>BLOCK
-     └─ RETURN
-        └─ PREROUTING tiếp tụ</span><span>c</span><span></span><span>(</span><span>không DNAT → bị drop ở </span><span>c</span><span>á</span><span>c</span><span> bướ</span><span>c</span><span> sau</span><span>)</span><span>
-</span></span></code></div></div></pre>
-<p>👉 <strong>Docker chỉ được gọi khi firewall cho phép</strong></p>
-<p>👉 Không có chuyện “vượt qua Docker”, mà là <strong>chủ động trao quyền cho Docker</strong></p>
-
-<h2 class="relative group">5. Một bài học khác: reload firewall không được làm gián đoạn hệ thống 
-    <div id="5-một-bài-học-khác-reload-firewall-không-được-làm-gián-đoạn-hệ-thống" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#5-m%e1%bb%99t-b%c3%a0i-h%e1%bb%8dc-kh%c3%a1c-reload-firewall-kh%c3%b4ng-%c4%91%c6%b0%e1%bb%a3c-l%c3%a0m-gi%c3%a1n-%c4%91o%e1%ba%a1n-h%e1%bb%87-th%e1%bb%91ng" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#2-ph%c3%a2n-t%c3%adch-local-variables" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<p>Một điểm rất thực tế mà bài viết đề cập (và tôi từng dính):</p>
+<p>Local variable thường được compiler biểu diễn bằng offset âm so với frame pointer hoặc bằng offset từ <code>esp</code>/<code>rsp</code>:</p>
+<pre tabindex="0"><code class="language-assembly" data-lang="assembly">sub     rsp, 30h
+lea     rcx, [rbp-20h]      ; địa chỉ buffer cục bộ
+mov     dword ptr [rbp-4], 0 ; counter = 0
+</code></pre><p>Một offset chưa nói lên kiểu dữ liệu. Hãy dùng các dấu hiệu sau:</p>
 <ul>
-<li>Reload iptables có thể:
-<ul>
-<li>Làm rớt SSH</li>
-<li>Cắt kết nối đang chạy</li>
-<li>Tạo cửa sổ “trống firewall” vài mili giây</li>
+<li><code>lea</code> lấy địa chỉ của vùng nhớ thường gợi ý một buffer, array hoặc struct.</li>
+<li><code>mov eax, [rbp-4]</code> và phép cộng 32-bit thường gợi ý <code>int</code> hoặc counter.</li>
+<li>Nhiều lần truy cập theo bước 8 bytes có thể là pointer hoặc phần tử trên x64.</li>
+<li>Một vùng được truyền vào <code>memcpy</code>, <code>strcmp</code>, <code>scanf</code> hoặc API tương tự cần được kiểm tra cả kích thước lẫn giới hạn.</li>
+<li>Vùng được khởi tạo bằng <code>memset</code> thường là buffer hoặc struct; xem số byte được ghi để ước lượng kích thước.</li>
 </ul>
-</li>
-</ul>
-<p>Script của Edouard xử lý rất cẩn thận:</p>
-<ul>
-<li>Chỉ block NEW connection</li>
-<li>Giữ ESTABLISHED connection</li>
-<li>Không tạo race condition với Docker</li>
-<li>Không để rule bị nhân đôi sau mỗi lần chạy</li>
-</ul>
-<p>Đây là kiểu script:</p>
-<blockquote>
-<p>“Không chỉ chạy được, mà chạy  <strong>an toàn trong production</strong> ”</p>
-</blockquote>
+<p>Trong pseudocode, đổi tên <code>var_20</code> thành <code>input_buffer</code>, <code>var_4</code> thành <code>index</code> bằng <code>N</code>. Với một biến đã chọn, nhấn <code>Y</code> để sửa kiểu. Đổi tên và kiểu theo từng giả thuyết nhỏ, sau đó đối chiếu lại với assembly để tránh tạo ra một pseudo-code có vẻ đẹp nhưng sai.</p>
 
-<h2 class="relative group">6. Điều kiện áp dụng (đừng bỏ qua!) 
-    <div id="6-điều-kiện-áp-dụng-đừng-bỏ-qua" class="anchor"></div>
+<h3 class="relative group">Phân biệt giá trị và địa chỉ 
+    <div id="phân-biệt-giá-trị-và-địa-chỉ" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#6-%c4%91i%e1%bb%81u-ki%e1%bb%87n-%c3%a1p-d%e1%bb%a5ng-%c4%91%e1%bb%abng-b%e1%bb%8f-qua" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#ph%c3%a2n-bi%e1%bb%87t-gi%c3%a1-tr%e1%bb%8b-v%c3%a0-%c4%91%e1%bb%8ba-ch%e1%bb%89" aria-label="Anchor">#</a>
     </span>        
     
-</h2>
-<p>Giải pháp này  <strong>không áp dụng cho container <code>--net=host</code></strong> .</p>
-<p>Và điều đó hoàn toàn hợp lý:</p>
-<ul>
-<li>Khi dùng host network → container = host</li>
-<li>Khi đó quay về INPUT chain là đúng</li>
-</ul>
-<p>Bài học ở đây:</p>
-<blockquote>
-<p><strong>Không có một rule firewall đúng cho mọi mô hình mạng</strong></p>
-</blockquote>
+</h3>
+<pre tabindex="0"><code class="language-assembly" data-lang="assembly">mov     eax, [rbp-4]        ; đọc giá trị của biến
+lea     rdx, [rbp-20h]      ; lấy địa chỉ của biến/buffer
+mov     [rbp-8], rax        ; ghi một pointer hoặc số 64-bit
+</code></pre><p><code>mov</code> với dấu ngoặc vuông truy cập bộ nhớ; <code>lea</code> tính địa chỉ mà không đọc nội dung tại địa chỉ đó. Đây là khác biệt quan trọng khi xác định một argument là <code>char *</code>, <code>char **</code> hay một giá trị số.</p>
 
-<h2 class="relative group">7. Tổng kết – những gì tôi rút ra 
-    <div id="7-tổng-kết--những-gì-tôi-rút-ra" class="anchor"></div>
+<h2 class="relative group">3. Stack frame và calling conventions 
+    <div id="3-stack-frame-và-calling-conventions" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#7-t%e1%bb%95ng-k%e1%ba%bft--nh%e1%bb%afng-g%c3%ac-t%c3%b4i-r%c3%bat-ra" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#3-stack-frame-v%c3%a0-calling-conventions" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<p>Sau khi đọc và áp dụng bài viết này, tôi rút ra vài kinh nghiệm xương máu:</p>
+
+<h3 class="relative group">Prologue và epilogue 
+    <div id="prologue-và-epilogue" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#prologue-v%c3%a0-epilogue" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Một frame x86 điển hình có dạng:</p>
+<pre tabindex="0"><code class="language-assembly" data-lang="assembly">push    ebp
+mov     ebp, esp
+sub     esp, 20h
+...
+mov     esp, ebp
+pop     ebp
+retn
+</code></pre><p>Prologue lưu frame pointer và cấp phát chỗ cho local variables. Epilogue khôi phục stack trước khi <code>ret</code> lấy địa chỉ trở về. Compiler tối ưu hóa có thể dùng <code>leave</code>, bỏ <code>ebp</code> hoàn toàn hoặc gộp nhiều thao tác; vì vậy hãy xác định frame qua data-flow của <code>esp</code>/<code>rsp</code>.</p>
+
+<h3 class="relative group">Các calling convention phổ biến 
+    <div id="các-calling-convention-phổ-biến" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#c%c3%a1c-calling-convention-ph%e1%bb%95-bi%e1%ba%bfn" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<table>
+	<thead>
+			<tr>
+					<th>Convention</th>
+					<th>Truyền arguments</th>
+					<th>Ai dọn stack?</th>
+					<th>Dấu hiệu thường gặp</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>cdecl</code></td>
+					<td>stack</td>
+					<td>caller</td>
+					<td>sau <code>call</code> có <code>add esp, N</code></td>
+			</tr>
+			<tr>
+					<td><code>stdcall</code></td>
+					<td>stack</td>
+					<td>callee</td>
+					<td><code>ret N</code> ở cuối function</td>
+			</tr>
+			<tr>
+					<td><code>fastcall</code></td>
+					<td>một số register, phần còn lại trên stack</td>
+					<td>tùy ABI</td>
+					<td>thường thấy <code>ecx</code>/<code>edx</code> được dùng sớm</td>
+			</tr>
+			<tr>
+					<td>Windows x64</td>
+					<td><code>rcx</code>, <code>rdx</code>, <code>r8</code>, <code>r9</code></td>
+					<td>caller theo ABI</td>
+					<td>shadow space 32 bytes</td>
+			</tr>
+			<tr>
+					<td>System V AMD64</td>
+					<td><code>rdi</code>, <code>rsi</code>, <code>rdx</code>, <code>rcx</code>, <code>r8</code>, <code>r9</code></td>
+					<td>caller theo ABI</td>
+					<td>register và stack layout khác Windows</td>
+			</tr>
+	</tbody>
+</table>
+<p>Khi signature của IDA sai, chọn <code>Edit function</code> hoặc nhấn <code>Y</code> để sửa calling convention và kiểu trả về. Sau đó kiểm tra các caller: nếu số arguments hoặc register mapping không khớp, prototype vẫn chưa đúng.</p>
+
+<h3 class="relative group">Quy trình theo dõi một lời gọi hàm 
+    <div id="quy-trình-theo-dõi-một-lời-gọi-hàm" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#quy-tr%c3%acnh-theo-d%c3%b5i-m%e1%bb%99t-l%e1%bb%9di-g%e1%bb%8di-h%c3%a0m" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <ol>
-<li><strong>Đừng tin INPUT khi dùng Docker</strong></li>
-<li><strong>Luôn kiểm tra NAT trước khi kết luận firewall không hoạt động</strong></li>
-<li><strong>Docker không phá iptables – nó chỉ dùng iptables theo cách khác</strong></li>
-<li><strong>Chặn traffic container = chặn ở PREROUTING</strong></li>
-<li><strong>Firewall production phải reload an toàn, không được “giật cục”</strong></li>
+<li>Đặt breakpoint tại instruction ngay trước <code>call</code> khi debug được.</li>
+<li>Ghi lại các register chứa arguments và vùng stack liên quan.</li>
+<li>Step into callee, kiểm tra instruction đầu tiên đọc argument.</li>
+<li>Đặt tên cho argument, local variable và giá trị trả về.</li>
+<li>Theo dõi nơi return value được dùng, thường là <code>eax</code>/<code>rax</code> hoặc <code>x0</code>.</li>
 </ol>
-<p>Nếu bạn từng:</p>
+<p>Với function variadic như <code>printf</code>, số arguments không thể suy ra chỉ từ prototype đơn giản. Hãy kiểm tra format string và cách caller chuẩn bị từng giá trị.</p>
+
+<h2 class="relative group">4. Nhận diện và xử lý anti-analysis 
+    <div id="4-nhận-diện-và-xử-lý-anti-analysis" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#4-nh%e1%ba%adn-di%e1%bb%87n-v%c3%a0-x%e1%bb%ad-l%c3%bd-anti-analysis" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>Anti-analysis làm giảm chất lượng disassembly hoặc thay đổi hành vi khi chạy trong debugger. Mục tiêu trong quá trình phân tích là nhận diện, cô lập và ghi nhận tác động của nó; không nên vô hiệu hóa cơ chế bảo vệ trên hệ thống không được phép.</p>
+
+<h3 class="relative group">Một số dấu hiệu 
+    <div id="một-số-dấu-hiệu" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#m%e1%bb%99t-s%e1%bb%91-d%e1%ba%a5u-hi%e1%bb%87u" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <ul>
-<li>DROP INPUT mà container vẫn mở port</li>
-<li>Thấy iptables “không nghe lời”</li>
-<li>Bị Docker làm rối firewall</li>
+<li><strong>Phát hiện debugger</strong>: gọi <code>IsDebuggerPresent</code>, <code>CheckRemoteDebuggerPresent</code>, đọc PEB hoặc dùng exception bất thường.</li>
+<li><strong>Phát hiện môi trường</strong>: kiểm tra tên process, registry, số CPU, timing hoặc thiết bị ảo.</li>
+<li><strong>Control-flow obfuscation</strong>: jump chain, opaque predicate, junk instruction và indirect jump.</li>
+<li><strong>API hashing và dynamic resolution</strong>: không có tên API rõ trong import table; chương trình tự tìm địa chỉ bằng hash.</li>
+<li><strong>Packed/self-modifying code</strong>: vùng <code>.text</code> bị ghi, code chỉ xuất hiện sau khi giải nén hoặc được tạo động.</li>
 </ul>
-<p>👉 Rất có thể bạn đang mắc đúng lỗi mà tôi từng mắc.</p>
-<p>Đây là một trong những bài viết hiếm hoi khiến tôi phải nói:</p>
-<p>“À, ra là vậy!”</p>
-<p>Nếu bạn làm vận hành, DevOps, SOC hay hạ tầng có Docker,</p>
-<p>tôi thực sự khuyên bạn nên đọc và hiểu kỹ bài này.</p>
-<p>Nó sẽ cứu bạn ít nhất  <strong>một đêm mất ngủ</strong> .</p>
+
+<h3 class="relative group">Quy trình phân tích thực tế 
+    <div id="quy-trình-phân-tích-thực-tế" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#quy-tr%c3%acnh-ph%c3%a2n-t%c3%adch-th%e1%bb%b1c-t%e1%ba%bf" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<ol>
+<li>Tạo snapshot hoặc bản sao của sample và ghi hash để có thể lặp lại kết quả.</li>
+<li>Bắt đầu bằng static analysis: sections, imports, strings, xrefs và các vùng có quyền <code>RWX</code>.</li>
+<li>Dùng debugger trong VM cô lập; đặt breakpoint tại API hoặc instruction thay đổi quyền bộ nhớ.</li>
+<li>Khi code được giải mã tại runtime, dump vùng nhớ trong lab rồi nạp bản dump vào IDA để phân tích tiếp.</li>
+<li>Đánh dấu các vùng chưa xác định bằng <code>U</code>, tạo lại code bằng <code>C</code> khi đã xác định đúng boundary, và dùng <code>Make function</code> khi cần.</li>
+<li>Ghi lại mọi giả thuyết trong comment. Một patch tạm thời chỉ nên dùng để quan sát một nhánh trong môi trường kiểm thử và phải được ghi rõ.</li>
+</ol>
+<p>Không nên kết luận một binary là packed chỉ vì entropy cao hoặc import ít. Hãy kết hợp nhiều dấu hiệu: entry point nhỏ, section bất thường, code thực thi được tạo sau khi chạy và sự thay đổi quyền trang nhớ.</p>
+
+<h2 class="relative group">5. Script automation với IDAPython 
+    <div id="5-script-automation-với-idapython" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#5-script-automation-v%e1%bb%9bi-idapython" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>IDAPython phù hợp cho các tác vụ lặp lại như liệt kê function, tìm call đến API, đặt tên theo quy tắc và xuất báo cáo. Có thể chạy script từ <code>File &gt; Script command...</code> hoặc mở Python console trong IDA.</p>
+
+<h3 class="relative group">Liệt kê function và xuất JSON 
+    <div id="liệt-kê-function-và-xuất-json" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#li%e1%bb%87t-k%c3%aa-function-v%c3%a0-xu%e1%ba%a5t-json" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Script sau dùng API tương thích IDA 7.x/8.x. Nó chỉ đọc database và ghi báo cáo ra thư mục hiện tại của database:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">json</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">ida_funcs</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">ida_kernwin</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">idaapi</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">idautils</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">idc</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">collect_functions</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">	<span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">	<span class="k">for</span> <span class="n">function_ea</span> <span class="ow">in</span> <span class="n">idautils</span><span class="o">.</span><span class="n">Functions</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">		<span class="n">function</span> <span class="o">=</span> <span class="n">ida_funcs</span><span class="o">.</span><span class="n">get_func</span><span class="p">(</span><span class="n">function_ea</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">		<span class="k">if</span> <span class="n">function</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">			<span class="k">continue</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">			<span class="s2">&#34;address&#34;</span><span class="p">:</span> <span class="nb">hex</span><span class="p">(</span><span class="n">function</span><span class="o">.</span><span class="n">start_ea</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">			<span class="s2">&#34;name&#34;</span><span class="p">:</span> <span class="n">idc</span><span class="o">.</span><span class="n">get_func_name</span><span class="p">(</span><span class="n">function</span><span class="o">.</span><span class="n">start_ea</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">			<span class="s2">&#34;size&#34;</span><span class="p">:</span> <span class="n">function</span><span class="o">.</span><span class="n">end_ea</span> <span class="o">-</span> <span class="n">function</span><span class="o">.</span><span class="n">start_ea</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">		<span class="p">})</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="n">result</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">	<span class="n">input_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">idc</span><span class="o">.</span><span class="n">get_input_file_path</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">	<span class="n">output_path</span> <span class="o">=</span> <span class="n">input_path</span><span class="o">.</span><span class="n">with_name</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">input_path</span><span class="o">.</span><span class="n">stem</span><span class="si">}</span><span class="s2">_function_report.json&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="n">output_path</span><span class="o">.</span><span class="n">write_text</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">		<span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">collect_functions</span><span class="p">(),</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">		<span class="n">encoding</span><span class="o">=</span><span class="s2">&#34;utf-8&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="n">ida_kernwin</span><span class="o">.</span><span class="n">msg</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Wrote </span><span class="si">{</span><span class="n">output_path</span><span class="si">}</span><span class="se">\\</span><span class="s2">n&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">	<span class="n">main</span><span class="p">()</span>
+</span></span></code></pre></div><p>Việc kiểm tra function bằng <code>ida_funcs.get_func()</code> giúp script bỏ qua vùng địa chỉ không còn là function hợp lệ. Nếu input path không ghi được, hãy đổi <code>output_path</code> sang một thư mục làm việc riêng.</p>
+
+<h3 class="relative group">Tìm các lệnh gọi API đáng chú ý 
+    <div id="tìm-các-lệnh-gọi-api-đáng-chú-ý" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#t%c3%acm-c%c3%a1c-l%e1%bb%87nh-g%e1%bb%8di-api-%c4%91%c3%a1ng-ch%c3%ba-%c3%bd" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">idautils</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">idc</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">TARGETS</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&#34;VirtualAlloc&#34;</span><span class="p">,</span> <span class="s2">&#34;VirtualProtect&#34;</span><span class="p">,</span> <span class="s2">&#34;CreateThread&#34;</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">function_ea</span> <span class="ow">in</span> <span class="n">idautils</span><span class="o">.</span><span class="n">Functions</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">	<span class="k">for</span> <span class="n">instruction_ea</span> <span class="ow">in</span> <span class="n">idautils</span><span class="o">.</span><span class="n">FuncItems</span><span class="p">(</span><span class="n">function_ea</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">		<span class="k">if</span> <span class="n">idc</span><span class="o">.</span><span class="n">print_insn_mnem</span><span class="p">(</span><span class="n">instruction_ea</span><span class="p">)</span> <span class="o">!=</span> <span class="s2">&#34;call&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">			<span class="k">continue</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="n">target_name</span> <span class="o">=</span> <span class="n">idc</span><span class="o">.</span><span class="n">get_name</span><span class="p">(</span><span class="n">idc</span><span class="o">.</span><span class="n">get_operand_value</span><span class="p">(</span><span class="n">instruction_ea</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">		<span class="k">if</span> <span class="n">target_name</span> <span class="ow">in</span> <span class="n">TARGETS</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">			<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="nb">hex</span><span class="p">(</span><span class="n">instruction_ea</span><span class="p">)</span><span class="si">}</span><span class="s2"> -&gt; </span><span class="si">{</span><span class="n">target_name</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>Tên import có thể bị decorate, forward hoặc resolve động nên danh sách kết quả không phải bằng chứng đầy đủ. Kết hợp script với xrefs (<code>X</code>) và kiểm tra assembly quanh mỗi call.</p>
+
+<h3 class="relative group">Mẹo viết script bền vững 
+    <div id="mẹo-viết-script-bền-vững" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#m%e1%ba%b9o-vi%e1%ba%bft-script-b%e1%bb%81n-v%e1%bb%afng" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<ul>
+<li>Dùng <code>idaapi.get_inf_structure().is_64bit()</code> hoặc API tương ứng để tách logic x86/x64.</li>
+<li>Kiểm tra <code>BADADDR</code>, <code>None</code> và function boundary trước khi đọc operand.</li>
+<li>Không sửa tên hàng loạt nếu chưa có quy tắc lọc và bản sao database.</li>
+<li>In địa chỉ bằng <code>hex()</code> và lưu input hash cùng báo cáo để kết quả có thể tái lập.</li>
+<li>Chia script thành các hàm nhỏ, chạy thử trên một function trước khi quét toàn bộ database.</li>
+</ul>
+
+<h2 class="relative group">6. Checklist phân tích 
+    <div id="6-checklist-phân-tích" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#6-checklist-ph%c3%a2n-t%c3%adch" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Xác định kiến trúc, compiler và calling convention có khả năng được dùng.</li>
+<li><input disabled="" type="checkbox"> Kiểm tra prototype và số lượng arguments của function.</li>
+<li><input disabled="" type="checkbox"> Đổi tên arguments/local variables theo data-flow đã xác nhận.</li>
+<li><input disabled="" type="checkbox"> Vẽ stack layout, chú ý alignment, saved registers và shadow space.</li>
+<li><input disabled="" type="checkbox"> Kiểm tra dấu hiệu debugger detection, packing và dynamic API resolution.</li>
+<li><input disabled="" type="checkbox"> Dùng debugger trong môi trường cô lập để quan sát code sau khi unpack.</li>
+<li><input disabled="" type="checkbox"> Chạy script trên bản sao database và lưu lại báo cáo cùng hash sample.</li>
+</ul>
+
+<h2 class="relative group">Kết luận 
+    <div id="kết-luận" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#k%e1%ba%bft-lu%e1%ba%adn" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>Phân tích function hiệu quả là quá trình kết hợp giữa assembly, calling convention, data-flow và quan sát runtime. Khi IDA đưa ra một giả thuyết về argument hoặc local variable, hãy kiểm chứng nó bằng caller, instruction thực tế và debugger. IDAPython sau đó giúp biến các thao tác lặp lại thành quy trình có thể tái lập, giảm thời gian tìm kiếm và tăng độ nhất quán của báo cáo.</p>
+<p>Ở phần tiếp theo, có thể mở rộng sang phân tích memory corruption, unpacking có kiểm soát và xây dựng plugin IDA cho một workflow cụ thể.</p>
 
           
           
@@ -1382,7 +1498,7 @@ iptables -A INPUT -j DROP
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://ckagngoc.github.io/posts/1768841486834-iptables-docker-and-confuse/&amp;title=Iptables%20Docker%20And%20Confuse"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://ckagngoc.github.io/posts/ida-tutorial-part-2/&amp;title=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20IDA%20Pro%20c%c6%a1%20b%e1%ba%a3n%20cho%20Reverse%20Engineering%20-%20Ph%e1%ba%a7n%202"
       title="Share on LinkedIn"
       aria-label="Share on LinkedIn"
       >
@@ -1401,7 +1517,7 @@ iptables -A INPUT -j DROP
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://ckagngoc.github.io/posts/1768841486834-iptables-docker-and-confuse/&amp;text=Iptables%20Docker%20And%20Confuse"
+      href="https://twitter.com/intent/tweet/?url=https://ckagngoc.github.io/posts/ida-tutorial-part-2/&amp;text=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20IDA%20Pro%20c%c6%a1%20b%e1%ba%a3n%20cho%20Reverse%20Engineering%20-%20Ph%e1%ba%a7n%202"
       title="Tweet on Twitter"
       aria-label="Tweet on Twitter"
       >
@@ -1419,7 +1535,7 @@ iptables -A INPUT -j DROP
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://bsky.app/intent/compose?text=Iptables%20Docker%20And%20Confuse&#43;https://ckagngoc.github.io/posts/1768841486834-iptables-docker-and-confuse/"
+      href="https://bsky.app/intent/compose?text=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20IDA%20Pro%20c%c6%a1%20b%e1%ba%a3n%20cho%20Reverse%20Engineering%20-%20Ph%e1%ba%a7n%202&#43;https://ckagngoc.github.io/posts/ida-tutorial-part-2/"
       title="Post on Bluesky"
       aria-label="Post on Bluesky"
       >
@@ -1437,7 +1553,7 @@ iptables -A INPUT -j DROP
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://ckagngoc.github.io/posts/1768841486834-iptables-docker-and-confuse/&amp;resubmit=true&amp;title=Iptables%20Docker%20And%20Confuse"
+      href="https://reddit.com/submit/?url=https://ckagngoc.github.io/posts/ida-tutorial-part-2/&amp;resubmit=true&amp;title=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20IDA%20Pro%20c%c6%a1%20b%e1%ba%a3n%20cho%20Reverse%20Engineering%20-%20Ph%e1%ba%a7n%202"
       title="Submit to Reddit"
       aria-label="Submit to Reddit"
       >
@@ -1456,7 +1572,7 @@ iptables -A INPUT -j DROP
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://ckagngoc.github.io/posts/1768841486834-iptables-docker-and-confuse/&amp;resubmit=true&amp;title=Iptables%20Docker%20And%20Confuse"
+      href="https://api.whatsapp.com/send?text=https://ckagngoc.github.io/posts/ida-tutorial-part-2/&amp;resubmit=true&amp;title=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20IDA%20Pro%20c%c6%a1%20b%e1%ba%a3n%20cho%20Reverse%20Engineering%20-%20Ph%e1%ba%a7n%202"
       title="Share via WhatsApp"
       aria-label="Share via WhatsApp"
       >
@@ -1475,7 +1591,7 @@ iptables -A INPUT -j DROP
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://ckagngoc.github.io/posts/1768841486834-iptables-docker-and-confuse/&amp;resubmit=true&amp;title=Iptables%20Docker%20And%20Confuse"
+      href="https://t.me/share/url?url=https://ckagngoc.github.io/posts/ida-tutorial-part-2/&amp;resubmit=true&amp;title=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20IDA%20Pro%20c%c6%a1%20b%e1%ba%a3n%20cho%20Reverse%20Engineering%20-%20Ph%e1%ba%a7n%202"
       title="Share via Telegram"
       aria-label="Share via Telegram"
       >
@@ -1494,7 +1610,7 @@ iptables -A INPUT -j DROP
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=https://ckagngoc.github.io/posts/1768841486834-iptables-docker-and-confuse/&amp;description=Iptables%20Docker%20And%20Confuse"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://ckagngoc.github.io/posts/ida-tutorial-part-2/&amp;description=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20IDA%20Pro%20c%c6%a1%20b%e1%ba%a3n%20cho%20Reverse%20Engineering%20-%20Ph%e1%ba%a7n%202"
       title="Pin on Pinterest"
       aria-label="Pin on Pinterest"
       >
@@ -1513,7 +1629,7 @@ iptables -A INPUT -j DROP
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://ckagngoc.github.io/posts/1768841486834-iptables-docker-and-confuse/&amp;quote=Iptables%20Docker%20And%20Confuse"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://ckagngoc.github.io/posts/ida-tutorial-part-2/&amp;quote=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20IDA%20Pro%20c%c6%a1%20b%e1%ba%a3n%20cho%20Reverse%20Engineering%20-%20Ph%e1%ba%a7n%202"
       title="Share on Facebook"
       aria-label="Share on Facebook"
       >
@@ -1532,7 +1648,7 @@ iptables -A INPUT -j DROP
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://ckagngoc.github.io/posts/1768841486834-iptables-docker-and-confuse/&amp;subject=Iptables%20Docker%20And%20Confuse"
+      href="mailto:?body=https://ckagngoc.github.io/posts/ida-tutorial-part-2/&amp;subject=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20IDA%20Pro%20c%c6%a1%20b%e1%ba%a3n%20cho%20Reverse%20Engineering%20-%20Ph%e1%ba%a7n%202"
       title="Send via email"
       aria-label="Send via email"
       >
@@ -1558,11 +1674,11 @@ iptables -A INPUT -j DROP
   
   
 
-  <a href="/posts/1750471962886-how-to-use-ssh-with-vps/" class="min-w-full">
+  <a href="/posts/1754896723352-ida-tutorial-part-1/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/1750471962886-how-to-use-ssh-with-vps/featured_hu_c08097e6e7c919de.png);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/1754896723352-ida-tutorial-part-1/feature_hu_963929661d10336.jpg);"></div>
         
       
 
@@ -1570,7 +1686,7 @@ iptables -A INPUT -j DROP
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/posts/1750471962886-how-to-use-ssh-with-vps/">How to use SSH with VPS</div>
+          href="/posts/1754896723352-ida-tutorial-part-1/">Hướng dẫn IDA Pro cơ bản cho Reverse Engineering - Phần 1</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1615,7 +1731,7 @@ iptables -A INPUT -j DROP
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2025-06-21T00:00:00&#43;00:00">21 June 2025</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2025-08-11T00:00:00&#43;00:00">11 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">7 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
   
   
     
@@ -1628,7 +1744,7 @@ iptables -A INPUT -j DROP
       
     
   
-  <span id="views_posts\1750471962886-how-to-use-ssh-with-vps\index.md" class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400" title="views">loading</span>
+  <span id="views_posts\1754896723352-IDA-tutorial-part-1\index.md" class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400" title="views">loading</span>
   <span class="inline-block align-text-bottom">
 
   <span class="relative block icon">
@@ -1650,7 +1766,7 @@ iptables -A INPUT -j DROP
       
     
   
-  <span id="likes_posts\1750471962886-how-to-use-ssh-with-vps\index.md"
+  <span id="likes_posts\1754896723352-IDA-tutorial-part-1\index.md"
     class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400"
     title="likes">loading</span>
   <span class="inline-block align-text-bottom">
@@ -1699,18 +1815,42 @@ iptables -A INPUT -j DROP
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ssh/&#34;,'_self');return false;">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/reverse-engineering/&#34;,'_self');return false;">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Ssh
+    Reverse-Engineering
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/trick/&#34;,'_self');return false;">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ida-pro/&#34;,'_self');return false;">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Trick
+    Ida-Pro
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/disassembler/&#34;,'_self');return false;">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Disassembler
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/tutorial/&#34;,'_self');return false;">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Tutorial
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/security/&#34;,'_self');return false;">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Security
   </span>
 </span>
   </span>
@@ -1743,11 +1883,11 @@ iptables -A INPUT -j DROP
   
   
 
-  <a href="/posts/1750497448859-how-to-use-windbg/" class="min-w-full">
+  <a href="/posts/1768841486834-iptables-docker-and-confuse/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/1750497448859-how-to-use-windbg/featured_hu_d2495432eea3a39b.png);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/1768841486834-iptables-docker-and-confuse/feature_hu_997c083acd6580bc.png);"></div>
         
       
 
@@ -1755,7 +1895,7 @@ iptables -A INPUT -j DROP
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/posts/1750497448859-how-to-use-windbg/">How to use WinDbg</div>
+          href="/posts/1768841486834-iptables-docker-and-confuse/">Iptables Docker And Confuse</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1800,7 +1940,7 @@ iptables -A INPUT -j DROP
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2025-06-21T00:00:00&#43;00:00">21 June 2025</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2026-01-19T00:00:00&#43;00:00">19 January 2026</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">6 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
   
   
     
@@ -1813,7 +1953,7 @@ iptables -A INPUT -j DROP
       
     
   
-  <span id="views_posts\1750497448859-how-to-use-windbg\index.md" class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400" title="views">loading</span>
+  <span id="views_posts\1768841486834-iptables-docker-and-confuse\index.md" class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400" title="views">loading</span>
   <span class="inline-block align-text-bottom">
 
   <span class="relative block icon">
@@ -1835,7 +1975,7 @@ iptables -A INPUT -j DROP
       
     
   
-  <span id="likes_posts\1750497448859-how-to-use-windbg\index.md"
+  <span id="likes_posts\1768841486834-iptables-docker-and-confuse\index.md"
     class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400"
     title="likes">loading</span>
   <span class="inline-block align-text-bottom">
@@ -1884,26 +2024,18 @@ iptables -A INPUT -j DROP
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/windbg/&#34;,'_self');return false;">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/iptables/&#34;,'_self');return false;">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Windbg
+    Iptables
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/debug/&#34;,'_self');return false;">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/docker/&#34;,'_self');return false;">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Debug
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/reverse/&#34;,'_self');return false;">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Reverse
+    Docker
   </span>
 </span>
   </span>
@@ -1955,8 +2087,8 @@ iptables -A INPUT -j DROP
           
         
       <script>
-        var oid = "views_posts\\1768841486834-iptables-docker-and-confuse\\index.md"
-        var oid_likes = "likes_posts\\1768841486834-iptables-docker-and-confuse\\index.md"
+        var oid = "views_posts\\ida-tutorial-part-2\\index.md"
+        var oid_likes = "likes_posts\\ida-tutorial-part-2\\index.md"
       </script>
       
       
@@ -1976,7 +2108,7 @@ iptables -A INPUT -j DROP
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/posts/1754896723352-ida-tutorial-part-1/">
+            <a class="flex group mr-3" href="/posts/1768841486834-iptables-docker-and-confuse/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1988,11 +2120,11 @@ iptables -A INPUT -j DROP
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Hướng dẫn IDA Pro cơ bản cho Reverse Engineering - Phần 1</span
+                  >Iptables Docker And Confuse</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2025-08-11T00:00:00&#43;00:00">11 August 2025</time>
+                    <time datetime="2026-01-19T00:00:00&#43;00:00">19 January 2026</time>
                   
                 </span>
               </span>
@@ -2000,28 +2132,6 @@ iptables -A INPUT -j DROP
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/posts/ida-tutorial-part-2/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Hướng dẫn IDA Pro cơ bản cho Reverse Engineering - Phần 2</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2026-08-21T00:00:00&#43;00:00">21 August 2026</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>

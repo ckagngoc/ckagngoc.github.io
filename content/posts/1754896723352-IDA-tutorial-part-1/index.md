@@ -160,9 +160,94 @@ IDA tạo file `.idb` chứa toàn bộ phân tích của bạn. Nhớ save thư
 
 ### 5. Hiểu calling conventions
 
-- **stdcall**: Callee dọn stack
-- **cdecl**: Caller dọn stack
-- **fastcall**: Tham số đầu qua register
+**Calling convention** là quy ước giữa caller (hàm gọi) và callee (hàm được gọi) về cách truyền arguments, nơi đặt giá trị trả về, register nào phải được bảo toàn và ai chịu trách nhiệm dọn stack. Biết quy ước này giúp bạn đọc đúng function signature trong IDA thay vì chỉ đoán từ tên hàm.
+
+#### `cdecl`: caller dọn stack
+
+Với x86 32-bit, arguments của `cdecl` thường được đưa lên stack theo thứ tự từ phải sang trái. Ví dụ với:
+
+```c
+int add(int left, int right);
+```
+
+caller có thể tạo lời gọi như sau:
+
+```assembly
+push    2              ; right
+push    3              ; left
+call    add
+add     esp, 8         ; caller dọn 2 arguments, mỗi argument 4 bytes
+; eax = 5
+```
+
+Trong callee, sau prologue chuẩn, `left` nằm ở `[ebp+8]` và `right` nằm ở `[ebp+0Ch]`:
+
+```assembly
+add:
+push    ebp
+mov     ebp, esp
+mov     eax, [ebp+8]   ; left = 3
+add     eax, [ebp+0Ch] ; right = 2
+pop     ebp
+retn                  ; không có số bytes đi kèm
+```
+
+Dấu hiệu quan trọng trong IDA là instruction `add esp, 8` xuất hiện **sau `call`**. `cdecl` phù hợp với hàm có số lượng arguments thay đổi như `printf`, vì caller biết chính xác cần dọn bao nhiêu bytes.
+
+#### `stdcall`: callee dọn stack
+
+Với cùng prototype, callee sẽ dọn arguments khi return:
+
+```assembly
+push    2
+push    3
+call    add_stdcall
+; không cần add esp, 8 ở đây
+```
+
+Cuối callee thường có `retn 8`:
+
+```assembly
+add_stdcall:
+push    ebp
+mov     ebp, esp
+mov     eax, [ebp+8]
+add     eax, [ebp+0Ch]
+pop     ebp
+retn    8              ; return và bỏ 8 bytes arguments khỏi stack
+```
+
+Nếu thấy `retn N`, hãy xem `N` có khớp với tổng kích thước arguments hay không. Đây là một dấu hiệu tốt để kiểm tra IDA đã nhận diện đúng calling convention chưa, nhưng không nên dùng nó một mình vì compiler có thể tối ưu prologue/epilogue.
+
+#### `fastcall`: ưu tiên register
+
+`fastcall` giảm số lần truy cập stack bằng cách truyền một vài arguments đầu tiên qua register. Một biến thể thường gặp trên x86 dùng `ecx` cho argument đầu tiên và `edx` cho argument thứ hai; các arguments còn lại mới được đặt trên stack:
+
+```c
+int multiply(int left, int right);
+```
+
+Một lời gọi có thể trông như sau:
+
+```assembly
+mov     ecx, 6         ; left
+mov     edx, 7         ; right
+call    multiply
+; eax = 42
+```
+
+Trong thực tế, quy tắc register của `fastcall` phụ thuộc compiler và nền tảng. Vì vậy, hãy đặt con trỏ vào function, nhấn `Y` để xem hoặc chỉnh calling convention, rồi đối chiếu với các instruction đọc `ecx`, `edx` và stack.
+
+#### Cách nhận diện nhanh trong IDA
+
+Khi phân tích một `call`, hãy kiểm tra theo thứ tự:
+
+1. Ngay trước `call`, arguments được `push` lên stack hay được đưa vào register nào?
+2. Ngay sau `call`, có `add esp, N` không?
+3. Ở cuối callee là `retn` hay `retn N`?
+4. Giá trị trả về có được đọc từ `eax` (x86) hoặc `rax` (x64) không?
+
+Ví dụ, chuỗi `push`, `call`, `add esp, 8` gợi ý `cdecl`, còn `call` kết thúc bằng `retn 8` gợi ý `stdcall`. Đây là các dấu hiệu để hình thành giả thuyết; hãy xác nhận lại bằng nhiều caller và bằng cách sửa prototype trong Hex-Rays nếu pseudo-code vẫn không hợp lý.
 
 ## Cấu trúc một chương trình PE
 

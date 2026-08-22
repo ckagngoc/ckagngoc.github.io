@@ -1,0 +1,4 @@
+[submodule "content/posts/IDA-tutorial-part-2/themes/blowfish"]
+	path = content/posts/IDA-tutorial-part-2/themes/blowfish
+	url = https://github.com/nunocoracao/blowfish.git
+	branch = main

@@ -187,14 +187,6 @@ IDA tạo file `.idb` chứa toàn bộ phân tích của bạn. Nhớ save thư
 - **Import**: Function từ DLL khác
 - **Export**: Function mà chương trình export
 
-## Bài tập thực hành
-
-1. **Tải một chương trình đơn giản vào IDA**
-2. **Tìm hàm main và phân tích**
-3. **Đặt tên cho các variable và function**
-4. **Thêm comment giải thích**
-5. **Tìm hiểu các string được sử dụng**
-
 ## Kết luận
 
 Trong phần 1 này, chúng ta đã tìm hiểu:
@@ -213,5 +205,3 @@ Trong phần 1 này, chúng ta đã tìm hiểu:
 - Script automation với IDAPython
 
 ---
-
-*Hãy thực hành thường xuyên với các chương trình đơn giản trước khi chuyển sang phân tích malware phức tạp!*

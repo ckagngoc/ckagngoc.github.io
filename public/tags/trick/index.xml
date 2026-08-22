@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Trick on Ckagngoc</title>
-    <link>http://localhost:1313/tags/trick/</link>
+    <link>https://ckagngoc.github.io/tags/trick/</link>
     <description>Recent content in Trick on Ckagngoc</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2026 Ckagngoc</copyright>
-    <lastBuildDate>Mon, 19 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/trick/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://ckagngoc.github.io/tags/trick/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Iptables Docker And Confuse</title>
-      <link>http://localhost:1313/posts/1768841486834-iptables-docker-and-confuse/</link>
+      <link>https://ckagngoc.github.io/posts/1768841486834-iptables-docker-and-confuse/</link>
       <pubDate>Mon, 19 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/1768841486834-iptables-docker-and-confuse/</guid>
+      <guid>https://ckagngoc.github.io/posts/1768841486834-iptables-docker-and-confuse/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/1768841486834-iptables-docker-and-confuse/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ckagngoc.github.io/posts/1768841486834-iptables-docker-and-confuse/feature.png" />
     </item>
     
     <item>
       <title>How to use SSH with VPS</title>
-      <link>http://localhost:1313/posts/1750471962886-how-to-use-ssh-with-vps/</link>
+      <link>https://ckagngoc.github.io/posts/1750471962886-how-to-use-ssh-with-vps/</link>
       <pubDate>Sat, 21 Jun 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/1750471962886-how-to-use-ssh-with-vps/</guid>
+      <guid>https://ckagngoc.github.io/posts/1750471962886-how-to-use-ssh-with-vps/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/1750471962886-how-to-use-ssh-with-vps/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ckagngoc.github.io/posts/1750471962886-how-to-use-ssh-with-vps/featured.png" />
     </item>
     
     <item>
       <title>How to use WinDbg</title>
-      <link>http://localhost:1313/posts/1750497448859-how-to-use-windbg/</link>
+      <link>https://ckagngoc.github.io/posts/1750497448859-how-to-use-windbg/</link>
       <pubDate>Sat, 21 Jun 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/1750497448859-how-to-use-windbg/</guid>
+      <guid>https://ckagngoc.github.io/posts/1750497448859-how-to-use-windbg/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/1750497448859-how-to-use-windbg/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ckagngoc.github.io/posts/1750497448859-how-to-use-windbg/featured.png" />
     </item>
     
   </channel>

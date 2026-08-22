@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
-  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  data-auto-appearance="true"><head>
   <meta charset="utf-8" />
   
   <meta http-equiv="content-language" content="en" />
@@ -15,7 +15,7 @@
   <meta name="keywords" content="reverse-engineering, ida-pro, disassembler, tutorial, security, " />
   
   
-  <link rel="canonical" href="http://localhost:1313/posts/1754896723352-ida-tutorial-part-1/" />
+  <link rel="canonical" href="https://ckagngoc.github.io/posts/1754896723352-ida-tutorial-part-1/" />
   
   
   
@@ -64,7 +64,7 @@
   
   
   
-  <meta property="og:url" content="http://localhost:1313/posts/1754896723352-ida-tutorial-part-1/">
+  <meta property="og:url" content="https://ckagngoc.github.io/posts/1754896723352-ida-tutorial-part-1/">
 	<meta property="og:site_name" content="Ckagngoc">
 	<meta property="og:title" content="Hướng dẫn IDA Pro cơ bản cho Reverse Engineering - Phần 1">
 	<meta property="og:description" content="Hướng dẫn cơ bản về IDA Pro - công cụ disassembler mạnh mẽ cho reverse engineering. Phần 1: Giới thiệu và các thao tác cơ bản">
@@ -78,11 +78,11 @@
 		<meta property="article:tag" content="Disassembler">
 		<meta property="article:tag" content="Tutorial">
 		<meta property="article:tag" content="Security">
-		<meta property="og:image" content="http://localhost:1313/posts/1754896723352-ida-tutorial-part-1/feature.jpg">
+		<meta property="og:image" content="https://ckagngoc.github.io/posts/1754896723352-ida-tutorial-part-1/feature.jpg">
 
   
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:image" content="http://localhost:1313/posts/1754896723352-ida-tutorial-part-1/feature.jpg">
+	<meta name="twitter:image" content="https://ckagngoc.github.io/posts/1754896723352-ida-tutorial-part-1/feature.jpg">
 	<meta name="twitter:title" content="Hướng dẫn IDA Pro cơ bản cho Reverse Engineering - Phần 1">
 	<meta name="twitter:description" content="Hướng dẫn cơ bản về IDA Pro - công cụ disassembler mạnh mẽ cho reverse engineering. Phần 1: Giới thiệu và các thao tác cơ bản">
 
@@ -97,7 +97,7 @@
     "description": "Hướng dẫn cơ bản về IDA Pro - công cụ disassembler mạnh mẽ cho reverse engineering. Phần 1: Giới thiệu và các thao tác cơ bản",
     
     "inLanguage": "en",
-    "url" : "http:\/\/localhost:1313\/posts\/1754896723352-ida-tutorial-part-1\/",
+    "url" : "https:\/\/ckagngoc.github.io\/posts\/1754896723352-ida-tutorial-part-1\/",
     "author" : {
       "@type": "Person",
       "name": "Ckagngoc"
@@ -111,7 +111,7 @@
     "keywords": ["reverse-engineering","ida-pro","disassembler","tutorial","security"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "841"
+    "wordCount": "784"
   }]
   </script>
 
@@ -954,7 +954,6 @@
         <li><a href="#importexport-tables">Import/Export Tables</a></li>
       </ul>
     </li>
-    <li><a href="#bài-tập-thực-hành">Bài tập thực hành</a></li>
     <li><a href="#kết-luận">Kết luận</a></li>
   </ul>
 </nav>
@@ -1016,7 +1015,6 @@
         <li><a href="#importexport-tables">Import/Export Tables</a></li>
       </ul>
     </li>
-    <li><a href="#bài-tập-thực-hành">Bài tập thực hành</a></li>
     <li><a href="#kết-luận">Kết luận</a></li>
   </ul>
 </nav>
@@ -1508,24 +1506,6 @@
 <li><strong>Export</strong>: Function mà chương trình export</li>
 </ul>
 
-<h2 class="relative group">Bài tập thực hành 
-    <div id="bài-tập-thực-hành" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#b%c3%a0i-t%e1%ba%adp-th%e1%bb%b1c-h%c3%a0nh" aria-label="Anchor">#</a>
-    </span>        
-    
-</h2>
-<ol>
-<li><strong>Tải một chương trình đơn giản vào IDA</strong></li>
-<li><strong>Tìm hàm main và phân tích</strong></li>
-<li><strong>Đặt tên cho các variable và function</strong></li>
-<li><strong>Thêm comment giải thích</strong></li>
-<li><strong>Tìm hiểu các string được sử dụng</strong></li>
-</ol>
-
 <h2 class="relative group">Kết luận 
     <div id="kết-luận" class="anchor"></div>
     
@@ -1552,7 +1532,6 @@
 <li>Script automation với IDAPython</li>
 </ul>
 <hr>
-<p><em>Hãy thực hành thường xuyên với các chương trình đơn giản trước khi chuyển sang phân tích malware phức tạp!</em></p>
 
           
           
@@ -1570,7 +1549,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/posts/1754896723352-ida-tutorial-part-1/&amp;title=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20IDA%20Pro%20c%c6%a1%20b%e1%ba%a3n%20cho%20Reverse%20Engineering%20-%20Ph%e1%ba%a7n%201"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://ckagngoc.github.io/posts/1754896723352-ida-tutorial-part-1/&amp;title=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20IDA%20Pro%20c%c6%a1%20b%e1%ba%a3n%20cho%20Reverse%20Engineering%20-%20Ph%e1%ba%a7n%201"
       title="Share on LinkedIn"
       aria-label="Share on LinkedIn"
       >
@@ -1589,7 +1568,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=http://localhost:1313/posts/1754896723352-ida-tutorial-part-1/&amp;text=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20IDA%20Pro%20c%c6%a1%20b%e1%ba%a3n%20cho%20Reverse%20Engineering%20-%20Ph%e1%ba%a7n%201"
+      href="https://twitter.com/intent/tweet/?url=https://ckagngoc.github.io/posts/1754896723352-ida-tutorial-part-1/&amp;text=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20IDA%20Pro%20c%c6%a1%20b%e1%ba%a3n%20cho%20Reverse%20Engineering%20-%20Ph%e1%ba%a7n%201"
       title="Tweet on Twitter"
       aria-label="Tweet on Twitter"
       >
@@ -1607,7 +1586,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://bsky.app/intent/compose?text=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20IDA%20Pro%20c%c6%a1%20b%e1%ba%a3n%20cho%20Reverse%20Engineering%20-%20Ph%e1%ba%a7n%201&#43;http://localhost:1313/posts/1754896723352-ida-tutorial-part-1/"
+      href="https://bsky.app/intent/compose?text=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20IDA%20Pro%20c%c6%a1%20b%e1%ba%a3n%20cho%20Reverse%20Engineering%20-%20Ph%e1%ba%a7n%201&#43;https://ckagngoc.github.io/posts/1754896723352-ida-tutorial-part-1/"
       title="Post on Bluesky"
       aria-label="Post on Bluesky"
       >
@@ -1625,7 +1604,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=http://localhost:1313/posts/1754896723352-ida-tutorial-part-1/&amp;resubmit=true&amp;title=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20IDA%20Pro%20c%c6%a1%20b%e1%ba%a3n%20cho%20Reverse%20Engineering%20-%20Ph%e1%ba%a7n%201"
+      href="https://reddit.com/submit/?url=https://ckagngoc.github.io/posts/1754896723352-ida-tutorial-part-1/&amp;resubmit=true&amp;title=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20IDA%20Pro%20c%c6%a1%20b%e1%ba%a3n%20cho%20Reverse%20Engineering%20-%20Ph%e1%ba%a7n%201"
       title="Submit to Reddit"
       aria-label="Submit to Reddit"
       >
@@ -1644,7 +1623,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=http://localhost:1313/posts/1754896723352-ida-tutorial-part-1/&amp;resubmit=true&amp;title=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20IDA%20Pro%20c%c6%a1%20b%e1%ba%a3n%20cho%20Reverse%20Engineering%20-%20Ph%e1%ba%a7n%201"
+      href="https://api.whatsapp.com/send?text=https://ckagngoc.github.io/posts/1754896723352-ida-tutorial-part-1/&amp;resubmit=true&amp;title=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20IDA%20Pro%20c%c6%a1%20b%e1%ba%a3n%20cho%20Reverse%20Engineering%20-%20Ph%e1%ba%a7n%201"
       title="Share via WhatsApp"
       aria-label="Share via WhatsApp"
       >
@@ -1663,7 +1642,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=http://localhost:1313/posts/1754896723352-ida-tutorial-part-1/&amp;resubmit=true&amp;title=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20IDA%20Pro%20c%c6%a1%20b%e1%ba%a3n%20cho%20Reverse%20Engineering%20-%20Ph%e1%ba%a7n%201"
+      href="https://t.me/share/url?url=https://ckagngoc.github.io/posts/1754896723352-ida-tutorial-part-1/&amp;resubmit=true&amp;title=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20IDA%20Pro%20c%c6%a1%20b%e1%ba%a3n%20cho%20Reverse%20Engineering%20-%20Ph%e1%ba%a7n%201"
       title="Share via Telegram"
       aria-label="Share via Telegram"
       >
@@ -1682,7 +1661,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=http://localhost:1313/posts/1754896723352-ida-tutorial-part-1/&amp;description=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20IDA%20Pro%20c%c6%a1%20b%e1%ba%a3n%20cho%20Reverse%20Engineering%20-%20Ph%e1%ba%a7n%201"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://ckagngoc.github.io/posts/1754896723352-ida-tutorial-part-1/&amp;description=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20IDA%20Pro%20c%c6%a1%20b%e1%ba%a3n%20cho%20Reverse%20Engineering%20-%20Ph%e1%ba%a7n%201"
       title="Pin on Pinterest"
       aria-label="Pin on Pinterest"
       >
@@ -1701,7 +1680,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:1313/posts/1754896723352-ida-tutorial-part-1/&amp;quote=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20IDA%20Pro%20c%c6%a1%20b%e1%ba%a3n%20cho%20Reverse%20Engineering%20-%20Ph%e1%ba%a7n%201"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://ckagngoc.github.io/posts/1754896723352-ida-tutorial-part-1/&amp;quote=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20IDA%20Pro%20c%c6%a1%20b%e1%ba%a3n%20cho%20Reverse%20Engineering%20-%20Ph%e1%ba%a7n%201"
       title="Share on Facebook"
       aria-label="Share on Facebook"
       >
@@ -1720,7 +1699,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=http://localhost:1313/posts/1754896723352-ida-tutorial-part-1/&amp;subject=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20IDA%20Pro%20c%c6%a1%20b%e1%ba%a3n%20cho%20Reverse%20Engineering%20-%20Ph%e1%ba%a7n%201"
+      href="mailto:?body=https://ckagngoc.github.io/posts/1754896723352-ida-tutorial-part-1/&amp;subject=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20IDA%20Pro%20c%c6%a1%20b%e1%ba%a3n%20cho%20Reverse%20Engineering%20-%20Ph%e1%ba%a7n%201"
       title="Send via email"
       aria-label="Send via email"
       >
@@ -3052,7 +3031,7 @@
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="http://localhost:1313/"
+  data-url="https://ckagngoc.github.io/"
   style="z-index:500"
 >
   <div

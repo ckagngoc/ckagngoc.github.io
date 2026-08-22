@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Event on Ckagngoc</title>
-    <link>http://localhost:1313/tags/event/</link>
+    <link>https://ckagngoc.github.io/tags/event/</link>
     <description>Recent content in Event on Ckagngoc</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2026 Ckagngoc</copyright>
-    <lastBuildDate>Tue, 17 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/event/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ckagngoc.github.io/tags/event/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>[Write-Up RE] Get2TheHell</title>
-      <link>http://localhost:1313/posts/1750170084049-write-up-re-get2thehell/</link>
+      <link>https://ckagngoc.github.io/posts/1750170084049-write-up-re-get2thehell/</link>
       <pubDate>Tue, 17 Jun 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/1750170084049-write-up-re-get2thehell/</guid>
+      <guid>https://ckagngoc.github.io/posts/1750170084049-write-up-re-get2thehell/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/1750170084049-write-up-re-get2thehell/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ckagngoc.github.io/posts/1750170084049-write-up-re-get2thehell/featured.png" />
     </item>
     
     <item>
       <title>[Write-Up RE] PTITCTF RE02</title>
-      <link>http://localhost:1313/posts/1750169562669-write-up-re-ptitctf-re02/</link>
+      <link>https://ckagngoc.github.io/posts/1750169562669-write-up-re-ptitctf-re02/</link>
       <pubDate>Tue, 17 Jun 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/1750169562669-write-up-re-ptitctf-re02/</guid>
+      <guid>https://ckagngoc.github.io/posts/1750169562669-write-up-re-ptitctf-re02/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/1750169562669-write-up-re-ptitctf-re02/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ckagngoc.github.io/posts/1750169562669-write-up-re-ptitctf-re02/featured.png" />
     </item>
     
   </channel>
